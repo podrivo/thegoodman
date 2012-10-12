@@ -7,16 +7,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {}
 body {background:#F6F6F6; overflow:hidden;}
 
-/* uhu */
+/* Hi */
 h1 {width:60px; height:60px; float:left; color:#FFF; text-shadow:1px 1px 1px rgba(0,0,0,.03)}
-h1 span, h2 span {font-size:50px; display:block; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:yo 2s ease infinite;}
+h1 em, h2 em {font-size:50px; display:block; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:yo 2s ease infinite;}
 h2 { width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#E47;}
-h2 span {font-size:280px; line-height:210px; left:0; -webkit-animation-duration:3s;}
-.sdw span {left:5px; top:5px; color:rgba(0,0,0,.16); -webkit-animation-delay:.08s; display:block; text-shadow:0 0 6px rgba(0,0,0,.08);}
-.t1 span {-webkit-animation-delay:0s;}
-.t2 span {-webkit-animation-delay:.30s;}
-.t3 span {-webkit-animation-delay:.45s;}
-.t4 span {-webkit-animation-delay:1s;}
+h2 em {font-size:280px; line-height:210px; left:0; -webkit-animation-duration:3s;}
+.sdw em {left:5px; top:5px; color:rgba(0,0,0,.16); -webkit-animation-delay:.08s; display:block; text-shadow:0 0 6px rgba(0,0,0,.08);}
+.t1 em {-webkit-animation-delay:0s;}
+.t2 em {-webkit-animation-delay:.30s;}
+.t3 em {-webkit-animation-delay:.45s;}
+.t4 em {-webkit-animation-delay:1s;}
 
 @-webkit-keyframes yo {
 	0%, 100% {-webkit-transform:rotate(0deg);}

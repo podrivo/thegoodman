@@ -1,5 +1,5 @@
 # The Good Man
-Experiment with CSS3 animations.
+Experiment with CSS3 animations and HTML5 audio.
 
 ## Author
 Pedro Ivo Hudson

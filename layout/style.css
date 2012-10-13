@@ -5,20 +5,39 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* HTML */
 html {}
-body {background:#F6F6F6; overflow:hidden;}
+body {overflow:hidden;}
+body.texture {background:#E5FCC2;}
 
 /* Hi */
-h1 {width:60px; height:60px; float:left; color:#FFF; text-shadow:1px 1px 1px rgba(0,0,0,.03)}
-h1 em, h2 em {font-size:50px; display:block; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:yo 2s ease infinite;}
-h2 { width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#E47;}
-h2 em {font-size:280px; line-height:210px; left:0; -webkit-animation-duration:3s;}
-.sdw em {left:5px; top:5px; color:rgba(0,0,0,.16); -webkit-animation-delay:.08s; display:block; text-shadow:0 0 6px rgba(0,0,0,.08);}
-.t1 em {-webkit-animation-delay:0s;}
-.t2 em {-webkit-animation-delay:.30s;}
-.t3 em {-webkit-animation-delay:.45s;}
-.t4 em {-webkit-animation-delay:1s;}
+h1 {width:180px; height:180px; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:fadeInDown 1.5s;}
+h1 em {-webkit-transform:rotate(180deg); display:block;}
+@-webkit-keyframes fadeInDown {
+	0% {
+		opacity:0;
+		-webkit-transform:translateY(-40px);
+	}
+
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0);
+	}
+}
+
+/* Texture */
+.texture p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:yo 1.5s linear infinite;}
+.texture h1, .texture h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:yo 2.5s ease infinite;}
+.texture h2 {margin:-115px 0 0 -115px; color:rgba(0,0,0,.2); -webkit-animation-delay:.04s;}
+
+.texture .a {-webkit-animation-delay:0s;}
+.texture .b {-webkit-animation-delay:.25s;}
+.texture .c {-webkit-animation-delay:.5s;}
+.texture .d {-webkit-animation-delay:.75s;}
+.texture .e {-webkit-animation-delay:1s;}
+.texture .f {-webkit-animation-delay:1.25s;}
+.texture .g {-webkit-animation-delay:1.5s;}
+.texture .h {-webkit-animation-delay:1.75s;}
 
 @-webkit-keyframes yo {
-	0%, 100% {-webkit-transform:rotate(0deg);}
-	50% {-webkit-transform:rotate(270deg);}
+	0% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);}
 }

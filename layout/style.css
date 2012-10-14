@@ -1,26 +1,16 @@
 @charset "utf-8";
 
 /* http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}:focus{outline:0}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 
 /* HTML */
-body {background:#fdf6e3; overflow:hidden; color:#002b36;}
-body.texture {background:#E5FCC2;}
-
-/* Hi */
-h1 {width:180px; height:180px; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:fadeInDown 1.5s;}
-h1 em {-webkit-transform:rotate(180deg); display:block;}
-
-@-webkit-keyframes fadeInDown {
-	0% {opacity:0; -webkit-transform:translateY(-80px);}
-	29% {opacity:0;}
-	30% {opacity:0; -webkit-transform:translateY(-50px);}
-	100% {opacity:1; -webkit-transform:translateY(0);}
-}
+body {background:#fdf6e3; overflow:hidden; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
 
 /* Texture */
+body.texture {background:#E5FCC2;}
 .texture p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:yo 1.5s linear infinite;}
-.texture h1, .texture h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:yo 2.5s ease infinite;}
+.texture h1, .texture h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:yo 2.5s infinite;}
 .texture h2 {margin:-115px 0 0 -115px; color:rgba(0,0,0,.2); -webkit-animation-delay:.04s;}
 
 .texture .a {-webkit-animation-delay:0s;}
@@ -35,4 +25,45 @@ h1 em {-webkit-transform:rotate(180deg); display:block;}
 @-webkit-keyframes yo {
 	0% {-webkit-transform:rotate(0deg);}
 	100% {-webkit-transform:rotate(360deg);}
+}
+
+/* Hi */
+h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 2.2s .6s backwards;}
+h1 em {-webkit-transform:rotate(180deg); display:block;}
+
+@-webkit-keyframes hi {
+	0% {opacity:0; -webkit-transform:translateY(-70px);}
+	40% {opacity:0;}
+	80% {opacity:1;}
+	100% {-webkit-transform:translateY(0);}
+}
+
+/* Enemys */
+.enemys p {font-size:30px; color:#586e75; position:absolute; -webkit-animation:enemy .8s backwards; -webkit-text-stroke:3px #586e75;}
+.enemys .e01 {top:20%; left:20%; -webkit-animation-delay:2.2s}
+.enemys .e02 {top:46%; left:87%; -webkit-animation-delay:2.4s}
+.enemys .e03 {top:15%; left:43%; -webkit-animation-delay:2.6s}
+.enemys .e04 {top:63%; left:71%; -webkit-animation-delay:2.8s}
+.enemys .e05 {top:23%; left:59%; -webkit-animation-delay:2.9s}
+.enemys .e06 {top:42%; left:05%; -webkit-animation-delay:3s}
+.enemys .e07 {top:92%; left:24%; -webkit-animation-delay:3.1s}
+.enemys .e08 {top:73%; left:56%; -webkit-animation-delay:3.3s}
+.enemys .e09 {top:03%; left:38%; -webkit-animation-delay:3.6s}
+.enemys .e10 {top:67%; left:39%; -webkit-animation-delay:3.8s}
+.enemys .e11 {top:48%; left:84%; -webkit-animation-delay:4s}
+.enemys .e12 {top:43%; left:10%; -webkit-animation-delay:4.1s}
+.enemys .e13 {top:20%; left:71%; -webkit-animation-delay:4.3s}
+.enemys .e14 {top:27%; left:59%; -webkit-animation-delay:4.6s}
+.enemys .e15 {top:94%; left:36%; -webkit-animation-delay:4.8s}
+.enemys .e16 {top:73%; left:56%; -webkit-animation-delay:5s}
+.enemys .e17 {top:52%; left:37%; -webkit-animation-delay:5.1s}
+.enemys .e18 {top:34%; left:61%; -webkit-animation-delay:5.3s}
+.enemys .e19 {top:69%; left:78%; -webkit-animation-delay:5.5s}
+.enemys .e20 {top:28%; left:39%; -webkit-animation-delay:5.7s}
+
+@-webkit-keyframes enemy {
+	0% {opacity:0; -webkit-transform:scale(.3);}
+	50% {opacity:1; -webkit-transform:scale(1.05);}
+	70% {-webkit-transform:scale(.9);}
+	100% {-webkit-transform:scale(1);}
 }

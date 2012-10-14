@@ -1,0 +1,48 @@
+/* Texture */
+body.texture {background:#E5FCC2;}
+.texture p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:txtr 1.5s linear infinite;}
+.texture h1, .texture h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:txtr 2.5s infinite;}
+.texture h2 {margin:-115px 0 0 -115px; color:rgba(0,0,0,.2); -webkit-animation-delay:.04s;}
+
+.texture .a {-webkit-animation-delay:0s;}
+.texture .b {-webkit-animation-delay:.25s;}
+.texture .c {-webkit-animation-delay:.5s;}
+.texture .d {-webkit-animation-delay:.75s;}
+.texture .e {-webkit-animation-delay:1s;}
+.texture .f {-webkit-animation-delay:1.25s;}
+.texture .g {-webkit-animation-delay:1.5s;}
+.texture .h {-webkit-animation-delay:1.75s;}
+
+@-webkit-keyframes txtr {
+	0% {-webkit-transform:rotate(0deg);}
+	100% {-webkit-transform:rotate(360deg);}
+}
+
+/* Up */
+.up .c {width:180px; height:140px; position:absolute; top:50%; left:50%; margin:-70px 0 0 -90px;}
+.up .bar {width:34px; height:140px; position:relative; float:left; overflow:hidden; display:block; margin:0 1px;}
+.up p {width:100%; height:100%; position:absolute; bottom:0; left:0; -webkit-animation:up cubic-bezier(0,.5,.3,1) .7s backwards; display:block;}
+.up .bar p:last-child {background:#fdf6e3; z-index:1;}
+.up .up1 p:first-child {background:#dc322f; -webkit-animation-delay:.4s;}
+.up .up2 p:first-child {background:#d33682; -webkit-animation-delay:.5s;}
+.up .up3 p:first-child {background:#6c71c4; -webkit-animation-delay:.6s;}
+.up .up4 p:first-child {background:#268bd2; -webkit-animation-delay:.7s;}
+.up .up5 p:first-child {background:#2aa198; -webkit-animation-delay:.8s;}
+.up .up1 p:last-child {-webkit-animation-delay:.7s;}
+.up .up2 p:last-child {-webkit-animation-delay:.8s;}
+.up .up3 p:last-child {-webkit-animation-delay:.9s;}
+.up .up4 p:last-child {-webkit-animation-delay:1s;}
+.up .up5 p:last-child {-webkit-animation-delay:1.1s;}
+
+.full .c {width:100%; height:100%; top:0; left:0; margin:0;}
+.full .bar {width:20%; height:100%; margin:0;}
+.full .up1 p:last-child {-webkit-animation-delay:1.2s;}
+.full .up2 p:last-child {-webkit-animation-delay:1.3s;}
+.full .up3 p:last-child {-webkit-animation-delay:1.4s;}
+.full .up4 p:last-child {-webkit-animation-delay:1.5s;}
+.full .up5 p:last-child {-webkit-animation-delay:1.6s;}
+
+@-webkit-keyframes up {
+	0% {height:0;}
+	100% {height:100%;}
+}

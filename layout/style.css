@@ -28,13 +28,13 @@ body.texture {background:#E5FCC2;}
 }
 
 /* Hi */
-h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 2.2s .6s backwards;}
+h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 1.8s .6s backwards;}
 h1 em {-webkit-transform:rotate(180deg); display:block;}
 
 @-webkit-keyframes hi {
-	0% {opacity:0; -webkit-transform:translateY(-70px);}
+	0% {opacity:0; -webkit-transform:translateY(-80px);}
 	40% {opacity:0;}
-	80% {opacity:1;}
+	90% {opacity:1;}
 	100% {-webkit-transform:translateY(0);}
 }
 

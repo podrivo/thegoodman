@@ -9,14 +9,16 @@ html {height:100%;}
 body {height:100%; background:#fdf6e3 url(subtle_dots.png) repeat; overflow:hidden; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
 
 /* Audio */
-.audiojs {background:none; width:100%; box-shadow:none; position:absolute;}
+.audiojs {background:none; width:100%; height:100%; box-shadow:none; position:absolute;}
 .audiojs .scrubber {background:none; width:100%; height:3px; margin:0; border:0; position:absolute; bottom:0;}
 .audiojs .progress {background:rgba(0,43,54,.15);}
-.audiojs.playing .play, .audiojs.playing .play:after {background:none; content:''}
-.play-pause, .time, .error-message, .loaded {display:none}
+.audiojs .play-pause {height:5px; height:5px; border:0; padding:0;}
+.audiojs .play, .audiojs .pause {background:#333; height:100%; height:100%; position:absolute; top:0; left:0;}
+.audiojs.playing .play {background:rgba(255,255,255,.2);}
+.time, .error-message, .loaded {display:none}
 
 /* Hi */
-h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 3s .6s backwards;}
+h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 3s .75s backwards;}
 h1 em {-webkit-transform:rotate(180deg); display:block; z-index:1;}
 
 @-webkit-keyframes hi {

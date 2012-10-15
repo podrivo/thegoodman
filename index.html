@@ -20,33 +20,53 @@
 <body>
 
 	<!-- Audio -->
-	<audio src="layout/HuskyRescue_TheGoodMan.mp3" preload="auto"></audio>
+	<audio src="layout/HuskyRescue_TheGoodMan.mp3"></audio>
 	
 	<!-- Hi -->
 	<h1><em>▵</em></h1>
 
 	<!-- Enemys -->
 	<div class="enemys">
-		<p class="e01">⎔</p>
-		<p class="e02">⎔</p>
-		<p class="e03">⎔</p>
-		<p class="e04">⎔</p>
-		<p class="e05">⎔</p>
-		<p class="e06">⎔</p>
-		<p class="e07">⎔</p>
-		<p class="e08">⎔</p>
-		<p class="e09">⎔</p>
-		<p class="e10">⎔</p>
-		<p class="e11">⎔</p>
-		<p class="e12">⎔</p>
-		<p class="e13">⎔</p>
-		<p class="e14">⎔</p>
-		<p class="e15">⎔</p>
-		<p class="e16">⎔</p>
-		<p class="e17">⎔</p>
-		<p class="e18">⎔</p>
-		<p class="e19">⎔</p>
-		<p class="e20">⎔</p>
+		<p class="e01"><em>⎔</em></p>
+		<p class="e02"><em>⎔</em></p>
+		<p class="e03"><em>⎔</em></p>
+		<p class="e04"><em>⎔</em></p>
+		<p class="e05"><em>⎔</em></p>
+		<p class="e06"><em>⎔</em></p>
+		<p class="e07"><em>⎔</em></p>
+		<p class="e08"><em>⎔</em></p>
+		<p class="e09"><em>⎔</em></p>
+		<p class="e10"><em>⎔</em></p>
+		<p class="e11"><em>⎔</em></p>
+		<p class="e12"><em>⎔</em></p>
+		<p class="e13"><em>⎔</em></p>
+		<p class="e14"><em>⎔</em></p>
+		<p class="e15"><em>⎔</em></p>
+		<p class="e16"><em>⎔</em></p>
+		<p class="e17"><em>⎔</em></p>
+		<p class="e18"><em>⎔</em></p>
+		<p class="e19"><em>⎔</em></p>
+		<p class="e20"><em>⎔</em></p>		
+		<p class="e21"><em>⎔</em></p>
+		<p class="e22"><em>⎔</em></p>
+		<p class="e23"><em>⎔</em></p>
+		<p class="e24"><em>⎔</em></p>
+		<p class="e25"><em>⎔</em></p>
+		<p class="e26"><em>⎔</em></p>
+		<p class="e27"><em>⎔</em></p>
+		<p class="e28"><em>⎔</em></p>
+		<p class="e29"><em>⎔</em></p>
+		<p class="e30"><em>⎔</em></p>
+		<p class="e31"><em>⎔</em></p>
+		<p class="e32"><em>⎔</em></p>
+		<p class="e33"><em>⎔</em></p>
+		<p class="e34"><em>⎔</em></p>
+		<p class="e35"><em>⎔</em></p>
+		<p class="e36"><em>⎔</em></p>
+		<p class="e37"><em>⎔</em></p>
+		<p class="e38"><em>⎔</em></p>
+		<p class="e39"><em>⎔</em></p>
+		<p class="e40"><em>⎔</em></p>
 	</div>
 
 	<!-- JS -->
@@ -55,6 +75,17 @@
 	<script>
 	audiojs.events.ready(function() {
 		audiojs.createAll();
+	});
+	</script>
+	<script src="../audiojs/audio.js"></script>
+	<script>
+	$(function() { 
+		$(document).keydown(function(e) {
+			var unicode = e.charCode ? e.charCode : e.keyCode;
+			if (unicode == 32) {
+				audio.playPause();
+			};
+		});
 	});
 	</script>
 

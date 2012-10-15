@@ -5,13 +5,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 
 /* HTML */
-body {background:#fdf6e3; overflow:hidden; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
+html {height:100%;}
+body {height:100%; background:#fdf6e3 url(subtle_dots.png) repeat; overflow:hidden; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
 
 /* Audio */
-.audiojs {width:100%; height:3px; background:#eee8d5; box-shadow:none; position:absolute; bottom:0;}
-.audiojs .scrubber {background:none; width:100%; margin:0; border:0;}
-.audiojs .progress {background:#93a1a1;}
-.play-pause, .time, .error-message, .loaded {display:none}
+.audiojs {width:100%; height:100%; background:#eee8d5; box-shadow:none; position:absolute;}
+.audiojs .scrubber {background:none; width:100%; height:3px; margin:0; border:0; position:absolute; bottom:0;}
+.audiojs .progress {background:rgba(0,43,54,.12);}
+.audiojs .play-pause {width:100%; height:100%; border:0; padding:0;}
+.audiojs .play {background:rgba(0,43,54,.8); width:100%; height:100%; position:absolute; top:0; left:0; display:block; z-index:100;}
+.audiojs .play:after {width:100%; content:'▶'; color:#FFF; font-size:40px; position:absolute; top:50%; left:50%; margin:-10px 0 0 -10px;}
+.audiojs.playing .play, .audiojs.playing .play:after {background:none; content:''}
+.time, .error-message, .loaded {display:none}
 
 /* Hi */
 h1 {width:180px; height:180px; color:#dc322f; font-size:180px; position:absolute; top:50%; left:50%; margin:-90px 0 0 -90px; -webkit-animation:hi 3s .6s backwards;}
@@ -19,38 +24,77 @@ h1 em {-webkit-transform:rotate(180deg); display:block; z-index:1;}
 
 @-webkit-keyframes hi {
 	0% {opacity:0; -webkit-transform:translateY(-80px);}
-	40% {opacity:0;}
-	80% {opacity:1;}
-	90% {-webkit-transform:translateY(-10px);}
+	20% {opacity:0;}
+	60% {opacity:1;}
 	100% {-webkit-transform:translateY(0);}
 }
 
 /* Enemys */
+.enemys {width:90%; height:80%; margin:0 auto; position:relative; top:10%;}
 .enemys p {font-size:30px; color:#002b36; position:absolute; -webkit-animation:enemy .8s backwards; -webkit-text-stroke:3px #002b36;}
-.enemys .e01 {top:20%; left:20%; -webkit-animation-delay:2.2s}
-.enemys .e02 {top:46%; left:87%; -webkit-animation-delay:2.4s}
-.enemys .e03 {top:15%; left:43%; -webkit-animation-delay:2.6s}
-.enemys .e04 {top:63%; left:71%; -webkit-animation-delay:2.8s}
-.enemys .e05 {top:23%; left:59%; -webkit-animation-delay:2.9s}
-.enemys .e06 {top:42%; left:05%; -webkit-animation-delay:3s}
-.enemys .e07 {top:92%; left:24%; -webkit-animation-delay:3.1s}
-.enemys .e08 {top:73%; left:56%; -webkit-animation-delay:3.3s}
-.enemys .e09 {top:03%; left:38%; -webkit-animation-delay:3.6s}
-.enemys .e10 {top:67%; left:39%; -webkit-animation-delay:3.8s}
-.enemys .e11 {top:48%; left:84%; -webkit-animation-delay:4s}
-.enemys .e12 {top:43%; left:10%; -webkit-animation-delay:4.1s}
-.enemys .e13 {top:20%; left:71%; -webkit-animation-delay:4.3s}
-.enemys .e14 {top:27%; left:59%; -webkit-animation-delay:4.6s}
-.enemys .e15 {top:94%; left:36%; -webkit-animation-delay:4.8s}
-.enemys .e16 {top:73%; left:56%; -webkit-animation-delay:5s}
-.enemys .e17 {top:52%; left:37%; -webkit-animation-delay:5.1s}
-.enemys .e18 {top:34%; left:61%; -webkit-animation-delay:5.3s}
-.enemys .e19 {top:69%; left:78%; -webkit-animation-delay:5.5s}
-.enemys .e20 {top:28%; left:39%; -webkit-animation-delay:5.7s}
+.enemys em {width:23px; height:20px; line-height:17px; display:block; -webkit-transform:rotate(360deg); -webkit-animation:rotate 60s linear infinite;}
+
+.e01 em, .e06 em, .e11 em, .e16 em, .e21 em, .e26 em, .e31 em, .e36 em  {-webkit-animation-duration:20s;}
+.e02 em, .e07 em, .e12 em, .e17 em, .e22 em, .e27 em, .e32 em, .e37 em  {-webkit-animation-duration:40s;}
+.e03 em, .e08 em, .e13 em, .e18 em, .e23 em, .e28 em, .e33 em, .e38 em  {-webkit-animation-duration:80s;}
+.e04 em, .e09 em, .e14 em, .e19 em, .e24 em, .e29 em, .e34 em, .e39 em  {-webkit-animation-duration:10s;}
+.e05 em, .e10 em, .e15 em, .e20 em, .e25 em, .e30 em, .e35 em, .e40 em  {-webkit-animation-duration:50s;}
+
+p.e01 {top:12%; left:0; -webkit-animation-delay:2.2s}
+p.e02 {top:12%; left:10%; -webkit-animation-delay:2.4s}
+p.e03 {top:12%; left:20%; -webkit-animation-delay:2.6s}
+p.e04 {top:12%; left:30%; -webkit-animation-delay:2.8s}
+p.e05 {top:12%; left:40%; -webkit-animation-delay:2.9s}
+
+p.e06 {top:36%; left:0; -webkit-animation-delay:3s}
+p.e07 {top:36%; left:10%; -webkit-animation-delay:3.1s}
+p.e08 {top:36%; left:20%; -webkit-animation-delay:3.3s}
+p.e09 {top:36%; left:30%; -webkit-animation-delay:3.6s}
+p.e10 {top:36%; left:40%; -webkit-animation-delay:3.8s}
+
+p.e11 {top:59%; left:0; -webkit-animation-delay:4s}
+p.e12 {top:59%; left:10%; -webkit-animation-delay:4.1s}
+p.e13 {top:59%; left:20%; -webkit-animation-delay:4.3s}
+p.e14 {top:59%; left:30%; -webkit-animation-delay:4.6s}
+p.e15 {top:59%; left:40%; -webkit-animation-delay:4.8s}
+
+p.e16 {top:80%; left:0; -webkit-animation-delay:5s}
+p.e17 {top:80%; left:10%; -webkit-animation-delay:5.1s}
+p.e18 {top:80%; left:20%; -webkit-animation-delay:5.3s}
+p.e19 {top:80%; left:30%; -webkit-animation-delay:5.5s}
+p.e20 {top:80%; left:40%; -webkit-animation-delay:5.7s}
+
+p.e21 {top:12%; right:0; -webkit-animation-delay:2.2s}
+p.e22 {top:12%; right:10%; -webkit-animation-delay:2.4s}
+p.e23 {top:12%; right:20%; -webkit-animation-delay:2.6s}
+p.e24 {top:12%; right:30%; -webkit-animation-delay:2.8s}
+p.e25 {top:12%; right:40%; -webkit-animation-delay:2.9s}
+
+p.e26 {top:36%; right:0; -webkit-animation-delay:3s}
+p.e27 {top:36%; right:10%; -webkit-animation-delay:3.1s}
+p.e28 {top:36%; right:20%; -webkit-animation-delay:3.3s}
+p.e29 {top:36%; right:30%; -webkit-animation-delay:3.6s}
+p.e30 {top:36%; right:40%; -webkit-animation-delay:3.8s}
+
+p.e31 {top:59%; right:0; -webkit-animation-delay:4s}
+p.e32 {top:59%; right:10%; -webkit-animation-delay:4.1s}
+p.e33 {top:59%; right:20%; -webkit-animation-delay:4.3s}
+p.e34 {top:59%; right:30%; -webkit-animation-delay:4.6s}
+p.e35 {top:59%; right:40%; -webkit-animation-delay:4.8s}
+
+p.e36 {top:80%; right:0; -webkit-animation-delay:5s}
+p.e37 {top:80%; right:10%; -webkit-animation-delay:5.1s}
+p.e38 {top:80%; right:20%; -webkit-animation-delay:5.3s}
+p.e39 {top:80%; right:30%; -webkit-animation-delay:5.5s}
+p.e40 {top:80%; right:40%; -webkit-animation-delay:5.7s}
 
 @-webkit-keyframes enemy {
 	0% {opacity:0; -webkit-transform:scale(.3);}
 	50% {opacity:1; -webkit-transform:scale(1.05);}
 	70% {-webkit-transform:scale(.9);}
 	100% {-webkit-transform:scale(1);}
+}
+@-webkit-keyframes rotate {
+	0% {-webkit-transform:translate(0,0) rotate(0);}
+	100% {-webkit-transform:translate(0,100px) rotate(360deg);}
 }

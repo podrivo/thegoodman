@@ -35,7 +35,7 @@ body.up {background:#fdf6e3;}
 .up .up4 p:last-child {-webkit-animation-delay:1.1s;}
 .up .up5 p:last-child {-webkit-animation-delay:1.2s;}
 
-.full .c {width:100%; height:100%; top:0; left:0; margin:0;}
+.full .c {width:100%; height:100%; top:0; left:0; margin:0; padding:0;}
 .full .bar {width:20%; height:100%; margin:0;}
 .full .up1 p:last-child {-webkit-animation-delay:1.2s;}
 .full .up2 p:last-child {-webkit-animation-delay:1.3s;}

@@ -4,7 +4,8 @@ An experiment with basic CSS3 animations.
 ## to do
 + Play/pause should work with audio and animations;
 + Enemys should be random;
-+ -Up test has a bug at the bottom line.-
++ Load first;
++ It should start paused.
 
 ## Author
 Pedro Ivo Hudson

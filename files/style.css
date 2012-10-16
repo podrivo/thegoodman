@@ -12,8 +12,8 @@ body {height:100%; background:#FFF; overflow:hidden; font-family:Arial !importan
 audio {position:absolute; z-index:999999999;}
 
 /* Hi */
-h1 {width:136px; height:142px; font-size:180px; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
-h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red .4s 2.1s backwards;}
+h1 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
+h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red .4s 2s backwards;}
 h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
 
 @-webkit-keyframes hi
@@ -26,39 +26,36 @@ h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radi
 {15% {opacity:1;} 100% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
 
 /* Enemys */
-.enemys {width:90%; height:90%; position:absolute; top:50%; left:50%; margin:-45% 0 0 -45%;}
+.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%;}
 .enemys p {font-size:30px; color:#002b36; position:absolute; -webkit-animation:enemy .8s backwards;}
-.enemys em {display:block; -webkit-animation:down 60s linear infinite;}
+.enemys em {display:block; -webkit-animation:down 60s linear;}
 
-.e01 em, .e02 em, .e3 em, .e4 em, .e5 em, .e6 em, .e7 em, .e8 em  {font-size:30px; -webkit-animation-duration:30s;}
-.e09 em, .e10 em, .e11 em, .e12 em, .e13 em, .e14 em, .e15 em, .e16 em  {font-size:22px; -webkit-animation-duration:40s;}
-.e17 em, .e18 em, .e19 em, .e20 em, .e21 em, .e22 em, .e23 em, .e24 em  {font-size:36px; -webkit-animation-duration:60s;}
-.e25 em, .e26 em, .e27 em, .e28 em, .e29 em, .e30 em, .e31 em, .e32 em  {font-size:42px; -webkit-animation-duration:20s;}
-.e33 em, .e34 em, .e35 em, .e36 em, .e37 em, .e38 em, .e39 em, .e40 em  {font-size:26px; -webkit-animation-duration:50s;}
+.enemys p:nth-child(1n+0) em {font-size:30px; -webkit-animation-duration:30s;}
+.enemys p:nth-child(2n+0) em {font-size:22px; -webkit-animation-duration:40s;}
+.enemys p:nth-child(3n+0) em {font-size:36px; -webkit-animation-duration:60s;}
+.enemys p:nth-child(4n+0) em {font-size:46px; -webkit-animation-duration:20s;}
+.enemys p:nth-child(5n+0) em {font-size:26px; -webkit-animation-duration:50s;}
 
-p.e01, p.e21 {top:12%; left:0; -webkit-animation-delay:4s}
-p.e02, p.e22 {top:12%; left:10%; -webkit-animation-delay:4.1s}
-p.e03, p.e23 {top:12%; left:20%; -webkit-animation-delay:4.2s}
-p.e04, p.e24 {top:12%; left:30%; -webkit-animation-delay:4.3s}
-p.e05, p.e25 {top:12%; left:40%; -webkit-animation-delay:4.4s}
-
-p.e06, p.e26 {top:36%; left:0; -webkit-animation-delay:4.5s}
-p.e07, p.e27 {top:36%; left:10%; -webkit-animation-delay:4.6s}
-p.e08, p.e28 {top:36%; left:20%; -webkit-animation-delay:4.7s}
-p.e09, p.e29 {top:36%; left:30%; -webkit-animation-delay:4.8s}
-p.e10, p.e30 {top:36%; left:40%; -webkit-animation-delay:4.9s}
-
-p.e11, p.e31 {top:59%; left:0; -webkit-animation-delay:5s}
-p.e12, p.e32 {top:59%; left:10%; -webkit-animation-delay:5.1s}
-p.e13, p.e33 {top:59%; left:20%; -webkit-animation-delay:5.2s}
-p.e14, p.e34 {top:59%; left:30%; -webkit-animation-delay:5.3s}
-p.e15, p.e35 {top:59%; left:40%; -webkit-animation-delay:5.4s}
-
-p.e16, p.e36 {top:80%; left:0; -webkit-animation-delay:5.5s}
-p.e17, p.e37 {top:80%; left:10%; -webkit-animation-delay:5.6s}
-p.e18, p.e38 {top:80%; left:20%; -webkit-animation-delay:5.7s}
-p.e19, p.e39 {top:80%; left:30%; -webkit-animation-delay:5.8s}
-p.e20, p.e40 {top:80%; left:40%; -webkit-animation-delay:5.9s}
+.enemys p:nth-child(1n+1) {-webkit-animation-delay:4s}
+.enemys p:nth-child(2n+2) {-webkit-animation-delay:4.1s}
+.enemys p:nth-child(3n+3) {-webkit-animation-delay:4.2s}
+.enemys p:nth-child(4n+4) {-webkit-animation-delay:4.3s}
+.enemys p:nth-child(5n+5) {-webkit-animation-delay:4.4s}
+.enemys p:nth-child(6n+1) {-webkit-animation-delay:4.5s}
+.enemys p:nth-child(7n+2) {-webkit-animation-delay:4.6s}
+.enemys p:nth-child(8n+3) {-webkit-animation-delay:4.7s}
+.enemys p:nth-child(9n+4) {-webkit-animation-delay:4.8s}
+.enemys p:nth-child(10n+5) {-webkit-animation-delay:4.9s}
+.enemys p:nth-child(11n+1) {-webkit-animation-delay:5s}
+.enemys p:nth-child(12n+2) {-webkit-animation-delay:5.1s}
+.enemys p:nth-child(13n+3) {-webkit-animation-delay:5.2s}
+.enemys p:nth-child(14n+4) {-webkit-animation-delay:5.3s}
+.enemys p:nth-child(15n+5) {-webkit-animation-delay:5.4s}
+.enemys p:nth-child(16n+1) {-webkit-animation-delay:5.5s}
+.enemys p:nth-child(17n+2) {-webkit-animation-delay:5.6s}
+.enemys p:nth-child(18n+3) {-webkit-animation-delay:5.7s}
+.enemys p:nth-child(19n+4) {-webkit-animation-delay:5.8s}
+.enemys p:nth-child(20n+5) {-webkit-animation-delay:5.9s}
 
 @-webkit-keyframes enemy {
 	0% {opacity:0; -webkit-transform:scale(.3);}
@@ -67,7 +64,7 @@ p.e20, p.e40 {top:80%; left:40%; -webkit-animation-delay:5.9s}
 	100% {-webkit-transform:scale(1);}
 }
 @-webkit-keyframes down {
-	0% {-webkit-transform:translateY(0);}
+	0%, 20% {-webkit-transform:translateY(0);}
 	100% {-webkit-transform:translateY(100px);}
 }
 

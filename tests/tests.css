@@ -1,21 +1,34 @@
-/* Texture */
-body.texture {background:#E5FCC2;}
-.texture p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:txtr 1.5s linear infinite;}
-.texture h1, .texture h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:txtr 2.5s infinite;}
-.texture h2 {margin:-115px 0 0 -115px; color:rgba(0,0,0,.2); -webkit-animation-delay:.04s;}
+/* Texture 01 */
+body.texture1 {background:#e5fcc2;}
+.texture1 p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:texture1 1.5s linear infinite;}
+.texture1 h1, .texture1 h2 {width:240px; height:240px; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; color:#C44D58; font-size:280px; line-height:230px; text-align:center; -webkit-animation:texture1 2.5s infinite;}
+.texture1 h2 {margin:-115px 0 0 -115px; color:rgba(0,0,0,.2); -webkit-animation-delay:.04s;}
 
-.texture .a {-webkit-animation-delay:0s;}
-.texture .b {-webkit-animation-delay:.25s;}
-.texture .c {-webkit-animation-delay:.5s;}
-.texture .d {-webkit-animation-delay:.75s;}
-.texture .e {-webkit-animation-delay:1s;}
-.texture .f {-webkit-animation-delay:1.25s;}
-.texture .g {-webkit-animation-delay:1.5s;}
-.texture .h {-webkit-animation-delay:1.75s;}
+.texture1 .a {-webkit-animation-delay:0s;}
+.texture1 .b {-webkit-animation-delay:.25s;}
+.texture1 .c {-webkit-animation-delay:.5s;}
+.texture1 .d {-webkit-animation-delay:.75s;}
+.texture1 .e {-webkit-animation-delay:1s;}
+.texture1 .f {-webkit-animation-delay:1.25s;}
+.texture1 .g {-webkit-animation-delay:1.5s;}
+.texture1 .h {-webkit-animation-delay:1.75s;}
 
-@-webkit-keyframes txtr {
-	0% {-webkit-transform:rotate(0deg);}
+@-webkit-keyframes texture1 {
+	0% {-webkit-transform:rotate(0);}
 	100% {-webkit-transform:rotate(360deg);}
+}
+
+/* Texture 02 */
+body.texture2 {background-color:#002b36; -webkit-animation:texture1 60s linear infinite;}
+.pttr1 {-webkit-animation:texture2 2s ease-out infinite;}
+.pttr2 {-webkit-animation:texture2 4s ease-in infinite;}
+.pttr2 p {-webkit-transform:rotate(180deg);}
+.texture2 p {float:left; font-size:86px; color:#dc322f;}
+.texture2 div {width:2500px; height:2500px; position:absolute; top:50%; left:50%; margin:-1250px 0 0 -1250px; overflow:hidden;}
+
+@-webkit-keyframes texture2 {
+	0%, 100% {-webkit-transform:translate(0,0);}
+	50% {-webkit-transform:translate(-200px,0);}
 }
 
 /* Up */

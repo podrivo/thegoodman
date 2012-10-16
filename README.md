@@ -1,12 +1,16 @@
 # the good man
 An experiment with basic CSS3 animations.
+http://pedroivo.com/thegoodman/
 
 ## to do
-+ Play/pause should work with audio and animations;
-+ Enemys should be random;
-+ Load first;
-+ It should start paused;
-+ Check 'backwards' attribute.
++ Play/pause should work with audio and animations
++ It should start paused
++ Preload first
++ (css) Check animation 'backwards' attribute
++ (css) Check ':nth-child' attribute (http://nthmaster.com/)
++ (bug?) Animation stops while switching tabs
++ (font) Check support for U+29CC (10700)
+http://www.fileformat.info/info/unicode/char/29cc/index.htm
 
 ## Author
 Pedro Ivo Hudson

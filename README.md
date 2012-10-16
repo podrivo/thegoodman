@@ -5,7 +5,8 @@ An experiment with basic CSS3 animations.
 + Play/pause should work with audio and animations;
 + Enemys should be random;
 + Load first;
-+ It should start paused.
++ It should start paused;
++ Check 'backwards' attribute.
 
 ## Author
 Pedro Ivo Hudson

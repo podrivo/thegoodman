@@ -36,8 +36,8 @@
 	<!-- JS -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript">
-		var w = $('.enemys').width(), h = $('.enemys').height();
 		$(document).ready(function() {
+			var w = $('.enemys').width(), h = $('.enemys').height();
 			$('.enemys').find('p').each(function() {
 				$(this).css('top', Math.floor((Math.random()*h)+1) + 'px');
 				$(this).css('left', Math.floor((Math.random()*w)+1) + 'px');

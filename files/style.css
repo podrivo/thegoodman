@@ -9,30 +9,24 @@ html {height:100%;}
 body {height:100%; background:#fdf6e3 url(subtle_dots.png) repeat; overflow:hidden; font-family:Arial !important; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
 
 /* Audio */
-audio {position:absolute; z-index:999999999; }
+audio {position:absolute; z-index:999999999; display:none;}
 
 /* Hi */
 h1 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
-h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red .4s 2s backwards;}
+h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red-super .4s 2s backwards;}
 h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
 
 @-webkit-keyframes hi
 {0%{opacity:0; -webkit-transform:translateY(-80px);} 20%{opacity:0;} 60%{opacity:1;} 100%{-webkit-transform:translateY(0);}}
 
-@-webkit-keyframes red
-{0%{color:#} 100%{color:#dc322f}}
-
-@-webkit-keyframes blue
-{0%{color:#} 100%{color:#268bd2}}
-
-@-webkit-keyframes white
-{0%{} 100%{color:#}}
+@-webkit-keyframes red-super
+{0%{color:#586e75} 100%{color:#dc322f}}
 
 @-webkit-keyframes great
 {15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
 
 /* Enemys */
-.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%; -webkit-animation:red 10s 9s cubic-bezier(0,1,0,1) !important;}
+.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
 .enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
 .enemys em {display:block; -webkit-animation:down 60s linear;}
 
@@ -73,9 +67,12 @@ h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radi
 	0%, 20% {-webkit-transform:translateY(0);}
 	100% {-webkit-transform:translateY(100px);}
 }
+@-webkit-keyframes blue-enemy
+{0%{} 100%{color:#268bd2}}
 
-/* Goodness/Right */
-.nice {background:#268bd2; width:1px; height:1px; opacity:0; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:nice 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
+/* Goodness */
+.nice {background:#268bd2; width:1px; height:1px; opacity:0; border-radius:1000px; position:absolute; top:50%; left:50%; z-index:3; overflow:hidden; display:block; -webkit-animation:nice 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
+.nice em {color:#fdf6e3; width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-80px 0 0 -70px; -webkit-transform:rotate(180deg);}
 @-webkit-keyframes nice {
 	0% {opacity:0;} 5%, 99% {opacity:1;}
 	80% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px;}

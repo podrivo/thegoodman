@@ -6,6 +6,7 @@ http://pedroivo.com/thegoodman/
 + Play/pause should work with audio and animations
 + It should start paused
 + Preload first
++ Fullscreen mode
 + (css) Check animation 'backwards' attribute
 + (css) Check ':nth-child' attribute (http://nthmaster.com/)
 + (bug?) Animation stops while switching tabs

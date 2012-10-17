@@ -6,10 +6,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* HTML */
 html {height:100%;}
-body {height:100%; background:#FFF; overflow:hidden; font-family:Arial !important; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
+body {height:100%; background:#fdf6e3 url(subtle_dots.png) repeat; overflow:hidden; font-family:Arial !important; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
 
 /* Audio */
-audio {position:absolute; z-index:999999999;}
+audio {position:absolute; z-index:999999999; }
 
 /* Hi */
 h1 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
@@ -17,24 +17,30 @@ h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg)
 h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
 
 @-webkit-keyframes hi
-{0% {opacity:0; -webkit-transform:translateY(-80px);} 20% {opacity:0;} 60% {opacity:1;} 100% {-webkit-transform:translateY(0);}}
+{0%{opacity:0; -webkit-transform:translateY(-80px);} 20%{opacity:0;} 60%{opacity:1;} 100%{-webkit-transform:translateY(0);}}
 
 @-webkit-keyframes red
-{0% {color:#002b36;} 100% {color:#dc322f;}}
+{0%{color:#} 100%{color:#dc322f}}
+
+@-webkit-keyframes blue
+{0%{color:#} 100%{color:#268bd2}}
+
+@-webkit-keyframes white
+{0%{} 100%{color:#}}
 
 @-webkit-keyframes great
-{15% {opacity:1;} 100% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
+{15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
 
 /* Enemys */
-.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%;}
-.enemys p {font-size:30px; color:#002b36; position:absolute; -webkit-animation:enemy .8s backwards;}
+.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%; -webkit-animation:red 10s 9s cubic-bezier(0,1,0,1) !important;}
+.enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
 .enemys em {display:block; -webkit-animation:down 60s linear;}
 
-.enemys p:nth-child(1n+0) em {font-size:30px; -webkit-animation-duration:30s;}
-.enemys p:nth-child(2n+0) em {font-size:22px; -webkit-animation-duration:40s;}
-.enemys p:nth-child(3n+0) em {font-size:36px; -webkit-animation-duration:60s;}
-.enemys p:nth-child(4n+0) em {font-size:46px; -webkit-animation-duration:20s;}
-.enemys p:nth-child(5n+0) em {font-size:26px; -webkit-animation-duration:50s;}
+.enemys p:nth-child(1n+0) em {font-size:30px; -webkit-animation-duration:40s; opacity:.5;}
+.enemys p:nth-child(2n+0) em {font-size:22px; -webkit-animation-duration:50s; opacity:.2;}
+.enemys p:nth-child(3n+0) em {font-size:36px; -webkit-animation-duration:70s; opacity:.8;}
+.enemys p:nth-child(4n+0) em {font-size:46px; -webkit-animation-duration:30s; opacity:1;}
+.enemys p:nth-child(5n+0) em {font-size:26px; -webkit-animation-duration:60s; opacity:.35;}
 
 .enemys p:nth-child(1n+1) {-webkit-animation-delay:4s}
 .enemys p:nth-child(2n+2) {-webkit-animation-delay:4.1s}

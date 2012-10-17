@@ -7,6 +7,8 @@ http://pedroivo.com/thegoodman/
 + It should start paused
 + Preload first
 + Fullscreen mode
++ Add subtitle
++ Toggle subtitle
 + (css) Check animation 'backwards' attribute
 + (css) Check ':nth-child' attribute (http://nthmaster.com/)
 + (bug?) Animation stops while switching tabs

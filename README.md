@@ -15,3 +15,9 @@ Pedro Ivo Hudson
 
 + http://pedroivo.com/
 + http://github.com/podrivo
+
+## Music
+Husky Rescue
+
++ http://www.husky-rescue.com/
++ http://soundcloud.com/husky-rescue/

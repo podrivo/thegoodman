@@ -6,7 +6,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* HTML */
 html {height:100%;}
-body {height:100%; background:#fdf6e3 url(subtle_dots.png) repeat; overflow:hidden; font-family:Arial !important; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both;}
+body {height:100%; overflow:hidden; font-family:Helvetica, "Lucida Grande", "Lucida Sans", Tahoma, "DejaVu Sans", sans-serif; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both; background:#fdf6e3; background-image:url(bg.png); background-image:url(bg.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)), color-stop(100%,rgba(253,246,227,1))); background-image:url(bg.png), -webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%); background-image:url(bg.png), radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%);
+}
 
 /* Audio */
 audio {position:absolute; z-index:999999999; display:none;}
@@ -15,6 +16,7 @@ audio {position:absolute; z-index:999999999; display:none;}
 h1 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
 h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red-super .4s 2s backwards;}
 h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
+h1 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:block; position:absolute; top:42px; left:21px; z-index:-1;}
 
 @-webkit-keyframes hi
 {0%{opacity:0; -webkit-transform:translateY(-80px);} 20%{opacity:0;} 60%{opacity:1;} 100%{-webkit-transform:translateY(0);}}
@@ -26,17 +28,17 @@ h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radi
 {15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
 
 /* Enemys */
-.enemys {width:86%; height:86%; position:absolute; top:50%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
+.enemys {width:86%; height:86%; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
 .enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
-.enemys em {display:block; -webkit-animation:down 60s linear;}
+.enemys em {display:block; -webkit-animation:down linear;}
 
-.enemys p:nth-child(1n+0) em {font-size:30px; -webkit-animation-duration:40s; opacity:.5;}
-.enemys p:nth-child(2n+0) em {font-size:22px; -webkit-animation-duration:50s; opacity:.2;}
-.enemys p:nth-child(3n+0) em {font-size:36px; -webkit-animation-duration:70s; opacity:.8;}
-.enemys p:nth-child(4n+0) em {font-size:46px; -webkit-animation-duration:30s; opacity:1;}
-.enemys p:nth-child(5n+0) em {font-size:26px; -webkit-animation-duration:60s; opacity:.35;}
+.enemys p:nth-child(1n+0) em {font-size:45px; -webkit-animation-duration:45s; opacity:.9;}
+.enemys p:nth-child(2n+0) em {font-size:35px; -webkit-animation-duration:60s; opacity:.7;}
+.enemys p:nth-child(3n+0) em {font-size:30px; -webkit-animation-duration:40s; opacity:.5;}
+.enemys p:nth-child(4n+0) em {font-size:25px; -webkit-animation-duration:60s; opacity:.3;}
+.enemys p:nth-child(5n+0) em {font-size:20px; -webkit-animation-duration:50s; opacity:.1;}
 
-.enemys p:nth-child(1n+1) {-webkit-animation-delay:4s}
+.enemys p:nth-child(1n+1) {-webkit-animation-delay:4.0s}
 .enemys p:nth-child(2n+2) {-webkit-animation-delay:4.1s}
 .enemys p:nth-child(3n+3) {-webkit-animation-delay:4.2s}
 .enemys p:nth-child(4n+4) {-webkit-animation-delay:4.3s}
@@ -46,7 +48,7 @@ h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radi
 .enemys p:nth-child(8n+3) {-webkit-animation-delay:4.7s}
 .enemys p:nth-child(9n+4) {-webkit-animation-delay:4.8s}
 .enemys p:nth-child(10n+5) {-webkit-animation-delay:4.9s}
-.enemys p:nth-child(11n+1) {-webkit-animation-delay:5s}
+.enemys p:nth-child(11n+1) {-webkit-animation-delay:5.0s}
 .enemys p:nth-child(12n+2) {-webkit-animation-delay:5.1s}
 .enemys p:nth-child(13n+3) {-webkit-animation-delay:5.2s}
 .enemys p:nth-child(14n+4) {-webkit-animation-delay:5.3s}
@@ -64,17 +66,22 @@ h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radi
 	100% {-webkit-transform:scale(1);}
 }
 @-webkit-keyframes down {
-	0%, 20% {-webkit-transform:translateY(0);}
+	0%,10% {-webkit-transform:translateY(0);}
 	100% {-webkit-transform:translateY(100px);}
 }
 @-webkit-keyframes blue-enemy
-{0%{} 100%{color:#268bd2}}
+{0%{} 100%{color:#268bd2;}}
 
 /* Goodness */
-.nice {background:#268bd2; width:1px; height:1px; opacity:0; border-radius:1000px; position:absolute; top:50%; left:50%; z-index:3; overflow:hidden; display:block; -webkit-animation:nice 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
-.nice em {color:#fdf6e3; width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-80px 0 0 -70px; -webkit-transform:rotate(180deg);}
+.nice {width:100%; height:100%; display:table;}
+.nice span {background:#268bd2; width:1px; height:1px; opacity:0; border-radius:1000px; position:absolute; top:50%; left:50%; z-index:3; overflow:hidden; display:block; -webkit-animation:nice 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
+.nice em {color:#fff; width:100%; height:100%; font-size:120px; z-index:4; display:table-cell; text-align:center; vertical-align:middle; position:relative; top:-10px; opacity:0; -webkit-animation:hide 2.6s 8.1s ease-in;}
 @-webkit-keyframes nice {
-	0% {opacity:0;} 5%, 99% {opacity:1;}
+	3%,98% {opacity:1;}
 	80% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px;}
-	100% {opacity:0;}
+	99%,100% {opacity:0;}
+}
+@-webkit-keyframes hide {
+	10%,99% {opacity:1;}
+	0%,100% {opacity:0;}
 }

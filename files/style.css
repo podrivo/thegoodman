@@ -9,6 +9,11 @@ html {height:100%;}
 body {height:100%; overflow:hidden; font-family:Helvetica, "Lucida Grande", "Lucida Sans", Tahoma, "DejaVu Sans", sans-serif; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both; background:#fdf6e3; background-image:url(bg.png); background-image:url(bg.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)), color-stop(100%,rgba(253,246,227,1))); background-image:url(bg.png), -webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%); background-image:url(bg.png), radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%);
 }
 
+/* Footer */
+.fs {background:#fdf6e3; color:#839496; width:30px; height:30px; border:0; display:block; -webkit-appearance:none; position:absolute; bottom:8px; right:8px; -webkit-transition:all .3s;}
+.fs em {font-size:24px; -webkit-transform:rotate(-45deg); display:block; position:relative; left:-4px;}
+.fs:hover, .fs:focus {background:#dc322f; color:#fdf6e3; cursor:pointer;}
+
 /* Audio */
 audio {position:absolute; z-index:999999999; display:none;}
 

@@ -31,6 +31,7 @@ h1 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:
 .enemys {width:86%; height:86%; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
 .enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
 .enemys em {display:block; -webkit-animation:down linear;}
+.enemys em:before {content:'\2716'; }
 
 .enemys p:nth-child(1n+0) em {font-size:45px; -webkit-animation-duration:45s; opacity:.9;}
 .enemys p:nth-child(2n+0) em {font-size:35px; -webkit-animation-duration:60s; opacity:.7;}
@@ -73,15 +74,15 @@ h1 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:
 {0%{} 100%{color:#268bd2;}}
 
 /* Goodness */
-.nice {width:100%; height:100%; display:table;}
-.nice span {background:#268bd2; width:1px; height:1px; opacity:0; border-radius:1000px; position:absolute; top:50%; left:50%; z-index:3; overflow:hidden; display:block; -webkit-animation:nice 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
-.nice em {color:#fff; width:100%; height:100%; font-size:120px; z-index:4; display:table-cell; text-align:center; vertical-align:middle; position:relative; top:-10px; opacity:0; -webkit-animation:hide 2.6s 8.1s ease-in;}
-@-webkit-keyframes nice {
+.good, .good em {width:1px; height:1px; opacity:0; position:absolute; top:50%; left:50%; border-radius:1000px;}
+.good {background:#268bd2; z-index:3; display:block; -webkit-animation:good 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
+.good em {border:1px solid #fff; z-index:4; -webkit-animation:nice 1s 8.7s cubic-bezier(.8,.01,1,.2);}
+@-webkit-keyframes good {
 	3%,98% {opacity:1;}
 	80% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px;}
 	99%,100% {opacity:0;}
 }
-@-webkit-keyframes hide {
-	10%,99% {opacity:1;}
-	0%,100% {opacity:0;}
+@-webkit-keyframes nice {
+	3% {opacity:1;}
+	100% {width:4000px; height:4000px; margin:-2000px 0 0 -2000px; border:400px solid #fff;}
 }

@@ -4,6 +4,10 @@ http://pedroivo.com/thegoodman/
 
 ## to do
 + About/Credits
++ Block IE/iPhone
++ Test in an iPad
++ Animation progress
++ Cross-browser
 + (css) ':nth-child' (http://nthmaster.com/)
 
 ## Author

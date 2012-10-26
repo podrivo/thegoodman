@@ -3,8 +3,7 @@ An experiment with basic CSS3 animations.
 http://pedroivo.com/thegoodman/
 
 ## to do
-+ Preload
-+ Start paused
++ About/Credits
 + (css) ':nth-child' (http://nthmaster.com/)
 
 ## Author

@@ -9,23 +9,54 @@ html {height:100%;}
 body {height:100%; overflow:hidden; font-family:Helvetica, "Lucida Grande", "Lucida Sans", Tahoma, "DejaVu Sans", sans-serif; -webkit-backface-visibility:hidden; -webkit-animation-fill-mode:both; background:#fdf6e3; background-image:url(bg.png); background-image:url(bg.png), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)), color-stop(100%,rgba(253,246,227,1))); background-image:url(bg.png), -webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%); background-image:url(bg.png), radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(253,246,227,1) 100%);
 }
 
-.animation, .play {display:none;}
-.play {-webkit-appearance:none; background:none; border:0; cursor:pointer; position:absolute; top:50%; left:50%; margin:-20px 0 0 -20px; font-size:36px; opacity:.2; -webkit-transition:all .3s;}
-.play:hover, .play:focus {opacity:1;}
+/* the good man */
+h1 {width:100%; height:100%; margin-top:-8%; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; display:table;}
+h1 em {display:table-cell; vertical-align:middle;}
+h1 span {display:block; -webkit-animation:sup 1.8s .4s backwards; position:relative; right:-25px;}
+.hide {opacity:0; -webkit-animation:hide .8s;}
 
-/* Footer */
-.fs {background:#fdf6e3; color:#839496; width:30px; height:30px; border:0; display:block; z-index:10; -webkit-appearance:none; position:absolute; bottom:8px; right:8px; -webkit-transition:all .3s;}
+@-webkit-keyframes sup
+{0%{opacity:0; -webkit-transform:translateY(60px);} 30%{opacity:0;} 100%{opacity:1; -webkit-transform:translateY(0);}}
+
+@-webkit-keyframes hide
+{0%{opacity:1; -webkit-transform:translateY(0);} 100%{opacity:0; -webkit-transform:translateY(-20px);}}
+
+/* Play */
+.animation {display:none;}
+.play {cursor:pointer; background:#eee8d5; color:#fdf6e3; width:70px; height:70px; border-radius:70px; position:absolute; top:50%; left:50%; margin:0 0 0 -35px; -webkit-transition:background .5s;  -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
+.play:hover, .play:focus {background:#268bd2;}
+.play p {position:absolute; top:50%; left:50%; margin:-15px 0 0 -12px; font-size:36px; display:none;}
+.play span {width:70px; height:70px; display:block; font-size:80px; color:#268bd2; text-align:center; line-height:75%; -webkit-animation:load 12s linear infinite; -webkit-transform-origin:(50%,50%);}
+
+@-webkit-keyframes load
+{0%{-webkit-transform:rotate(0) origin;} 100%{-webkit-transform:rotate(360deg);}}
+
+@-webkit-keyframes bounce {
+	0%{-webkit-transform:scale(1); opacity:1}
+	50%{-webkit-transform:scale(1.2); opacity:.7;}
+	60%{-webkit-transform:scale(0.6); opacity:1}
+	80%{-webkit-transform:scale(0.95)} 
+	100%{-webkit-transform:scale(0.85)}
+}
+
+/* About/Credits */
+footer {background:#fdf6e3; width:144px; height:30px; display:block; font:400 14px/30px 'Montserrat', sans-serif; text-transform:uppercase; color:#839496; padding:0 5px; text-align:center; position:absolute; bottom:6px; right:6px;}
+footer a {color:#839496; text-decoration:none;}
+footer a:hover, footer a:focus {color:#268bd2;}
+
+/* Fullscreen */
+.fs {background:#fdf6e3; color:#839496; width:30px; height:30px; border:0; display:block; z-index:10; -webkit-appearance:none; position:absolute; bottom:8px; right:8px; -webkit-transition:all .3s; display:none !important;}
 .fs em {font-size:24px; -webkit-transform:rotate(-45deg); display:block; position:relative; left:-4px;}
 .fs:hover, .fs:focus {background:#dc322f; color:#fdf6e3; cursor:pointer;}
 
 /* Audio */
 audio {position:absolute; z-index:999999999; display:none;}
 
-/* Hi */
-h1 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
-h1 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red-super .4s 2s backwards;}
-h1 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
-h1 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:block; position:absolute; top:42px; left:21px; z-index:-1;}
+/* Hello */
+h2 {width:136px; height:142px; font-size:180px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
+h2 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red-super .4s 2s backwards;}
+h2 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
+h2 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:block; position:absolute; top:42px; left:21px; z-index:-1;}
 
 @-webkit-keyframes hi
 {0%{opacity:0; -webkit-transform:translateY(-80px);} 20%{opacity:0;} 60%{opacity:1;} 100%{-webkit-transform:translateY(0);}}
@@ -39,8 +70,8 @@ h1 b {color:#fefaee; font-size:120px; -webkit-transform:rotate(270deg); display:
 /* Enemys */
 .enemys {width:86%; height:86%; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
 .enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
-.enemys em {display:block; -webkit-animation:down linear;}
-.enemys em:before {content:'\2716'; }
+.enemys em {display:block; -webkit-animation:down 5s 2s linear;}
+.enemys em:before {content:'\2716';}
 
 .enemys p:nth-child(1n+0) em {font-size:45px; -webkit-animation-duration:45s; opacity:.9;}
 .enemys p:nth-child(2n+0) em {font-size:35px; -webkit-animation-duration:60s; opacity:.7;}

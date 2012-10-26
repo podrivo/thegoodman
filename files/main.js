@@ -1,5 +1,4 @@
 /*! the good man */
-window.jQuery || document.write('<script src="files/jquery.1.8.2.min.js"><\/script>')
 
 /*! jquery.fullscreen 1.1.0 / https://github.com/kayahr/jquery-fullscreen-plugin */
 function d(b){var c,a;if(!this.length)return this;c=this[0];c instanceof Document?(a=c,c=a.documentElement):a=c.ownerDocument;if(null==b){if(!a.cancelFullScreen&&!a.webkitCancelFullScreen&&!a.mozCancelFullScreen)return null;b=!!a.fullScreen||!!a.webkitIsFullScreen||!!a.mozFullScreen;return!b?b:a.fullScreenElement||a.webkitCurrentFullScreenElement||a.mozFullScreenElement||b}b?(b=c.requestFullScreen||c.webkitRequestFullScreen||c.mozRequestFullScreen)&&b.call(c):(b=a.cancelFullScreen||a.webkitCancelFullScreen||
@@ -25,10 +24,12 @@ $(document).ready(function() {
 	$('.play').click(function() {
 		audio.play();
 		animation.css('display','block');
-		$(this).css('display','none');
+		$('h1,footer').addClass('hide');
+		$(this).css('opacity',0);
 	});
 });
 
 $(window).load(function() {
-	$('.play').css('display','block');
+	$('.play p').fadeIn(1200);
+	$('.play span').fadeOut(700);
 });

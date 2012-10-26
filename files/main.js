@@ -21,11 +21,11 @@ $(document).ready(function() {
 	/*! play */
 	var audio = $('audio')[0];
 	var animation = $('.animation');
-	$('.play').click(function() {
+	$('.play p').click(function() {
 		audio.play();
 		animation.css('display','block');
 		$('h1,footer').addClass('hide');
-		$(this).css('opacity',0);
+		$('.play,.play p').fadeOut(700);
 	});
 });
 

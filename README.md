@@ -6,8 +6,9 @@ http://pedroivo.com/thegoodman/
 + About/Credits
 + Block IE/iPhone
 + Test in an iPad
-+ Animation progress
-+ Cross-browser
++ Animation progress (without music)
++ favicon/ogp
++ (last) Cross-browser
 + (css) ':nth-child' (http://nthmaster.com/)
 
 ## Author
@@ -21,3 +22,6 @@ Husky Rescue
 
 + http://www.husky-rescue.com/
 + http://soundcloud.com/husky-rescue/
+
+## License
+This project is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).

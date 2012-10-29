@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 	/*! play */
 	var audio = $('audio')[0];
-	var animation = $('.animation');
+	var animation = $('article');
 	$('.play p').click(function() {
 		$('h1,footer').addClass('hide');
 		$('.play').fadeOut(900);

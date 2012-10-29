@@ -14,15 +14,25 @@
 <meta property="og:url" content="http://pedroivo.com/thegoodman/">
 <meta property="og:description" content="An experiment with basic CSS3 animations.">
 
-<link rel="stylesheet" media="screen" href="files/style.css">
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Montserrat:400,700">
+<link rel="stylesheet" media="screen" href="files/main.css">
+<link rel="stylesheet" media="screen" href="files/scenes.css">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Montserrat:400,700">
 
 </head>
 <body>
 
 	<!-- the good man -->
 	<h1><em><span>the good man</span></em></h1>
-	<div class="play"><p>&#9654;</p><span>&#9676;</span></div>
+	<div class="play"><p></p><span></span></div>
+
+	<!-- Alert -->
+	<div class="alert">
+		<p>Hello. This is an animation.</p>
+		<p>Audio should be properly synced with the rest.</p>
+		<p>In the next screen, you should read what is said.</p>
+		<p>Refresh the page if its unsynced.</p>
+		<p class="go">Ok. Go &#8594;</p>
+	</div>
 
 	<!-- About/Credits -->
 	<footer><a href="#" title="About">About</a> / <a href="#" title="Credits">Credits</a></footer>
@@ -31,13 +41,13 @@
 	<button class="fs"><em>&#11020;</em></button>
 
 	<!-- Audio -->
-	<audio preload="auto" src="http://media.soundcloud.com/stream/Ypry1HTyFcty?stream_token=G34vy"></audio>
+	<audio src="http://media.soundcloud.com/stream/Ypry1HTyFcty?stream_token=G34vy" preload="auto"></audio>
 
 	<!-- Animation -->
 	<div class="animation">
 		
 		<!-- Hello -->
-		<h2><em>&#10700; <b>&#9654;</b></em><span></span></h2>
+		<h2><em>&#10700;</em><span></span></h2>
 
 		<!-- Enemys -->
 		<div class="enemys">

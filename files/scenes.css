@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* Hello */
+h2 {width:136px; height:142px; font-size:180px; line-height:120px; z-index:2; position:absolute; top:50%; left:50%; margin:-100px 0 0 -68px; -webkit-animation:hi 2s .75s backwards;}
+h2 em {color:#dc322f; display:block; z-index:1; -webkit-transform:rotate(180deg); -webkit-animation:red-super .4s 2s backwards;}
+h2 span {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:great 3s 2s cubic-bezier(.07,.66,.44,.97);}
+h2:after {content:''; width:0; height:0; display:block; position:absolute; top:0; left:19px; margin-top:26px; border-top:86px solid #fefaee; border-left:50px solid transparent; border-right:50px solid transparent; z-index:-1;}
+
+@-webkit-keyframes hi
+{0%{opacity:0; -webkit-transform:translateY(-80px);} 20%{opacity:0;} 60%{opacity:1;} 100%{-webkit-transform:translateY(0);}}
+
+@-webkit-keyframes red-super
+{0%{color:#586e75} 100%{color:#dc322f}}
+
+@-webkit-keyframes great
+{15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
+
+/* Enemys */
+.enemys {width:86%; height:86%; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36; -webkit-animation:blue-enemy 10s 9s cubic-bezier(0,1,0,1) !important;}
+.enemys p {font-size:30px; position:absolute; -webkit-animation:enemy .8s backwards;}
+.enemys em {display:block; -webkit-animation:down 5s 2s linear;}
+.enemys em:before {content:'\2716';}
+
+.enemys p:nth-child(1n+0) em {font-size:45px; -webkit-animation-duration:45s; opacity:.9;}
+.enemys p:nth-child(2n+0) em {font-size:35px; -webkit-animation-duration:60s; opacity:.7;}
+.enemys p:nth-child(3n+0) em {font-size:30px; -webkit-animation-duration:40s; opacity:.5;}
+.enemys p:nth-child(4n+0) em {font-size:25px; -webkit-animation-duration:60s; opacity:.3;}
+.enemys p:nth-child(5n+0) em {font-size:20px; -webkit-animation-duration:50s; opacity:.1;}
+
+.enemys p:nth-child(1n+1) {-webkit-animation-delay:4.0s}
+.enemys p:nth-child(2n+2) {-webkit-animation-delay:4.1s}
+.enemys p:nth-child(3n+3) {-webkit-animation-delay:4.2s}
+.enemys p:nth-child(4n+4) {-webkit-animation-delay:4.3s}
+.enemys p:nth-child(5n+5) {-webkit-animation-delay:4.4s}
+.enemys p:nth-child(6n+1) {-webkit-animation-delay:4.5s}
+.enemys p:nth-child(7n+2) {-webkit-animation-delay:4.6s}
+.enemys p:nth-child(8n+3) {-webkit-animation-delay:4.7s}
+.enemys p:nth-child(9n+4) {-webkit-animation-delay:4.8s}
+.enemys p:nth-child(10n+5) {-webkit-animation-delay:4.9s}
+.enemys p:nth-child(11n+1) {-webkit-animation-delay:5.0s}
+.enemys p:nth-child(12n+2) {-webkit-animation-delay:5.1s}
+.enemys p:nth-child(13n+3) {-webkit-animation-delay:5.2s}
+.enemys p:nth-child(14n+4) {-webkit-animation-delay:5.3s}
+.enemys p:nth-child(15n+5) {-webkit-animation-delay:5.4s}
+.enemys p:nth-child(16n+1) {-webkit-animation-delay:5.5s}
+.enemys p:nth-child(17n+2) {-webkit-animation-delay:5.6s}
+.enemys p:nth-child(18n+3) {-webkit-animation-delay:5.7s}
+.enemys p:nth-child(19n+4) {-webkit-animation-delay:5.8s}
+.enemys p:nth-child(20n+5) {-webkit-animation-delay:5.9s}
+
+@-webkit-keyframes enemy {
+	0% {opacity:0; -webkit-transform:scale(.3);}
+	50% {opacity:1; -webkit-transform:scale(1.05);}
+	70% {-webkit-transform:scale(.9);}
+	100% {-webkit-transform:scale(1);}
+}
+@-webkit-keyframes down {
+	0%,10% {-webkit-transform:translateY(0);}
+	100% {-webkit-transform:translateY(100px);}
+}
+@-webkit-keyframes blue-enemy
+{0%{} 100%{color:#268bd2;}}
+
+/* Goodness */
+.good, .good em {width:1px; height:1px; opacity:0; position:absolute; top:50%; left:50%; border-radius:1000px;}
+.good {background:#268bd2; z-index:3; display:block; -webkit-animation:good 2.8s 8.1s cubic-bezier(0,.65,.4,1);}
+.good em {border:1px solid #fff; z-index:4; -webkit-animation:nice 1s 8.7s cubic-bezier(.8,.01,1,.2);}
+@-webkit-keyframes good {
+	3%,98% {opacity:1;}
+	80% {width:2000px; height:2000px; margin:-1000px 0 0 -1000px;}
+	99%,100% {opacity:0;}
+}
+@-webkit-keyframes nice {
+	3% {opacity:1;}
+	100% {width:4000px; height:4000px; margin:-2000px 0 0 -2000px; border:400px solid #fff;}
+}

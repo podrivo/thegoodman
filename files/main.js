@@ -22,10 +22,14 @@ $(document).ready(function() {
 	var audio = $('audio')[0];
 	var animation = $('.animation');
 	$('.play p').click(function() {
+		$('h1,footer').addClass('hide');
+		$('.play').fadeOut(900);
+		$('.alert').fadeIn().addClass('sup');
+	});
+	$('.go').click(function() {
 		audio.play();
 		animation.css('display','block');
-		$('h1,footer').addClass('hide');
-		$('.play,.play p').fadeOut(700);
+		$('.alert').removeClass('sup').addClass('hide');
 	});
 });
 

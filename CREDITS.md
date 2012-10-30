@@ -3,6 +3,8 @@ The song "The Good Man" was made by [Husky Rescue](http://www.husky-rescue.com/)
 
 Tipography include [Montserrat](http://www.google.com/webfonts/specimen/Montserrat), by Julieta Ulanovsky, and [Lato](http://www.google.com/webfonts/specimen/Lato), by Łukasz Dziedzic, and is served via [Google Web Fonts](http://google.com/webfonts).
 
+Some icons are provided by [IcoMoon](http://icomoon.io/) and others are [Unicode characters](http://copypastecharacter.com/).
+
 HTML template is based on [HTML5 Boilerplate](http://html5boilerplate.com/) front-end template.
 
 Using [jQuery](http://jquery.com/) JavaScript Library, served via [Google Hosted Libraries](https://developers.google.com/speed/libraries/).

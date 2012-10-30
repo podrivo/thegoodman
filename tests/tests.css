@@ -76,14 +76,31 @@ body.bounce {background:#fdf6e3;}
 /* Change */
 body.change {background:#fdf6e3;}
 
-h1, h2 {width:80px; height:80px; display:block; position:absolute; top:50%; left:50%; margin:-40px 0 0 -40px; border-radius:100px; text-align:center;}
-h1 {font-size:70px; line-height:80px; -webkit-transform:scale(0) rotate(0); -webkit-animation:red 1s cubic-bezier(1,-.36,0,1.3) backwards; z-index:1; padding-left:12px;}
-h2 {font-size:80px; line-height:90px; -webkit-transform:scale(1) rotate(0); -webkit-animation:blue 1s cubic-bezier(1,-.36,0,1.3) backwards; z-index:2;}
+.change h1, .change h2 {width:80px; height:80px; display:block; position:absolute; top:50%; left:50%; margin:-40px 0 0 -40px; border-radius:100px; text-align:center;}
+.change h1 {font-size:70px; line-height:80px; -webkit-transform:scale(0) rotate(0); -webkit-animation:red 1s cubic-bezier(1,-.36,0,1.3) backwards; z-index:1; padding-left:12px;}
+.change h2 {font-size:80px; line-height:90px; -webkit-transform:scale(1) rotate(0); -webkit-animation:blue 1s cubic-bezier(1,-.36,0,1.3) backwards; z-index:2;}
 
 @-webkit-keyframes red
 {0%{-webkit-transform:scale(1) rotate(0); z-index:2;} 100%{-webkit-transform:scale(0) rotate(360deg); z-index:1; opacity:0;}}
 @-webkit-keyframes blue
 {0%{-webkit-transform:scale(0) rotate(0); z-index:1;} 100%{-webkit-transform:scale(1) rotate(360deg); z-index:2;}}
 
-a:hover .tick {transform:scale(0) rotate(360deg); z-index:1;}
-a:hover .cross {transform:scale(1) rotate(360deg); z-index:2;}
+/* Graph */
+.graph div {width:200px; height:200px; position:absolute; top:50%; left:50%; margin:-100px 0 0 -100px; display:block;}
+.graph p {width:200px; height:100px; overflow:hidden;}
+.graph p em {content:''; border-width:100px; border-style:solid; width:0; height:0; display:block; border-radius:100px; -webkit-transform:rotate(45deg); -webkit-animation:graph 1.2s;}
+.graph div:nth-child(n+1) p:first-child em {border-bottom-color:transparent; border-right-color:transparent; -webkit-animation-duration:.6s; -webkit-animation-timing-function:cubic-bezier(.2,0,.95,0);}
+.graph div:nth-child(n+1) p:last-child em {border-top-color:transparent; border-left-color:transparent; -webkit-animation-timing-function:cubic-bezier(0,.95,.8,1); -webkit-animation-fill-mode:backwards !important; position:relative; top:-101px;}
+
+.graph div:nth-child(1) p em {border-color:#2aa198;}
+.graph div:nth-child(1) p:first-child em {}
+.graph div:nth-child(1) p:last-child em {-webkit-animation-delay:.6s;}
+.graph div:nth-child(2) p em {border-color:#d33682;}
+.graph div:nth-child(2) p:first-child em {-webkit-animation-delay:.12s;}
+.graph div:nth-child(2) p:last-child em {-webkit-animation-delay:.72s;}
+.graph div:nth-child(3) p em {border-color:#268bd2;}
+.graph div:nth-child(3) p:first-child em {-webkit-animation-delay:.22s;}
+.graph div:nth-child(3) p:last-child em {-webkit-animation-delay:.82s;}
+
+@-webkit-keyframes graph
+{0%{-webkit-transform:rotate(-135deg);} 100%{-webkit-transform:rotate(45deg);}}

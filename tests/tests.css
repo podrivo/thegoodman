@@ -19,11 +19,11 @@ body.texture1 {background:#e5fcc2;}
 }
 
 /* Texture 02 */
-body.texture2 {background-color:#002b36; -webkit-animation:texture1 60s linear infinite;}
+body.texture2 {background-color:#002b36; -webkit-animation:texture1 60s linear infinite; font-family:Helvetica; overflow:visible;}
 .pttr1 {-webkit-animation:texture2 2s ease-out infinite;}
 .pttr2 {-webkit-animation:texture2 4s ease-in infinite;}
 .pttr2 p {-webkit-transform:rotate(180deg);}
-.texture2 p {float:left; font-size:86px; color:#dc322f;}
+.texture2 p {float:left; font-size:86px; color:#eee8d5;}
 .texture2 div {width:2500px; height:2500px; position:absolute; top:50%; left:50%; margin:-1250px 0 0 -1250px; overflow:hidden;}
 
 @-webkit-keyframes texture2 {

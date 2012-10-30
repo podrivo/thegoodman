@@ -1,4 +1,4 @@
-# the good man
+# The Good Man
 An experiment with basic CSS3 animations.
 http://pedroivo.com/thegoodman/
 
@@ -7,7 +7,6 @@ http://pedroivo.com/thegoodman/
 + Block IE/iPhone
 + Test in an iPad
 + Animation progress (without music)
-+ favicon/ogp
 + (last) Cross-browser
 + (css) ':nth-child' (http://nthmaster.com/)
 

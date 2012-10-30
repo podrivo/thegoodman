@@ -5,15 +5,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<title>the good man</title>
+<title>The Good Man</title>
 <meta name="description" content="An experiment with basic CSS3 animations.">
 <meta name="viewport" content="width=device-width">
 
-<meta property="og:title" content="the good man">
+<meta property="og:title" content="The Good Man">
 <meta property="og:type" content="website">
 <meta property="og:url" content="http://pedroivo.com/thegoodman/">
+<meta property="og:image" content="http://pedroivo.com/thegoodman/files/ogp.png">
 <meta property="og:description" content="An experiment with basic CSS3 animations.">
 
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" media="screen" href="files/main.css">
 <link rel="stylesheet" media="screen" href="files/scenes.css">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Montserrat:400,700">
@@ -24,12 +26,20 @@
 	<!-- main -->
 	<header>
 	
-		<!-- the good man -->
-		<h1>the good man</h1>
+		<!-- The Good Man -->
+		<h1>The Good Man</h1>
 		<div class="play"><p></p><span></span></div>
 
+		<!-- About -->
+		<section id="about" class="reveal-modal">
+			<p>Teste</p>Testando
+		</section>
+
 		<!-- About/Credits -->
-		<footer><a href="#" title="About">About</a> / <a href="#" title="Credits">Credits</a></footer>
+		<footer>
+			<a href="#about" id="about" title="About" data-reveal-id="about" data-animation="fade" data-animationspeed="600">About</a> / 
+			<a href="#credits" id="credits" title="Credits">Credits</a>
+		</footer>
 
 		<!-- Alert -->
 		<div class="alert">

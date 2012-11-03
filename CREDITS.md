@@ -9,6 +9,4 @@ HTML template is based on [HTML5 Boilerplate](http://html5boilerplate.com/) fron
 
 Using [jQuery](http://jquery.com/) JavaScript Library, served via [Google Hosted Libraries](https://developers.google.com/speed/libraries/).
 
-Special thanks to Claudio Santos.
-
 This project is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).

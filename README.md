@@ -6,9 +6,8 @@ http://pedroivo.com/thegoodman/
 + About/Credits
 + Block IE/iPhone
 + Test in an iPad
-+ Animation progress (without music)
++ #hash about/credits
 + (last) Cross-browser
-+ (css) ':nth-child' (http://nthmaster.com/)
 
 ## Author
 Pedro Ivo Hudson

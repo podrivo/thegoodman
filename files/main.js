@@ -26,6 +26,16 @@ $(document).ready(function() {
 		$('.alert').removeClass('sup').addClass('hide');
 	});
 
+	/*! about */
+	$('footer a:nth-child(1)').click(function() {
+		$('header').fadeOut(900);
+		$('.about').removeClass('hide').fadeIn().addClass('sup');
+	});
+	$('.back').click(function() {
+		$('.about').removeClass('sup').addClass('hide').fadeOut('slow');;
+		$('header').fadeIn(900);
+	});
+
 	/*! random enemys */
 	$('.enemys').find('p').each(function() {
 		$(this).css('top', Math.floor((Math.random())*100) + '%');

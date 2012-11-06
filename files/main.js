@@ -26,15 +26,30 @@ $(document).ready(function() {
 		$('.alert').removeClass('sup').addClass('hide');
 	});
 
-	/*! about */
+	/*! About */
 	$('footer a:nth-child(1)').click(function() {
 		$('header').fadeOut(900);
+		$('.credits').removeClass('sup').addClass('hide').fadeOut('slow');
 		$('.about').removeClass('hide').fadeIn().addClass('sup');
 	});
 	$('.back').click(function() {
-		$('.about').removeClass('sup').addClass('hide').fadeOut('slow');;
+		$('.about').removeClass('sup').addClass('hide').fadeOut('slow');
 		$('header').fadeIn(900);
 	});
+
+	/*! Credits */
+	$('footer a:nth-child(2)').click(function() {
+		$('header').fadeOut(900);
+		$('.about').removeClass('sup').addClass('hide').fadeOut('slow');
+		$('.credits').removeClass('hide').fadeIn().addClass('sup');
+	});
+	$('.back').click(function() {
+		$('.about, .credits').removeClass('sup').addClass('hide').fadeOut('slow');
+		$('header').fadeIn(900);
+	});
+
+	if(location.href.search('#about') > 0) $('footer a:nth-child(1)').click();
+	if(location.href.search('#credits') > 0) $('footer a:nth-child(2)').click();
 
 	/*! random enemys */
 	$('.enemys').find('p').each(function() {

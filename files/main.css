@@ -13,7 +13,7 @@ body {height:100%; overflow:hidden; font-family:'Apple Symbols','Arial Unicode M
 body>div {width:100%; height:100%; background:-webkit-radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; z-index:1; position:relative; display:block;}
 a, .back {-webkit-transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
-header *, aside, article * {z-index:3 !important;}
+header *, footer, aside, article * {z-index:3 !important;}
 
 /* The Good Man */
 h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px;; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; -webkit-animation:sup 1.8s .4s backwards;}
@@ -66,31 +66,33 @@ article {display:none;}
 .fs:hover, .fs:focus {background:#dc322f; color:#fdf6e3; cursor:pointer;}
 
 /* Footer */
-footer {background:#073642; width:144px; height:30px; display:block; font:400 14px/30px 'Montserrat', sans-serif; text-transform:uppercase; color:#eee8d5; padding:0 5px; text-align:center; position:absolute; bottom:6px; right:6px;}
+footer {background:#073642; width:148px; height:30px; display:block; font:400 14px/30px 'Montserrat', sans-serif; text-transform:uppercase; color:#eee8d5; padding:0 5px; text-align:center; position:absolute; bottom:10px; right:10px;}
 footer a {color:#eee8d5;}
 footer a:hover, footer a:focus {color:#268bd2;}
 
 /* Audio */
 audio {position:absolute !important; display:none !important;}
 
-/* About */
-.about {width:700px; position:absolute; top:50%; left:50%; margin:-250px 0 0 -350px; font:italic 400 24px 'Lato', serif; display:none;}
-.about p {margin-bottom:35px;}
-.about b, .about em {font-weight:700;}
-.about p:nth-child(1) b {color:#6c71c4;}
-.about p:nth-child(2) b {color:#268bd2;}
-.about p:nth-child(3) b {color:#2aa198;}
-.about p:nth-child(4) b {color:#859900;}
+/* About/Credits */
+aside {width:700px; position:absolute; top:50%; left:50%; margin:-300px 0 0 -350px; font:italic 400 24px 'Lato', serif; display:none;}
+aside h4 {background:#eee8d5; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
+aside p, aside h4 {margin-bottom:35px;}
+aside .back {background:#073642; color:#fdf6e3; float:left; padding:4px 5px; cursor:pointer;}
+aside .back:hover {background:#268bd2;}
 
-.about ul {position:absolute; top:368px; left:332px;}
-.about li {display:inline-block;}
-.about ul em {position:absolute; top:-99999px;}
-.about ul a {display:inline-block; color:#002b36; margin:0 5px;}
+.about b, .about em {font-weight:700;}
+.about p:nth-child(2) b {color:#6c71c4;}
+.about p:nth-child(3) b {color:#268bd2;}
+.about p:nth-child(4) b {color:#2aa198;}
+.about p:nth-child(5) b {color:#859900;}
+
+.about ul {position:absolute; top:470px; left:332px;}
+.about li {display:inline-block; font-size:22px;}
+.about li em {position:absolute; top:-99999px;}
+.about li a {display:inline-block; color:#002b36; margin:0 8px;}
 .about [data-icon]:before {font-family:'about'; content:attr(data-icon); speak:none;}
 .about li:nth-child(1) a:hover {color:#dc322f;}
 .about li:nth-child(2) a:hover {color:#859900;}
 .about li:nth-child(3) a:hover {color:#2aa198;}
 .about li:nth-child(4) a:hover {color:#d33682;}
 .about li:nth-child(5) a:hover {color:#268bd2;}
-.about .back {background:#073642; color:#fdf6e3; float:left; padding:4px 5px; cursor:pointer;}
-.about .back:hover {background:#268bd2;}

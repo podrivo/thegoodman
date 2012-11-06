@@ -13,7 +13,7 @@ body {height:100%; overflow:hidden; font-family:'Apple Symbols','Arial Unicode M
 body>div {width:100%; height:100%; background:-webkit-radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; z-index:1; position:relative; display:block;}
 a, .back {-webkit-transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
-header *, footer, aside, article * {z-index:3 !important;}
+header *, footer, aside, article * {z-index:4 !important;}
 
 /* The Good Man */
 h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px;; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; -webkit-animation:sup 1.8s .4s backwards;}
@@ -27,8 +27,8 @@ h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px;; font:700 72
 {0%{opacity:1; -webkit-transform:translateY(0);} 100%{opacity:0; -webkit-transform:translateY(-20px);}}
 
 /* Load/Play */
-header {display:block;}
-article {display:none;}
+header, footer, aside {display:none !important;}
+article {display:block;}
 .play {cursor:pointer; background:#eee8d5; color:#fdf6e3; width:70px; height:70px; border-radius:70px; position:absolute; top:50%; left:50%; margin:0 0 0 -35px; -webkit-transition:background .5s;  -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
 .play:hover {background:#268bd2;}
 .play:hover span {border-left-color:#fdf6e3; border-right-color:#fdf6e3;}
@@ -40,13 +40,8 @@ article {display:none;}
 @-webkit-keyframes load
 {0%{-webkit-transform:rotate(0) origin;} 100%{-webkit-transform:rotate(360deg);}}
 
-@-webkit-keyframes bounce {
-	0%{-webkit-transform:scale(1); opacity:1}
-	50%{-webkit-transform:scale(1.2); opacity:.7;}
-	60%{-webkit-transform:scale(0.6); opacity:1}
-	80%{-webkit-transform:scale(0.95)} 
-	100%{-webkit-transform:scale(0.85)}
-}
+@-webkit-keyframes bounce
+{0%{-webkit-transform:scale(1); opacity:1} 50%{-webkit-transform:scale(1.2); opacity:.7;} 60%{-webkit-transform:scale(0.6); opacity:1} 80%{-webkit-transform:scale(0.95)} 100%{-webkit-transform:scale(0.85)}}
 
 /* Alert */
 .alert {width:700px; position:absolute; top:50%; left:50%; margin:-130px 0 0 -350px; display:none}

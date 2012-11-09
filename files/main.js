@@ -29,16 +29,13 @@ $(document).ready(function() {
 		setTimeout(function(){$('h2, h3, .enemys').addClass('vanish');},10000);
 		setTimeout(function(){$('.good').addClass('vanish');},13200);
 		setTimeout(function(){$('.plus em, .plus b').addClass('vanish');},17200);
-	});
-
-	
+	});	
 
 	/* random enemys */
 	$('.enemys').find('p').each(function() {
 		$(this).css('top', Math.floor((Math.random())*100) + '%');
 		$(this).css('left', Math.floor((Math.random())*100) + '%');
 	});
-	
 });
 
 $(window).load(function() {

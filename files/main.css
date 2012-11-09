@@ -8,8 +8,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 @font-face {font-family:'about'; src:url('about.eot'); src:url('about.eot?#iefix') format('embedded-opentype'), url('about.svg#about') format('svg'), url('about.woff') format('woff'), url('about.ttf') format('truetype'); font-weight:normal; font-style:normal;}
 
 /* HTML */
-html {height:100%; overflow:hidden;}
-body {height:100%; overflow:hidden; font-family:'Apple Symbols','Arial Unicode MS'; background:#fdf6e3; background-image:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:-webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
+html, body {height:100%; overflow:hidden;}
+body {font-family:'Apple Symbols','Arial Unicode MS'; background:#fdf6e3; background-image:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:-webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
 a, .back {-webkit-transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
 
@@ -78,7 +78,7 @@ audio {position:absolute !important; display:none !important;}
 /* About/Credits */
 .int {overflow:auto;}
 .int body {height:auto;}
-.int section {max-width:740px; margin:auto; padding:40px 20px 40px; font:italic 400 24px 'Lato', serif; position:relative;}
+.int section {max-width:740px; margin:auto; padding:40px 20px 40px; font:italic 400 24px 'Lato', serif; position:relative; -webkit-animation:sup 1.8s backwards;}
 .int h4 {background:#eee8d5; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
 .int p, .int h4 {margin-bottom:35px; position:relative;}
 .int p:last-child {margin-bottom:0;}

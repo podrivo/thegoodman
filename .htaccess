@@ -1,4 +1,4 @@
 RewriteEngine On
 
-RewriteBase /
+RewriteCond %{HTTP_HOST} ^pedroivo.com/thegoodman/$
 RewriteRule ^about/$ /about.html

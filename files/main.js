@@ -26,9 +26,9 @@ $(document).ready(function() {
 		$('body').addClass('bg');
 		
 		/* vanish */
-		setTimeout(function(){$('h2, h3, .enemys').addClass('vanish');},10000);
-		setTimeout(function(){$('.good').addClass('vanish');},13200);
-		setTimeout(function(){$('.plus em, .plus b').addClass('vanish');},17200);
+		setTimeout(function(){$('h2, h3, .enemys').remove();},10000);
+		setTimeout(function(){$('.good').remove();},13200);
+		setTimeout(function(){$('.plus em, .plus b').remove();},17200);
 	});	
 
 	/* random enemys */

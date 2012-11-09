@@ -99,6 +99,3 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 @-webkit-keyframes badbehaviorLast
 {from{width:1px; height:1px; margin:0; border-width:0;}45%{border-width:20px;}to{border-width:0;}}
-
-/* Vanish */
-.vanish {display:none !important;}

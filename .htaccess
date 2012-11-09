@@ -1,5 +1,4 @@
 RewriteEngine On
+
 RewriteBase /
-RewriteRule ^/$ /index.html
 RewriteRule ^about/$ /about.html
-RewriteRule ^credits/$ /credits.html

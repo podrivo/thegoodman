@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+/* Background color */
+body.home.bg {-webkit-animation:bgBlue 20s 10s;}
+
+@-webkit-keyframes bgBlue
+{0%,100%{background:none; background-color:#268bd2;}}
+
 /* Progress */
 .progress {background:rgba(0,43,54,.4); width:100%; height:5px; display:block; position:absolute; bottom:0; left:0; z-index:999 !important; -webkit-animation:progress 128s linear;}
 
@@ -33,7 +39,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 /* Enemys */
 .enemys {width:86%; height:86%; z-index:2 !important; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36;}
 .enemys p {font-size:30px; position:absolute; -webkit-animation:bounceIn .8s backwards;}
-.enemys em {display:block; -webkit-animation:down 5s 2s linear;}
+.enemys em {-webkit-animation:down 5s 2s linear, vanish 99999s 9s}
 .enemys em:before {content:'\2716';}
 
 .enemys p:nth-child(1n+0) em {font-size:45px; -webkit-animation-duration:45s; opacity:.9;}
@@ -70,11 +76,29 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 {0%,10%{-webkit-transform:translateY(0);} 100%{-webkit-transform:translateY(100px);}}
 
 /* Goodness */
-.good {background:#268bd2; width:3000px; height:3000px; margin:-1500px 0 0 -1500px; opacity:1; position:absolute; top:50%; left:50%; border-radius:1000px; -webkit-animation:good 4s 7.8s cubic-bezier(0,.65,.4,1) backwards;}
+.good {background:#268bd2; opacity:1; position:absolute; top:50%; left:50%; border-radius:1000px; -webkit-animation:good 6s 7.8s forwards;}
 
 @-webkit-keyframes good
-{0%{width:1px; height:1px; margin:0; opacity:0;} 3%{opacity:1;}}
+{0%{width:1px; height:1px; margin:0; opacity:0;} 10%,40%{opacity:1;} 70%,100%{width:3000px; height:3000px; margin:-1500px 0 0 -1500px; opacity:0;}}
 
 /* Plus */
-.plus span {font-size:130px; display:block; color:#fff; position:absolute; top:50%; left:50%; margin:-46px 0 0 -48px; -webkit-animation:bounceIn .6s backwards;}
-.plus em:nth-child(2) {background:#000; width:200px; height:200px; display:block; position:absolute; top:50%; left:50%; margin:-100px 0 0 -100px; border-radius:200px; -webkit-animation:bounceIn .6s backwards; opacity:.3}
+.plus span {font-size:130px; z-index:10; display:block; color:#fdf6e3; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px; -webkit-animation:bounceIn .8s 10s backwards;}
+.plus em, .plus b, .plus i {display:block; position:absolute; top:49%; left:50%; border-radius:500px; -webkit-animation:bounceIn .8s backwards;}
+.plus em:nth-child(2) {background:#073642; z-index:9; width:180px; height:180px; margin:-90px 0 0 -90px; -webkit-animation:bounceIn .8s 11.8s backwards, badbehavior 1s 15s forwards}
+.plus em:nth-child(3) {background:#dc322f; z-index:8; width:250px; height:250px; margin:-125px 0 0 -125px; -webkit-animation-delay:12.6s;}
+.plus em:nth-child(4) {background:#eee8d5; z-index:7; width:300px; height:300px; margin:-150px 0 0 -150px; -webkit-animation-delay:12.8s;}
+.plus em:nth-child(5) {background:#dc322f; z-index:6; width:350px; height:350px; margin:-175px 0 0 -175px; -webkit-animation-delay:13s;}
+.plus i {background:#268bd2; z-index:9; width:1px; height:1px; -webkit-animation:badbehaviorUP 1s 16s forwards;}
+.plus b {background:transparent; z-index:9; width:360px; height:360px; margin:-180px 0 0 -180px; border-style:solid; border-color:#073642; -webkit-animation:badbehaviorLast 1s 16.15s forwards;}
+
+@-webkit-keyframes badbehavior
+{to{width:350px; height:350px; margin:-175px 0 0 -175px;}}
+
+@-webkit-keyframes badbehaviorUP
+{to{width:360px; height:360px; margin:-180px 0 0 -180px;}}
+
+@-webkit-keyframes badbehaviorLast
+{from{width:1px; height:1px; margin:0; border-width:0;}45%{border-width:20px;}to{border-width:0;}}
+
+/* Vanish */
+.vanish {display:none !important;}

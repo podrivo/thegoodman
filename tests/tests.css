@@ -62,7 +62,7 @@ body.up {background:#fdf6e3;}
 }
 
 /* Bounce */
-.bounce p {background:#268bd2; width:80px; height:80px; position:absolute; top:50%; left:50%; margin:-40px 0 0 -40px; border-radius:100px; display:block; -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
+.bounce p {background:#268bd2; width:80px; height:80px; position:absolute; top:49%; left:50%; margin:-40px 0 0 -40px; border-radius:100px; display:block; -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
 
 @-webkit-keyframes bounce {
 	0%{-webkit-transform:scale(1.1); opacity:1}

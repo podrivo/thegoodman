@@ -11,6 +11,20 @@ $(document).ready(function() {
 		$(document).toggleFullScreen()
 	});
 
+	/* about */
+	$('.about a').click(function() {
+		$('title').html('About / The Good Man');
+		$('html').addClass('int');
+		$('header').fadeOut('fast');
+		$('section').show();
+	});
+	$('.home a').click(function() {
+		$('title').html('The Good Man');
+		$('html').removeClass('int');
+		$('section').hide();
+		$('header').show();
+	});
+
 	/* play */
 	var audio = $('audio')[0];
 	var animation = $('article');
@@ -29,7 +43,7 @@ $(document).ready(function() {
 		setTimeout(function(){$('h2, h3, .enemys').remove();},10000);
 		setTimeout(function(){$('.good').remove();},13200);
 		setTimeout(function(){$('.plus em, .plus b').remove();},17200);
-	});	
+	});
 
 	/* random enemys */
 	$('.enemys').find('p').each(function() {

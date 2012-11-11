@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* Background color */
-body.home.bg {-webkit-animation:bgBlue 20s 10s;}
+body.bg {-webkit-animation:bgBlue 20s 10s;}
 
 @-webkit-keyframes bgBlue
 {0%,100%{background:none; background-color:#268bd2;}}

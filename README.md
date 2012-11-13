@@ -5,7 +5,8 @@ www.thegoodman.cc
 About CSS3 animations and a graduation project.<br>
 My name is **Pedro Ivo Hudson** and this is my debut.
 
-**The Good Man** is about visual transcription of a narrative. Transformed into HTML elements and animated in CSS3, this project aims its efforts to build an *animation*, in a web browser.
+**The Good Man** is about visual transcription of a narrative.<br>
+Transformed into HTML elements and animated in CSS3, this project aims its efforts to build an *animation*, in a web browser.
 
 **Without images**, just web fonts and shapes, it’s intended to run smoothly and to be as *scalable* as possible.
 

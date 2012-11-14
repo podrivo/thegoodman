@@ -5,7 +5,7 @@ Hello. This project is about experimentations. About CSS3 animations and a gradu
 
 The Good Man is about visual transcription of a narrative. Transformed into HTML elements and animated in CSS3, this project aims its efforts to build an animation, in a web browser. Without images, just web fonts and shapes, it’s intended to run smoothly and to be as scalable as possible.
 
-Also, this is my graduation project in Graphic Design. It was intended to be a study about animation in code, to understand quirks. During the process, [different tests](http://thegoodman.cc/tests) were performed.
+Also, this is my graduation project in Graphic Design. It was intended to be a study about animation in code, to understand its quirks. During the process, [different tests](http://thegoodman.cc/tests) were performed.
 
 If you’d like to talk, get in touch: @podrivo
 

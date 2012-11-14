@@ -86,7 +86,7 @@ audio {position:absolute !important; display:none !important;}
 .int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
 .int p, .int h4 {margin-bottom:35px; position:relative;}
 .int p:last-child {margin-bottom:0;}
-.int section a {color:#657b83; border-bottom:2px dashed #657b83;}
+.int section a {color:#586e75; border-bottom:2px dashed #586e75;}
 
 section b, section em {font-weight:700;}
 section p:nth-child(2) b {color:#6c71c4;}

@@ -4,5 +4,5 @@ RewriteBase /
 RewriteRule ^about/$ /about.html
 RewriteRule ^tests/$ /tests/index.html
 
-RewriteRule ^/about$ /about/ [R=301,L]
-RewriteRule ^/tests$ /tests/ [R=301,L]
+RewriteRule ^about$ /about/ [R=301,L]
+RewriteRule ^tests$ /tests/ [R=301,L]

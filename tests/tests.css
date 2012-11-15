@@ -1,3 +1,6 @@
+/* BG Pattern */
+.test .pat {z-index:-1;}
+
 /* Texture 01 */
 body.texture1 {background:#e5fcc2;}
 .texture1 p {width:5%; height:60px; float:left; color:rgba(157,224,173,.5); font-size:50px; text-align:center; line-height:60px; position:relative; left:-5px; -webkit-animation:texture1 1.5s linear infinite;}
@@ -104,7 +107,7 @@ body.up {background:#fdf6e3;}
 
 /* Chain Reaction */
 .test.chain {background:#fdf6e3;}
-.chain div {background:#fdf6e3; width:300px; height:30px; position:absolute; top:50%; left:50%; margin:-15px 0 0 -150px;}
+.chain div:first-child {width:300px; height:30px; position:absolute; top:50%; left:50%; margin:-15px 0 0 -150px;}
 .chain b {width:2%; height:100%; display:block; float:left; -webkit-animation:chain 3s infinite; box-sizing:content-box; margin-left:-1px;}
 
 .chain b:nth-child(1) {background:#b58900; -webkit-animation-delay:0.2s !important;}
@@ -122,7 +125,7 @@ body.up {background:#fdf6e3;}
 .chain b:nth-child(13) {background:#6c71c4; -webkit-animation-delay:2.6s !important;}
 .chain b:nth-child(14) {background:#268bd2; -webkit-animation-delay:2.8s !important;}
 
-.chain.full div {background:#d33682; width:100%; margin:-9px 0 0 -50%;}
+.chain.full div:first-child {background:#d33682; width:100%; margin:-9px 0 0 -50%;}
 .chain.full b {-webkit-animation:chain-full 3s infinite;}
 .chain.full b:nth-child(1) {width:2%;}
 .chain.full b:nth-child(2) {width:5%;}
@@ -136,8 +139,8 @@ body.up {background:#fdf6e3;}
 .chain.full b:nth-child(10) {width:4%;}
 .chain.full b:nth-child(11) {width:9%;}
 
-.chain-up div {width:100%; height:100%; top:0; left:0; margin:0;}
-.chain-up b {width:10%; height:40%; margin:0; -webkit-animation:chain-up 3s ease-in-out infinite;}
+.chain-down div:first-child {width:100%; height:100%; top:0; left:0; margin:0;}
+.chain-down b {width:10%; height:40%; margin:0; -webkit-animation:chain-down 3s ease-in-out infinite;}
 
 @-webkit-keyframes chain
 {0%,100%{padding:0;} 50%{padding:0 5%;}}
@@ -145,12 +148,12 @@ body.up {background:#fdf6e3;}
 @-webkit-keyframes chain-full
 {0%,100%{padding:0;} 50%{padding:0 1%;}}
 
-@-webkit-keyframes chain-up
+@-webkit-keyframes chain-down
 {0%,100%{padding:0;} 50%{padding:3% 0;}}
 
 /* Particles */
 .part {padding-left:30%;}
-.part div {height:40%; display:inline-block; position:relative; top:20%; margin:0 1.5%;}
+.part div {height:40%; display:inline-block; position:relative; margin:15% 1.5% 0;}
 .part div:nth-child(1) b {background:#b58900;}
 .part div:nth-child(2) b {background:#cb4b16;}
 .part div:nth-child(3) b {background:#dc322f;}

@@ -228,3 +228,9 @@ body.up {background:#fdf6e3;}
 
 @-webkit-keyframes part
 {0%,100%{top:0;} 50%{top:100%; width:2px; height:2px;}}
+
+/* Rotate */
+.rotate p {background:#268bd2; width:40px; height:40px; border-radius:4px; position:absolute; top:50%; left:50%; margin:-20px 0 0 -20px; -webkit-animation:rotate 2.6s cubic-bezier(.68,-.55,.265,1.55) forwards infinite;}
+
+@-webkit-keyframes rotate
+{0%{-webkit-transform:rotate(0);} 25%{-webkit-transform:rotate(90deg);} 50%{-webkit-transform:rotate(180deg);} 75%{-webkit-transform:rotate(270deg);} 100%{-webkit-transform:rotate(360deg);}}

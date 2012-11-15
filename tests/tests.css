@@ -195,7 +195,7 @@ body.up {background:#fdf6e3;}
 .part p:nth-child(29) {height:22%; top:22%; left:280px;}
 .part p:nth-child(30) {height:21%; top:21%; left:290px;}
 
-.part b {width:20px; height:20px; border-radius:20px; position:absolute; -webkit-animation:part 6s ease-in-out infinite;}
+.part b {width:20px; height:20px; border-radius:20px; position:absolute; -webkit-animation:part 6s ease-in-out infinite; -webkit-transform:translateZ(0);}
 .part p:nth-child(2) b {-webkit-animation-delay:0.2s; -webkit-transform:scale(.97);}
 .part p:nth-child(3) b {-webkit-animation-delay:0.4s; -webkit-transform:scale(.94);}
 .part p:nth-child(4) b {-webkit-animation-delay:0.6s; -webkit-transform:scale(.91);}

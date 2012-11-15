@@ -9,7 +9,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
-html, body {height:100%; overflow:hidden;}
+html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;}
 body {font-family:'Apple Symbols','Arial Unicode MS'; background:#fdf6e3; background-image:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:-webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
 a, .back {-webkit-transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
@@ -98,7 +98,7 @@ section p:nth-child(5) b {color:#859900;}
 .social {position:absolute; top:532px; left:320px;}
 .social li {display:inline-block;}
 .social li em {position:absolute; top:-99999px;}
-.social li a {display:inline-block; color:#002b36; margin:0 3px; padding:0 3px; border:0;}
+.social li a {display:inline-block; color:#002b36; margin:0 3px; padding:0 3px; border:0 !important;}
 .social li:nth-child(1) a:hover {color:#dc322f;}
 .social li:nth-child(2) a:hover {color:#859900;}
 .social li:nth-child(3) a:hover {color:#2aa198;}

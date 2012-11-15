@@ -9,6 +9,7 @@ RewriteRule ^tests/txtr-01/$ /tests/txtr-01.html
 RewriteRule ^tests/txtr-02/$ /tests/txtr-02.html
 RewriteRule ^tests/bounce/$ /tests/bounce.html
 RewriteRule ^tests/change/$ /tests/change.html
+RewriteRule ^tests/rotate/$ /tests/rotate.html
 RewriteRule ^tests/graph/$ /tests/graph.html
 RewriteRule ^tests/chain/$ /tests/chain.html
 RewriteRule ^tests/chain-full/$ /tests/chain-full.html
@@ -23,6 +24,7 @@ RewriteRule ^tests/txtr-01$ /tests/txtr-01/ [R=301,L]
 RewriteRule ^tests/txtr-02$ /tests/txtr-02/ [R=301,L]
 RewriteRule ^tests/bounce$ /tests/bounce/ [R=301,L]
 RewriteRule ^tests/change$ /tests/change/ [R=301,L]
+RewriteRule ^tests/rotate$ /tests/rotate/ [R=301,L]
 RewriteRule ^tests/graph$ /tests/graph/ [R=301,L]
 RewriteRule ^tests/chain$ /tests/chain/ [R=301,L]
 RewriteRule ^tests/chain-full$ /tests/chain-full/ [R=301,L]

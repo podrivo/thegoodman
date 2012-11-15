@@ -29,7 +29,7 @@ $(document).ready(function() {
 		/* vanish */
 		setTimeout(function(){$('h2, h3, .enemys').remove();},10000);
 		setTimeout(function(){$('.good').remove();},13200);
-		setTimeout(function(){$('.plus em, .plus b').remove();},17200);
+		setTimeout(function(){$('.plus em, .plus b').remove();},17600);
 	});
 
 	/* random enemys */

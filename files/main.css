@@ -15,7 +15,7 @@ a, .back {-webkit-transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
 
 /* Misc */
-.pat {width:100%; height:100%; z-index:2; background:-webkit-radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; position:fixed; top:0; left:0; display:block;}
+.pat {width:100% !important; height:100% !important; z-index:2; background:-webkit-radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; position:fixed !important; top:0 !important; left:0 !important; display:block !important; margin:0 !important;}
 header *, aside, article *, section {z-index:4;}
 header {height:100%;}
 
@@ -69,12 +69,12 @@ aside .go em {float:right;}
 .mn {font:400 14px 'Montserrat', sans-serif; text-transform:uppercase; position:fixed; bottom:10px; left:10px; z-index:5;}
 .mn li {display:inline-block; float:left;}
 .mn em {position:absolute; top:-99999px;}
-.mn a, .int .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}
+.mn a, .int .home a, .test .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}
 .mn .home a {width:30px;}
 .mn .home span:before {font-size:18px; position:relative; top:3px; left:-2px;}
-.mn a:hover, .mn a:focus, .int .about a, .home a {background:#268bd2;}
-.int .about a, .home a {cursor:default;}
-.int .home a {cursor:pointer;}
+.mn a:hover, .mn a:focus, .home a, .int.a .about a, .int.t .tests a {background:#268bd2;}
+.int.a .about a, .int.t .tests a, .home a {cursor:default;}
+.int .home a, .test .home a {cursor:pointer;}
 
 /* Audio */
 audio {position:absolute !important; display:none !important;}
@@ -84,9 +84,10 @@ audio {position:absolute !important; display:none !important;}
 .int body {height:auto;}
 .int section {max-width:700px; margin:auto; padding:40px 20px 40px; font:italic 400 22px 'Lato', serif; position:relative; -webkit-animation:sup 1.2s backwards;}
 .int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
-.int p, .int h4 {margin-bottom:35px; position:relative;}
+.int p, .int h4 {margin-bottom:25px; position:relative;}
 .int p:last-child {margin-bottom:0;}
 .int section a {color:#586e75; border-bottom:2px dashed #586e75;}
+.int section a:hover, .int section a:focus {color:#dc322f; border-bottom:2px dashed #dc322f;}
 
 section b, section em {font-weight:700;}
 section p:nth-child(2) b {color:#6c71c4;}
@@ -94,7 +95,7 @@ section p:nth-child(3) b {color:#268bd2;}
 section p:nth-child(4) b {color:#2aa198;}
 section p:nth-child(5) b {color:#859900;}
 
-.social {position:absolute; top:583px; left:320px;}
+.social {position:absolute; top:532px; left:320px;}
 .social li {display:inline-block;}
 .social li em {position:absolute; top:-99999px;}
 .social li a {display:inline-block; color:#002b36; margin:0 3px; padding:0 3px; border:0;}

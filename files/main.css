@@ -2,25 +2,25 @@
 
 /* http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-backface-visibility:hidden;-webkit-animation-fill-mode:both;}
+*{box-sizing:border-box;backface-visibility:hidden;animation-fill-mode:both;}
 
 /* @font-face */
 @font-face {font-family:'The Good Man'; src:url('fonts/thegoodman.eot'); src:url('fonts/thegoodman.eot?#iefix') format('embedded-opentype'), url('fonts/thegoodman.svg#The Good Man') format('svg'), url('fonts/thegoodman.woff') format('woff'), url('fonts/thegoodman.ttf') format('truetype'); font-weight:normal; font-style:normal;}
-span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
+article, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
-html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased;}
-body {font-family:'Apple Symbols','Arial Unicode MS'; background:#fdf6e3; background-image:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:-webkit-radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
-a, .back {-webkit-transition:all .2s; text-decoration:none;}
+html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; font-smoothing:antialiased;}
+body {background:#fdf6e3; background-image:gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
+a, .back {transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
 
 /* Misc */
-.pat {width:100% !important; height:100% !important; z-index:2; background:-webkit-radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; position:fixed !important; top:0 !important; left:0 !important; display:block !important; margin:0 !important;}
+.pat {width:100% !important; height:100% !important; z-index:2; background:radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; position:fixed !important; top:0 !important; left:0 !important; display:block !important; margin:0 !important;}
 header *, aside, article *, section {z-index:4;}
 header {height:100%;}
 
 /* The Good Man */
-h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; -webkit-animation:sup 1.8s .4s backwards;}
+h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; opacity:0; -webkit-animation:sup 1.8s .4s forwards;}
 .hide {opacity:0; -webkit-animation:hide .8s;}
 .sup {-webkit-animation:sup 1.8s backwards;}
 
@@ -31,10 +31,10 @@ h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72p
 {0%{opacity:1; -webkit-transform:translateY(0);} 100%{opacity:0; -webkit-transform:translateY(-20px);}}
 
 /* Load/Play */
-header, aside {display:block;}
+header, aside, .mn {display:block;}
 article {display:none;}
 
-.play {cursor:pointer; background:#eee8d5; color:#fdf6e3; width:70px; height:70px; border-radius:70px; position:absolute; top:49%; left:50%; margin:0 0 0 -35px; -webkit-transition:background .5s;  -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
+.play {cursor:pointer; background:#eee8d5; color:#fdf6e3; width:70px; height:70px; border-radius:70px; position:absolute; top:49%; left:50%; margin:0 0 0 -35px; transition:background .5s;  -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
 .play:hover {background:#268bd2;}
 .play:hover span {border-left-color:#fdf6e3; border-right-color:#fdf6e3;}
 .play p, .play span {width:70px; height:70px; display:block;}
@@ -54,7 +54,7 @@ aside div {display:table-cell; vertical-align:middle;}
 aside p {background:#002b36; color:#fdf8e8; font:italic 400 24px/34px 'Lato'; float:left; clear:both; padding:0 8px;}
 aside p:hover {opacity:.75}
 aside .b {margin-bottom:16px;}
-aside .go {background:#268bd2 !important; cursor:pointer; width:115px; -webkit-transition:width .3s;}
+aside .go {background:#268bd2 !important; cursor:pointer; width:115px; transition:width .3s;}
 aside .go:hover {width:139px;}
 aside .go em {float:right;}
 
@@ -77,12 +77,12 @@ aside .go em {float:right;}
 .int .home a, .test .home a {cursor:pointer;}
 
 /* Audio */
-audio {position:absolute !important; display:none !important;}
+audio {position:absolute !important; display:none !important; z-index:999999 !important;}
 
 /* About */
 .int {overflow:auto;}
 .int body {height:auto;}
-.int section {max-width:700px; margin:auto; padding:40px 20px 40px; font:italic 400 22px 'Lato', serif; position:relative; -webkit-animation:sup 1.2s backwards;}
+.int section {max-width:700px; margin:auto; padding:40px 20px 60px; opacity:0; font:italic 400 22px 'Lato', serif; position:relative; -webkit-animation:sup 1.2s forwards;}
 .int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
 .int p, .int h4 {margin-bottom:25px; position:relative;}
 .int p:last-child {margin-bottom:0;}

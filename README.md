@@ -14,7 +14,7 @@ Music by [Husky Rescue](http://husky-rescue.com/), served via [SoundCloud](http:
 
 Typography includes [Montserrat](http://www.google.com/webfonts/specimen/Montserrat), by Julieta Ulanovsky, and [Lato](http://www.google.com/webfonts/specimen/Lato), by Łukasz Dziedzic, and is served via [Google Web Fonts](http://google.com/webfonts).
 
-Icons provided by [IcoMoon](http://icomoon.io/) and mathematical symbols by [STIX Fonts](http://stixfonts.org/).
+Icon font builder provided by [IcoMoon](http://icomoon.io/).
 
 Special thanks to [Claudio Santos](http://voltzdesign.com.br/), [Lucas Franco](http://lucasfranco.com.br/) and [João Henrique](http://bebopstudio.com.br/).
 

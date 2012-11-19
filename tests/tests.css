@@ -77,12 +77,12 @@ body.up {background:#fdf6e3;}
 
 /* Change */
 .change h1, .change h2 {width:80px; height:80px; display:block; position:absolute; top:50%; left:50%; margin:-40px 0 0 -40px; border-radius:100px; text-align:center;}
-.change h1 {font-size:70px; line-height:80px; transform:scale(0) rotate(0); animation:red 1s cubic-bezier(1,-.36,0,1.3) forwards; z-index:1; padding-left:12px; opacity:1;}
-.change h2 {font-size:80px; line-height:90px; transform:scale(1) rotate(0); animation:blue 1s cubic-bezier(1,-.36,0,1.3) forwards; z-index:2; opacity:0;}
+.change h1 {font-size:70px; line-height:80px; transform:scale(0) rotate(0); animation:change-out 1s cubic-bezier(1,-.36,0,1.3) forwards; z-index:1; padding-left:12px; opacity:1;}
+.change h2 {font-size:80px; line-height:90px; transform:scale(1) rotate(0); animation:change-in 1s cubic-bezier(1,-.36,0,1.3) forwards; z-index:2; opacity:0;}
 
-@keyframes red
+@keyframes change-out
 {0%{transform:scale(1) rotate(0); z-index:2;} 100%{transform:scale(0) rotate(360deg); z-index:1; opacity:0;}}
-@keyframes blue
+@keyframes change-in
 {0%{transform:scale(0) rotate(0); z-index:1;} 100%{transform:scale(1) rotate(360deg); z-index:2; opacity:1;}}
 
 /* Graph */

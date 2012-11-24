@@ -6,7 +6,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* @font-face */
 @font-face {font-family:'The Good Man'; src:url('fonts/thegoodman.eot'); src:url('fonts/thegoodman.eot?#iefix') format('embedded-opentype'), url('fonts/thegoodman.svg#The Good Man') format('svg'), url('fonts/thegoodman.woff') format('woff'), url('fonts/thegoodman.ttf') format('truetype'); font-weight:normal; font-style:normal;}
-article, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
+article, .fs:after, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
 html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; font-smoothing:antialiased;}
@@ -31,9 +31,6 @@ h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72p
 {0%{opacity:1; -webkit-transform:translateY(0);} 100%{opacity:0; -webkit-transform:translateY(-20px);}}
 
 /* Load/Play */
-header, aside, .mn {display:block;}
-article {display:none;}
-
 .play {cursor:pointer; background:#eee8d5; color:#fdf6e3; width:70px; height:70px; border-radius:70px; position:absolute; top:49%; left:50%; margin:0 0 0 -35px; transition:background .5s;  -webkit-animation:bounce 1s; -webkit-transform:scale(0.85);}
 .play:hover {background:#268bd2;}
 .play:hover span {border-left-color:#fdf6e3; border-right-color:#fdf6e3;}
@@ -62,7 +59,7 @@ aside .go em {float:right;}
 .fs {background:#2aa198 !important; position:relative;}
 .fs:before, .fs:after {width:34px; height:34px; position:absolute; top:0; right:-39px; display:block;}
 .fs:before {content:''; background:#2aa198;}
-.fs:after {content:'\2922'; font-size:28px; font-style:normal; top:0; right:-46px;}
+.fs:after {content:'f'; font-size:26px; font-style:normal; top:3px; right:-43px;}
 .fs:hover, .fs:focus {background:#dc322f; color:#fdf6e3; cursor:pointer;}
 
 /* Menu */
@@ -75,9 +72,6 @@ aside .go em {float:right;}
 .mn a:hover, .mn a:focus, .home a, .int.a .about a, .int.t .tests a {background:#268bd2;}
 .int.a .about a, .int.t .tests a, .home a {cursor:default;}
 .int .home a, .test .home a {cursor:pointer;}
-
-/* Audio */
-audio {position:absolute !important; display:none !important; z-index:999999 !important;}
 
 /* About */
 .int {overflow:auto;}

@@ -15,9 +15,7 @@ $(function(){$('.contact').attr('href',$.rotate('znvygb:uryyb@cbqevib.pbz?fhowrp
 $(document).ready(function() {
 
 	/* toggle fullscreen */
-	$('.fs').toggle($(document).fullScreen() != null).click(function() {
-		$(document).toggleFullScreen()
-	});
+	$('.fs').toggle($(document).fullScreen() != null).click(function() {$(document).toggleFullScreen()});
 
 	/* play */
 	var audio = $('audio')[0];
@@ -38,6 +36,8 @@ $(document).ready(function() {
 		setTimeout(function(){$('.good').remove();},13200);
 		setTimeout(function(){$('.plus em, .plus b').remove();},17600);
 	});
+
+		
 
 	/* random enemys */
 	$('.enemys').find('p').each(function() {

@@ -2,7 +2,7 @@ RewriteEngine On
 RewriteBase /
 
 RewriteRule ^about/$ /about.html
-RewriteRule ^tests/$ /tests/index.html
+RewriteRule ^tests/$ /tests.html
 RewriteRule ^tests/up/$ /tests/up.html
 RewriteRule ^tests/up-full/$ /tests/up-full.html
 RewriteRule ^tests/txtr-01/$ /tests/txtr-01.html
@@ -15,6 +15,7 @@ RewriteRule ^tests/chain/$ /tests/chain.html
 RewriteRule ^tests/chain-full/$ /tests/chain-full.html
 RewriteRule ^tests/chain-down/$ /tests/chain-down.html
 RewriteRule ^tests/particles/$ /tests/particles.html
+RewriteRule ^tests/particles-ex/$ /tests/particles-ex.html
 
 RewriteRule ^about$ /about/ [R=301,L]
 RewriteRule ^tests$ /tests/ [R=301,L]
@@ -30,3 +31,4 @@ RewriteRule ^tests/chain$ /tests/chain/ [R=301,L]
 RewriteRule ^tests/chain-full$ /tests/chain-full/ [R=301,L]
 RewriteRule ^tests/chain-down$ /tests/chain-down/ [R=301,L]
 RewriteRule ^tests/particles$ /tests/particles/ [R=301,L]
+RewriteRule ^tests/particles-ex$ /tests/particles-ex/ [R=301,L]

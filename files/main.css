@@ -9,7 +9,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article, .fs:after, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
-html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; font-smoothing:antialiased;}
+html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important; text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
 body {background:#fdf6e3; background-image:gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
 a, .back {transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
@@ -20,7 +20,7 @@ header *, aside, article *, section {z-index:4;}
 header {height:100%;}
 
 /* The Good Man */
-h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; opacity:0; -webkit-animation:sup 1.8s .4s forwards;}
+h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 73px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; opacity:0; -webkit-animation:sup 1.8s .4s forwards;}
 .hide {opacity:0; -webkit-animation:hide .8s;}
 .sup {-webkit-animation:sup 1.8s backwards;}
 
@@ -49,27 +49,31 @@ h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 72p
 aside {max-width:740px; height:100%; margin:auto; padding:40px 20px 40px; display:none; position:relative;}
 aside div {display:table-cell; vertical-align:middle;}
 aside p {background:#002b36; color:#fdf8e8; font:italic 400 24px/34px 'Lato'; float:left; clear:both; padding:0 8px;}
-aside p:hover {opacity:.75}
 aside .b {margin-bottom:16px;}
-aside .go {background:#268bd2 !important; cursor:pointer; width:115px; transition:width .3s;}
-aside .go:hover {width:139px;}
-aside .go em {float:right;}
 
-/* Fullscreen */
-.fs {background:#2aa198 !important; position:relative;}
-.fs:before, .fs:after {width:34px; height:34px; position:absolute; top:0; right:-39px; display:block;}
-.fs:before {content:''; background:#2aa198;}
-.fs:after {content:'f'; font-size:26px; font-style:normal; top:3px; right:-43px;}
-.fs:hover, .fs:focus {background:#dc322f; color:#fdf6e3; cursor:pointer;}
+.go {background:#268bd2; width:98px; cursor:pointer; transition:all .2s;}
+.go em {float:right;}
+.go:hover {width:135px;}
+
+.fs, .st {width:135px; position:relative;}
+.st {background:#d33682;}
+.st em:hover {background:#d33682 !important; cursor:pointer;}
+.st em, .fs em {background:#93a1a1; width:36px; font:18px/34px 'The Good Man', sans-serif !important; position:absolute; top:0; right:-40px; text-align:center; transition:all .2s;}
+.st em {background:#839496;}
+.st em.on, .st em:hover {background:#d33682 !important; cursor:pointer;}
+.fs {background:#6c71c4;}
+.fs em {font-size:26px !important; a}
+.fs em.on, .fs em:hover {background:#6c71c4 !important; cursor:pointer;}
+
 
 /* Menu */
-.mn {font:400 14px 'Montserrat', sans-serif; text-transform:uppercase; position:fixed; bottom:10px; left:10px; z-index:5;}
-.mn li {display:inline-block; float:left;}
-.mn em {position:absolute; top:-99999px;}
-.mn a, .int .home a, .test .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}
-.mn .home a {width:30px;}
-.mn .home span:before {font-size:18px; position:relative; top:3px; left:-2px;}
-.mn a:hover, .mn a:focus, .home a, .int.a .about a, .int.t .tests a {background:#268bd2;}
+nav {font:400 14px 'Montserrat', sans-serif; text-transform:uppercase; position:fixed; bottom:10px; left:10px; z-index:5;}
+nav li {display:inline-block; float:left;}
+nav em {position:absolute; top:-99999px;}
+nav a, .int .home a, .test .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}
+nav .home a {width:30px;}
+nav .home span:before {font-size:18px; position:relative; top:3px; left:-2px;}
+nav a:hover, nav a:focus, .home a, .int.a .about a, .int.t .tests a {background:#268bd2;}
 .int.a .about a, .int.t .tests a, .home a {cursor:default;}
 .int .home a, .test .home a {cursor:pointer;}
 
@@ -98,3 +102,67 @@ section p:nth-child(5) b {color:#859900;}
 .social li:nth-child(3) a:hover {color:#2aa198;}
 .social li:nth-child(4) a:hover {color:#d33682;}
 .social li:nth-child(5) a:hover {color:#268bd2;}
+
+
+/* Subtitle */
+.sub footer {background:rgba(0,43,54,.97); color:#fdf8e8; width:100%; height:50px; text-align:center; display:none; opacity:0; font:700 20px/50px 'Montserrat', sans-serif; z-index:20; position:absolute; bottom:0; text-transform:uppercase; -webkit-animation:subtitle 120.7s 3.5s;}
+.sub footer p {-webkit-animation:sub; opacity:0; width:100%; position:absolute;}
+.sub footer p:nth-child(1) {-webkit-animation-duration:3.0s; -webkit-animation-delay:3.5s;}
+.sub footer p:nth-child(2) {-webkit-animation-duration:2.2s; -webkit-animation-delay:6.8s;}
+.sub footer p:nth-child(3) {-webkit-animation-duration:2.6s; -webkit-animation-delay:9.0s;}
+.sub footer p:nth-child(4) {-webkit-animation-duration:1.2s; -webkit-animation-delay:11.5s;}
+.sub footer p:nth-child(5) {-webkit-animation-duration:1.5s; -webkit-animation-delay:12.6s;}
+.sub footer p:nth-child(6) {-webkit-animation-duration:1.6s; -webkit-animation-delay:15.0s;}
+.sub footer p:nth-child(7) {-webkit-animation-duration:2.2s; -webkit-animation-delay:16.6s;}
+
+.sub footer p:nth-child(8) {-webkit-animation-duration:2.4s; -webkit-animation-delay:21.0s;}
+.sub footer p:nth-child(9) {-webkit-animation-duration:1.0s; -webkit-animation-delay:24.6s;}
+.sub footer p:nth-child(10) {-webkit-animation-duration:1.4s; -webkit-animation-delay:26.0s;}
+.sub footer p:nth-child(11) {-webkit-animation-duration:2.5s; -webkit-animation-delay:28.0s;}
+.sub footer p:nth-child(12) {-webkit-animation-duration:3.2s; -webkit-animation-delay:31.0s;}
+.sub footer p:nth-child(13) {-webkit-animation-duration:2.2s; -webkit-animation-delay:34.4s;}
+.sub footer p:nth-child(14) {-webkit-animation-duration:2.2s; -webkit-animation-delay:36.4s;}
+.sub footer p:nth-child(15) {-webkit-animation-duration:2.0s; -webkit-animation-delay:38.2s;}
+.sub footer p:nth-child(16) {-webkit-animation-duration:1.6s; -webkit-animation-delay:40.3s;}
+
+.sub footer p:nth-child(17) {-webkit-animation-duration:2.8s; -webkit-animation-delay:43.4s;}
+.sub footer p:nth-child(18) {-webkit-animation-duration:2.4s; -webkit-animation-delay:46.5s;}
+.sub footer p:nth-child(19) {-webkit-animation-duration:1.6s; -webkit-animation-delay:49.4s;}
+.sub footer p:nth-child(20) {-webkit-animation-duration:2.6s; -webkit-animation-delay:51.2s;}
+.sub footer p:nth-child(21) {-webkit-animation-duration:1.8s; -webkit-animation-delay:54.2s;}
+.sub footer p:nth-child(22) {-webkit-animation-duration:3.6s; -webkit-animation-delay:56.6s;}
+
+.sub footer p:nth-child(23) {-webkit-animation-duration:1.6s; -webkit-animation-delay:62.0s;}
+.sub footer p:nth-child(24) {-webkit-animation-duration:2.4s; -webkit-animation-delay:63.8s;}
+.sub footer p:nth-child(25) {-webkit-animation-duration:3.2s; -webkit-animation-delay:66.8s;}
+.sub footer p:nth-child(26) {-webkit-animation-duration:2.2s; -webkit-animation-delay:70.0s;}
+.sub footer p:nth-child(27) {-webkit-animation-duration:1.8s; -webkit-animation-delay:72.4s;}
+
+.sub footer p:nth-child(28) {-webkit-animation-duration:1.6s; -webkit-animation-delay:75.4s;}
+.sub footer p:nth-child(29) {-webkit-animation-duration:1.2s; -webkit-animation-delay:77.2s;}
+.sub footer p:nth-child(30) {-webkit-animation-duration:1.2s; -webkit-animation-delay:79.2s;}
+.sub footer p:nth-child(31) {-webkit-animation-duration:2.2s; -webkit-animation-delay:80.2s;}
+.sub footer p:nth-child(32) {-webkit-animation-duration:2.2s; -webkit-animation-delay:82.2s;}
+.sub footer p:nth-child(33) {-webkit-animation-duration:2.4s; -webkit-animation-delay:85.6s;}
+.sub footer p:nth-child(34) {-webkit-animation-duration:1.2s; -webkit-animation-delay:87.8s;}
+.sub footer p:nth-child(35) {-webkit-animation-duration:2.2s; -webkit-animation-delay:90.0s;}
+.sub footer p:nth-child(36) {-webkit-animation-duration:1.4s; -webkit-animation-delay:92.4s;}
+
+.sub footer p:nth-child(37) {-webkit-animation-duration:1.4s; -webkit-animation-delay:95.4s;}
+.sub footer p:nth-child(38) {-webkit-animation-duration:2.0s; -webkit-animation-delay:98.2s;}
+.sub footer p:nth-child(39) {-webkit-animation-duration:1.2s; -webkit-animation-delay:100.4s;}
+.sub footer p:nth-child(40) {-webkit-animation-duration:2.2s; -webkit-animation-delay:102.4s;}
+.sub footer p:nth-child(41) {-webkit-animation-duration:1.8s; -webkit-animation-delay:105.0s;}
+.sub footer p:nth-child(42) {-webkit-animation-duration:1.8s; -webkit-animation-delay:107.6s;}
+.sub footer p:nth-child(43) {-webkit-animation-duration:1.6s; -webkit-animation-delay:110.4s;}
+
+.sub footer p:nth-child(44) {-webkit-animation-duration:1.0s; -webkit-animation-delay:114.0s;}
+.sub footer p:nth-child(45) {-webkit-animation-duration:1.8s; -webkit-animation-delay:115.4s;}
+.sub footer p:nth-child(46) {-webkit-animation-duration:1.6s; -webkit-animation-delay:117.6s;}
+.sub footer p:nth-child(47) {-webkit-animation-duration:1.6s; -webkit-animation-delay:119.6s;}
+.sub footer p:nth-child(48) {-webkit-animation-duration:2.4s; -webkit-animation-delay:121.6s;}
+
+@-webkit-keyframes sub
+{0%{opacity:0;}20%,80%{opacity:1;}100%{opacity:0;}}
+@-webkit-keyframes subtitle
+{0%{opacity:0;}1%,99%{opacity:1;}100%{opacity:0;}}

@@ -35,15 +35,17 @@ And shoot them up with my bullets
 
 I wanted to be a great man  
 Like my father  
-The good man  
+A good man  
 Taking care of his loving family  
 Wife and son  
-Coming home everyday after work and read a newspaper  
-Build a house in the countryside I'd go fishing
+Coming home everyday after work and  
+Read a newspaper  
+Build a house in the countryside  
+I'd go fishing
 
 Now I got it all  
-Well, my wife doesn't love me anymore  
-But that's ok  
+Well, my wife doesn't love me anymore but
+That's ok  
 I've got the other plans already  
 I have it all figured out  
 I am the superman  

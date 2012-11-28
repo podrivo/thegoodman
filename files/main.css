@@ -105,7 +105,7 @@ section p:nth-child(5) b {color:#859900;}
 
 
 /* Subtitle */
-.sub footer {background:rgba(0,43,54,.97); color:#fdf8e8; width:100%; height:50px; text-align:center; display:none; opacity:0; font:700 20px/50px 'Montserrat', sans-serif; z-index:20; position:absolute; bottom:0; text-transform:uppercase; -webkit-animation:subtitle 120.7s 3.5s;}
+.sub footer {background:rgba(0,43,54,.97); color:#fdf8e8; width:100%; height:50px; text-align:center; display:none; opacity:0; font:700 20px/50px 'Montserrat', sans-serif; z-index:99 !important; position:absolute; bottom:0; text-transform:uppercase; -webkit-animation:subtitle 120.7s 3.5s;}
 .sub footer p {-webkit-animation:sub; opacity:0; width:100%; position:absolute;}
 .sub footer p:nth-child(1) {-webkit-animation-duration:3.0s; -webkit-animation-delay:3.5s;}
 .sub footer p:nth-child(2) {-webkit-animation-duration:2.2s; -webkit-animation-delay:6.8s;}

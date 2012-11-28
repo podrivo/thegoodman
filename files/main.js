@@ -23,20 +23,23 @@ $(document).ready(function() {
 		if ($('body').is('.full')){$(this).addClass('cursor');};
 
 		/* vanish */
-		if ($('body').is('.nosub')){$('footer').remove();};
 		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
-		setTimeout(function(){$('.good').remove();},13200);
-		setTimeout(function(){$('.plus em, .plus b').remove();},20000);
-		setTimeout(function(){$('.plus').remove();},22500);
-		setTimeout(function(){$('.fire').remove();},27000);
-		setTimeout(function(){$('.flames').remove();},30000);
-		setTimeout(function(){$('.smash').remove();},37800);
-		setTimeout(function(){$('.claw').remove();},47000);
-		
-		setTimeout(function(){$('footer').remove();},126000);
-		setTimeout(function(){$('body').removeClass('cursor');},126000);
+	setTimeout(function(){$('.good').remove();},13200);
+	setTimeout(function(){$('.plus').remove();},23500);
+	setTimeout(function(){$('.fire').remove();},27000);
+	setTimeout(function(){$('.flames').remove();},36000);
+	setTimeout(function(){$('.fight').remove();},39000);
+	setTimeout(function(){$('.smash').remove();},38000);
+	setTimeout(function(){$('.claw, .proud, .citizen, .virus').remove();},60000);
+	setTimeout(function(){$('.transition').remove();},60200);
+	setTimeout(function(){$('.bars, .shoot, .greatman').remove();},76000);
+	
+	if ($('body').is('.nosub')){$('footer').remove();};
+	setTimeout(function(){$('footer').remove();},126000);
+	setTimeout(function(){$('body').removeClass('cursor');},126000);
 	});
 
+	
 	
 	/* toggle fullscreen class */
 	$('.fs').click(function(){$('body').toggleClass('full');});
@@ -55,6 +58,12 @@ $(document).ready(function() {
 	$('.fight').find('p').each(function() {
 		$(this).css('top', Math.floor((Math.random())*100) + '%');
 		$(this).css('left', Math.floor((Math.random())*100) + '%');
+	});
+
+	/* virus */
+	$('.virus').find('p').each(function() {
+		$(this).css('top', Math.floor((Math.random())*90) + '%');
+		$(this).css('left', Math.floor((Math.random())*90) + '%');
 	});
 });
 

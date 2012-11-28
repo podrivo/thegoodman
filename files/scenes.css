@@ -348,10 +348,11 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Officer */
-.officer {width:400px; height:400px; z-index:20; font-size:180px; line-height:400px; text-align:center; color:#eee8d5; position:absolute; top:50%; left:50%; margin:-200px 0 0 -200px; -webkit-animation:bounceIn 2s 62s backwards, officerBlue 2s 64.4s forwards, changeOut 1s 76.2s cubic-bezier(1,-0.35,0,1.35) forwards;}
-.officer p {-webkit-animation:rotate 2s 62s; position:absolute; left:50%; margin-left:-90px;}
-.officer p:after {content:'*'; width:400px; height:400px; position:absolute; top:0; left:50%; margin-left:-200px; font-size:180px; color:#eee8d5; z-index:-1; -webkit-transform:scale(1.6);}
-.officer p:before {content:''; background:#eee8d5; width:100px; height:100px; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:100px; z-index:-1;}
+.officer {-webkit-animation:changeOut 1s 74.6s cubic-bezier(1,-0.35,0,1.35) forwards;}
+.officer p {width:400px; height:400px; z-index:20; font-size:180px; line-height:400px; text-align:center; color:#eee8d5; position:absolute; top:50%; left:50%; margin:-200px 0 0 -200px; -webkit-animation:bounceIn 2s 62s backwards, officerBlue 2s 64.4s forwards;}
+.officer b {-webkit-animation:rotate 2s 62s; position:absolute; left:50%; margin-left:-90px;}
+.officer b:after {content:'*'; width:400px; height:400px; position:absolute; top:0; left:50%; margin-left:-200px; font-size:180px; color:#eee8d5; z-index:-1; -webkit-transform:scale(1.6);}
+.officer b:before {content:''; background:#eee8d5; width:100px; height:100px; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:100px; z-index:-1;}
 
 @-webkit-keyframes officerBlue
 {to{color:#268bd2;}}
@@ -397,7 +398,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 /* Great Man */
 .greatman {width:100%;height:100%;}
-.greatman p {background:#2aa198; width:100%;height:0%;position:absolute; -webkit-animation:greatman 3.2s 74.2s ease-out forwards;}
+.greatman p {background:#2aa198; width:100%;height:0%;position:absolute; -webkit-animation:greatman 3.2s 74.2s cubic-bezier(0,.5,.3,1) forwards;}
 .greatman p:nth-child(1) {bottom:50%;}
 .greatman p:nth-child(2) {top:50%;}
 
@@ -406,7 +407,45 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Like My Father */
-.father p {width:240px; -webkit-animation:changeIn 1s 76.8s cubic-bezier(1,-0.35,0,1.35) forwards; font-size:240px; color:#eee8d5; position:absolute; top:50%; left:50%; margin:-120px 0 0 -120px; opacity:0;}
+.father {-webkit-animation:fatherIn 1s 75.6s forwards; opacity:0;}
+.father p {background:#fdf6e3; border:6px solid #2aa198; outline:8px solid #fdf6e3; width:120px; height:140px; -webkit-animation:fatherShow 1.5s 77.7s forwards, fatherGood 1s 79.2s forwards; font-size:85px; padding:22px 0 6px; text-align:center; color:#fdf6e3; position:absolute; top:50%; left:50%; margin:-60px 0 0 -60px;}
 
-@-webkit-keyframes changeIn
-{0%{-webkit-transform:scale(0) rotate(0); z-index:1;} 100%{-webkit-transform:scale(1) rotate(360deg); z-index:2; opacity:1;}}
+.hang p:after, .hang p:before {content:'';width:0;height:0;border-top:0;position:absolute;left:50%; margin-left:-20px;z-index:-1;}
+.hang p:after {border-bottom:20px solid #2aa198; border-right:20px solid transparent; border-left:20px solid transparent; top:-23px;}
+.hang p:before {border-bottom:20px solid #fdf6e3; border-right:20px solid transparent; border-left:20px solid transparent; top:-28px;}
+
+@-webkit-keyframes fatherIn {to{opacity:1;}}
+@-webkit-keyframes fatherShow {to{color:#2aa198;}}
+@-webkit-keyframes fatherGood {from{background:#fdf6e3;color:#2aa198;}to{background:#6c71c4; color:#fdf6e3;}}
+
+
+/* Loving Family */
+.loving p {background:#eee8d5; opacity:0; border:3px solid #2aa198; outline:4px solid #fdf6e3; color:#fdf6e3; font-size:40px; line-height:65px; text-align:center; width:90px; height:70px; position:absolute; top:50%; left:50%; -webkit-animation:fatherIn 1s forwards;}
+.loving p:nth-child(1) {width:46px; height:46px; line-height:46px; font-size:30px; margin:170px 0 0 -27px; -webkit-animation-delay:80.2s;}
+
+.loving p:nth-child(2) {width:80px; height:40px; line-height:35px; font-size:20px; margin:108px 0 0 5px; -webkit-animation-delay:80.4s;}
+.loving p:nth-child(3) {width:80px; height:40px; line-height:35px; font-size:20px; margin:108px 0 0 -93px; -webkit-animation-delay:80.6s;}
+
+.loving p:nth-child(4) {width:50px; height:50px; line-height:45px; font-size:30px; margin:34px 0 0 -131px; -webkit-animation-delay:80.8s;}
+.loving p:nth-child(5) {width:50px; height:50px; line-height:45px; font-size:25px; margin:34px 0 0 82px; -webkit-animation-delay:81.0s;}
+
+.loving p:nth-child(6) {width:100px; height:50px; line-height:45px; font-size:30px; margin:-135px 0 0 15px; -webkit-animation-delay:81.2s;}
+.loving p:nth-child(7) {width:100px; height:50px; line-height:45px; font-size:30px; margin:-135px 0 0 -114px; -webkit-animation-delay:81.4s;}
+.loving p:nth-child(8) {width:80px; height:50px; line-height:45px; font-size:30px; margin:-135px 0 0 145px; -webkit-animation-delay:81.6s;}
+.loving p:nth-child(9) {width:80px; height:50px; line-height:45px; font-size:30px; margin:-135px 0 0 -222px; -webkit-animation-delay:81.8s;}
+
+.loving p:nth-child(10) {width:80px; height:50px; line-height:45px; font-size:35px; margin:-205px 0 0 88px; -webkit-animation-delay:81.8s;}
+.loving p:nth-child(11) {width:80px; height:50px; line-height:45px; font-size:35px; margin:-205px 0 0 -168px; -webkit-animation-delay:82.0s;}
+
+.hang.loving p:after, .hang.loving p:before {margin:6px 0 0 -10px;}
+.hang.loving p:after {top:-17px; border-width:0px 10px 10px;}
+.hang.loving p:before {top:-21px; border-width:0px 10px 10px;}
+
+
+/* Wife and Son */
+.family p {opacity:0; border:5px solid #2aa198; outline:6px solid #fdf6e3; font-size:40px; line-height:65px; text-align:center; width:90px; height:70px; position:absolute; top:50%; left:50%; -webkit-animation:fatherIn 1s forwards;}
+.family p:nth-child(1) {background:#d33682; color:#fdf6e3; margin:-62px 0 0 -173px; -webkit-animation-delay:82.2s;}
+.family p:nth-child(2) {background:#268bd2; color:#fdf6e3; margin:-62px 0 0 84px; -webkit-animation-delay:82.8s;}
+.hang.family p:after, .hang.family p:before {margin-left:-12px;}
+.hang.family p:after {top:-17px; border-width:0px 12px 12px;}
+.hang.family p:before {top:-22px; border-width:0px 12px 12px;}

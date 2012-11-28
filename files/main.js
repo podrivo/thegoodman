@@ -24,23 +24,21 @@ $(document).ready(function() {
 
 		/* vanish */
 		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
-	setTimeout(function(){$('.good').remove();},13200);
-	setTimeout(function(){$('.plus').remove();},23500);
-	setTimeout(function(){$('.fire').remove();},27000);
-	setTimeout(function(){$('.flames').remove();},36000);
-	setTimeout(function(){$('.fight').remove();},39000);
-	setTimeout(function(){$('.smash').remove();},38000);
-	setTimeout(function(){$('.claw, .proud, .citizen, .virus').remove();},60000);
-	setTimeout(function(){$('.transition').remove();},60200);
-	setTimeout(function(){$('.bars, .shoot, .greatman').remove();},76000);
-	
-	if ($('body').is('.nosub')){$('footer').remove();};
-	setTimeout(function(){$('footer').remove();},126000);
-	setTimeout(function(){$('body').removeClass('cursor');},126000);
+		setTimeout(function(){$('.good').remove();},13200);
+		setTimeout(function(){$('.plus').remove();},23500);
+		setTimeout(function(){$('.fire').remove();},27000);
+		setTimeout(function(){$('.flames').remove();},36000);
+		setTimeout(function(){$('.fight').remove();},39000);
+		setTimeout(function(){$('.smash').remove();},38000);
+		setTimeout(function(){$('.claw, .proud, .citizen, .virus').remove();},60000);
+		setTimeout(function(){$('.transition').remove();},60200);
+		setTimeout(function(){$('.bars, .shoot, .greatman').remove();},76000);
+		
+		if ($('body').is('.nosub')){$('footer').remove();};
+		setTimeout(function(){$('footer').remove();},126000);
+		setTimeout(function(){$('body').removeClass('cursor');},126000);
 	});
 
-	
-	
 	/* toggle fullscreen class */
 	$('.fs').click(function(){$('body').toggleClass('full');});
 

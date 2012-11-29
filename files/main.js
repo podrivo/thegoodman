@@ -32,12 +32,17 @@ $(document).ready(function() {
 		setTimeout(function(){$('.smash').remove();},38000);
 		setTimeout(function(){$('.claw, .proud, .citizen, .virus').remove();},60000);
 		setTimeout(function(){$('.transition').remove();},60200);
-		setTimeout(function(){$('.bars, .shoot, .greatman').remove();},76000);
-		
-		if ($('body').is('.nosub')){$('footer').remove();};
-		setTimeout(function(){$('footer').remove();},126000);
-		setTimeout(function(){$('body').removeClass('cursor');},126000);
+		setTimeout(function(){$('.bars, .shoot').remove();},76000);
+		setTimeout(function(){$('.officer').remove();},76700);
+		setTimeout(function(){$('.greatman').remove();},77600);
+		setTimeout(function(){$('.heart').remove();},88000);
+		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
+		setTimeout(function(){$('.fish').remove();},98500);
 	});
+	
+	if ($('body').is('.nosub')){$('footer').remove();};
+	setTimeout(function(){$('footer').remove();},126000);
+	setTimeout(function(){$('body').removeClass('cursor');},126000);
 
 	/* toggle fullscreen class */
 	$('.fs').click(function(){$('body').toggleClass('full');});

@@ -13,7 +13,7 @@ article {display:none;}
 /* Animation; bg-color */
 article {user-select:none;}
 .full.cursor {cursor:none;}
-body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwards, bgDark 25s 37.6s, bgOrange .1s 60s forwards, bgCyan .1s 76.7s forwards, bgBlue2 8s 92.8s;}
+body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwards, bgDark 25s 37.6s, bgOrange .1s 60s forwards, bgCyan .1s 76.7s forwards, bgBlues 1s 92.8s forwards, bgHome .1s 127.4s forwards;}
 
 @-webkit-keyframes bgBlue
 {from,to{background:none; background-color:#268bd2;}}
@@ -33,8 +33,11 @@ body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwar
 @-webkit-keyframes bgCyan
 {from,to{background:none; background-color:#2aa198;}}
 
-@-webkit-keyframes bgBlue2
+@-webkit-keyframes bgBlues
 {from,to{background:none; background-color:#268bd2;}}
+
+@-webkit-keyframes bgHome
+{from,to{background:#fdf6e3; background-image:gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%);}}
 
 
 /* Progress */
@@ -262,8 +265,8 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 /* Citizen */
 .citizen * {position:absolute;top:50%;left:50%;display:block;}
 .citizen p {background:#859900; width:180px; height:180px; margin:-90px 0 0 -90px; border-radius:200px; z-index:20; -webkit-animation:citizen 1s 43.6s backwards, citizenGod 2s 55s ease-out forwards;}
-.citizen span:nth-child(2) {width:254px; height:254px; margin:-127px 0 0 -127px;}
-.citizen span:nth-child(3) {width:280px; height:280px; margin:-140px 0 0 -140px;}
+.citizen span:nth-child(2) {width:236px; height:236px; margin:-118px 0 0 -118px;}
+.citizen span:nth-child(3) {width:266px; height:266px; margin:-133px 0 0 -133px;}
 .citizen span:nth-child(4) {width:300px; height:300px; margin:-150px 0 0 -150px;}
 .citizen b {width:100%; height:100%; margin:-50% 0 0 -50%; display:block; border-radius:1000px; border-style:dotted; border-color:#2aa198; -webkit-animation:citizenSpan 2s backwards, citizenRotate 46s linear, goodAura 1s linear forwards;}
 .citizen span:nth-child(2) b {border-width:7px; -webkit-animation-delay:43.8s, 42s, 55.0s;}
@@ -340,14 +343,14 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Officer */
-.officer span {width:400px; height:400px; position:absolute; top:50%; left:50%; margin:-200px 0 0 -200px; z-index:20; display:block; opacity:0; -webkit-transform:perspective(2000) rotateY(0) scale(0); -webkit-animation:officerEnter 2s 62s forwards, wig 1s 64.1s infinite;}
+.officer span {width:400px; height:400px; position:absolute; top:50%; left:50%; margin:-200px 0 0 -200px; z-index:20; display:block; opacity:0; -webkit-animation:officerEnter 2s 62s forwards, wig 1s 64.1s infinite;}
 .officer p {width:400px; height:400px; z-index:20; font-size:180px; line-height:400px; text-align:center; color:#eee8d5; position:absolute; top:50%; left:50%; margin:-200px 0 0 -200px; -webkit-animation:officerBlue 2s 64.4s forwards;}
 .officer b {position:absolute; left:50%; margin-left:-90px;}
 .officer b:after {content:'*'; width:400px; height:400px; position:absolute; top:0; left:50%; margin-left:-200px; font-size:180px; color:#eee8d5; z-index:-1; -webkit-transform:scale(1.6);}
 .officer b:before {content:''; background:#eee8d5; width:100px; height:100px; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px; border-radius:100px; z-index:-1;}
 
+@-webkit-keyframes officerEnter {0%{opacity:0;-webkit-transform:scale(0);}50%{opacity:1;}100%{-webkit-transform:scale(1);opacity:1;}}
 @-webkit-keyframes officerBlue {to{color:#268bd2;}}
-@-webkit-keyframes officerEnter {60%{opacity:1;}100%{-webkit-transform:perspective(2000) rotateY(180deg) scale(1);opacity:1;}}
 
 @-webkit-keyframes changeOut
 {0%{-webkit-transform:scale(1) rotate(0); z-index:2;} 100%{-webkit-transform:scale(0) rotate(360deg); z-index:1; opacity:0;}}
@@ -536,10 +539,31 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 @-webkit-keyframes other {100%{border-bottom-color:#002b36;}}
 @-webkit-keyframes out {100%{border-bottom-color:#eee8d5;}}
-@-webkit-keyframes bad {100%{border-bottom-color:transparent;}}
+@-webkit-keyframes bad {0%{border-bottom-color:#eee8d5;}100%{border-bottom-color:transparent;}}
 
 
 /* I am */
-.am {font-size:95px; color:#073642; position:absolute; bottom:384px; left:50%; margin:0 0 0 -54px; -webkit-animation:hi 2.8s 107.6s backwards, fly 3.6s 114s ease-in-out forwards;}}
+.am {-webkit-animation:hide 2s 119.6s forwards; width:100%;height:100%;position:absolute;top:0;left:0;z-index:20;}
+.am p {font-size:95px; color:#073642; position:absolute; bottom:384px; left:50%; margin:0 0 0 -54px; -webkit-animation:hi 2.8s 107.6s backwards, day 5.6s 114s ease-in-out forwards;}
 
-@-webkit-keyframes fly {100%{bottom:-4px;}}
+@-webkit-keyframes day {100%{bottom:0;}}
+
+
+/* Like a butterfly */
+.fly {width:100%;height:100%;position:absolute;top:0;left:0;}
+.fly p {-webkit-animation:fly 15s; width:0; height:0; border-width:1px; border-style:solid; border-radius:2000px; position:absolute; bottom:0; left:50%;}
+.fly p:nth-child(1) {-webkit-animation-delay:119.6s; border-color:rgba(0,43,54,.40);}
+.fly p:nth-child(2) {-webkit-animation-delay:120.3s; border-color:rgba(0,43,54,.45);}
+.fly p:nth-child(3) {-webkit-animation-delay:121.1s; border-color:rgba(0,43,54,.30);}
+.fly em {-webkit-animation:goingUp 4.4s 119.6s ease-in-out forwards, pavil 1s 124.1s forwards; background:#eee8d5;width:0;height:0;position:absolute;bottom:0;left:50%;}
+
+@-webkit-keyframes fly {1%{border-width:1px;}60%{border-width:60px;}100%{width:2500px;height:2500px;border-width:0;bottom:-1250px;left:50%;margin-left:-1250px;}}
+@-webkit-keyframes goingUp {0%,55%{width:30px;margin-left:-15px;}100%{width:1px;height:100%;margin-left:0;}}
+
+@-webkit-keyframes pavil {0%{bottom:0;height:100%;}100%{top:0;height:0;}}
+
+
+/* Explode */
+.explode p {background:#fdf6e3;position:absolute;top:0;left:50%;width:0;height:0;border-radius:4000px; -webkit-animation:explode 2s 125.1s forwards, hide 2s 127.6s forwards;}
+
+@-webkit-keyframes explode {100%{width:4000px;height:4000px;top:-2000px;margin-left:-2000px}}

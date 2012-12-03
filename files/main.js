@@ -15,14 +15,15 @@ $(document).ready(function() {
 	$('.go').click(function() {
 		audio.play();
 		animation.css('display','block');
-		$('aside').removeClass('sup').addClass('hide').fadeOut(900);
+		$('aside').removeClass('sup').addClass('tchau').fadeOut(900);
 		$('body').addClass('bg').addClass('cursor');
 		$('footer').fadeIn('fast');
 		
 		/* remove cursor in fullscreen */
 		if ($('body').is('.full')){$(this).addClass('cursor');};
 	
-		/* vanish */
+	
+		/* vanish animation */
 		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
 		setTimeout(function(){$('.good').remove();},13200);
 		setTimeout(function(){$('.plus q').remove();},19000);
@@ -40,7 +41,10 @@ $(document).ready(function() {
 		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
 		setTimeout(function(){$('.fish').remove();},98500);
 		setTimeout(function(){$('.all').remove();},112000);
+		setTimeout(function(){$('.am, .fly').remove();},126500);
+		setTimeout(function(){$('.explode').remove();},130000);
 		
+		/* vanish animation */
 		if ($('body').is('.nosub')){$('footer').remove();};
 		setTimeout(function(){$('footer').remove();},126000);
 		setTimeout(function(){$('body').removeClass('cursor');},126000);

@@ -16,15 +16,16 @@ $(document).ready(function() {
 		audio.play();
 		animation.css('display','block');
 		$('aside').removeClass('sup').addClass('hide').fadeOut(900);
-		$('body').addClass('bg').addClass('cursor');;
+		$('body').addClass('bg').addClass('cursor');
 		$('footer').fadeIn('fast');
 		
 		/* remove cursor in fullscreen */
 		if ($('body').is('.full')){$(this).addClass('cursor');};
-
+	
 		/* vanish */
 		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
 		setTimeout(function(){$('.good').remove();},13200);
+		setTimeout(function(){$('.plus q').remove();},19000);
 		setTimeout(function(){$('.plus').remove();},23500);
 		setTimeout(function(){$('.fire').remove();},27000);
 		setTimeout(function(){$('.flames').remove();},36000);
@@ -38,6 +39,7 @@ $(document).ready(function() {
 		setTimeout(function(){$('.heart').remove();},88000);
 		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
 		setTimeout(function(){$('.fish').remove();},98500);
+		setTimeout(function(){$('.all').remove();},112000);
 	});
 	
 	if ($('body').is('.nosub')){$('footer').remove();};
@@ -65,8 +67,8 @@ $(document).ready(function() {
 
 	/* virus */
 	$('.virus').find('p').each(function() {
-		$(this).css('top', Math.floor((Math.random())*90) + '%');
-		$(this).css('left', Math.floor((Math.random())*90) + '%');
+		$(this).css('top', Math.floor((Math.random())*100) + '%');
+		$(this).css('left', Math.floor((Math.random())*100) + '%');
 	});
 });
 
@@ -74,6 +76,3 @@ $(window).load(function() {
 	$('.play p').fadeIn(1200);
 	$('.play span').fadeOut(700);
 });
-window.addEventListener('load', function() {
-    new FastClick(document.body);
-}, false);

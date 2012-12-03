@@ -21,13 +21,13 @@ header {height:100%; z-index:4;}
 
 /* The Good Man */
 h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 73px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; opacity:0; -webkit-animation:sup 1.8s .4s forwards;}
-.hide {-webkit-animation:hide .8s;}
+.tchau {opacity:0; -webkit-animation:tchau .8s;}
 .sup {-webkit-animation:sup 1.8s backwards;}
 
 @-webkit-keyframes sup
 {0%{opacity:0; -webkit-transform:translateY(50px);} 30%{opacity:0;} 100%{opacity:1; -webkit-transform:translateY(0);}}
 
-@-webkit-keyframes hide
+@-webkit-keyframes tchau
 {0%{opacity:1; -webkit-transform:translateY(0);} 100%{opacity:0; -webkit-transform:translateY(-20px);}}
 
 /* Load/Play */

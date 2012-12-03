@@ -8,7 +8,7 @@ $(document).ready(function() {
 	var audio = $('audio')[0];
 	var animation = $('article');
 	$('.play p').click(function() {
-		$('h1').addClass('hide');
+		$('h1').addClass('tchau');
 		$('.play, nav').fadeOut(900);
 		$('aside').fadeIn().addClass('sup').css('display','table');
 	});
@@ -40,11 +40,11 @@ $(document).ready(function() {
 		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
 		setTimeout(function(){$('.fish').remove();},98500);
 		setTimeout(function(){$('.all').remove();},112000);
+		
+		if ($('body').is('.nosub')){$('footer').remove();};
+		setTimeout(function(){$('footer').remove();},126000);
+		setTimeout(function(){$('body').removeClass('cursor');},126000);
 	});
-	
-	if ($('body').is('.nosub')){$('footer').remove();};
-	setTimeout(function(){$('footer').remove();},126000);
-	setTimeout(function(){$('body').removeClass('cursor');},126000);
 
 	/* toggle fullscreen class */
 	$('.fs').click(function(){$('body').toggleClass('full');});

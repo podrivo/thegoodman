@@ -23,7 +23,7 @@ $(document).ready(function() {
 		if ($('body').is('.full')){$(this).addClass('cursor');};
 	
 		/* vanish animation */
-		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
+		setTimeout(function(){$('header, h2, h3, .enemys').remove();},9500);
 		setTimeout(function(){$('.good').remove();},13200);
 		setTimeout(function(){$('.plus q').remove();},19000);
 		setTimeout(function(){$('.plus').remove();},23500);
@@ -34,20 +34,21 @@ $(document).ready(function() {
 		setTimeout(function(){$('.claw, .proud, .citizen, .virus').remove();},60000);
 		setTimeout(function(){$('.transition').remove();},60200);
 		setTimeout(function(){$('.bars, .shoot').remove();},76000);
-		setTimeout(function(){$('.officer').remove();},76700);
-		setTimeout(function(){$('.greatman').remove();},77600);
+		setTimeout(function(){$('.officer').remove();},76400);
+		setTimeout(function(){$('.greatman').remove();},77500);
 		setTimeout(function(){$('.heart').remove();},88000);
 		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
 		setTimeout(function(){$('.fish').remove();},98500);
 		setTimeout(function(){$('.all').remove();},112000);
 		setTimeout(function(){$('.am, .fly').remove();},126500);
-		setTimeout(function(){$('.explode, .box').remove();},130000);
+		setTimeout(function(){$('.box').remove();},127000);
+		setTimeout(function(){$('.explode').remove();},132000);
 		
 		/* vanish animation */
 		if ($('body').is('.nosub')){$('footer').remove();};
-		setTimeout(function(){$('footer, .progress').remove();},126000);
+		setTimeout(function(){$('footer, .progress').remove();},127500);
 		setTimeout(function(){$('body').removeClass('cursor').removeClass('bg');},126000);
-		setTimeout(function(){$('article').fadeOut();},130000);
+		setTimeout(function(){$('nav').fadeIn(900);},130000);
 	});
 
 	/* toggle fullscreen class */

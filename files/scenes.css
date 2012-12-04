@@ -13,7 +13,7 @@ article {display:none;}
 /* Animation; bg-color */
 article {user-select:none;}
 .full.cursor {cursor:none;}	
-body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwards, bgDark 25s 37.6s, bgGreen .1s 60s forwards, bgCyan .1s 76.7s forwards, bgBlues 1s 92.8s forwards, bgHome .1s 125.2s forwards;}
+body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwards, bgDark 25s 37.6s, bgOrange .1s 60s forwards, bgCyan .1s 76.7s forwards, bgBlues 1s 92.8s forwards, bgHome .1s 125.2s forwards;}
 
 @-webkit-keyframes bgBlue
 {from,to{background:none; background-color:#268bd2;}}
@@ -27,8 +27,8 @@ body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwar
 @-webkit-keyframes bgDark
 {from,to{background:none; background-color:#002b36;}}
 
-@-webkit-keyframes bgGreen
-{from,to{background:none; background-color:#859900;}}
+@-webkit-keyframes bgOrange
+{from,to{background:none; background-color:#d75f00;}}
 
 @-webkit-keyframes bgCyan
 {from,to{background:none; background-color:#2aa198;}}
@@ -41,11 +41,11 @@ body.bg {-webkit-animation:bgBlue 20s 10s, bgRed 20s 27s, bgGray 3s 34.2s forwar
 
 
 /* Progress */
-.progress {background:rgba(0,43,54,.4); width:100%; height:4px; display:block; position:absolute; bottom:0; left:0; z-index:999 !important; -webkit-animation:progress 128s linear;}
+.progress {background:rgba(0,43,54,.4); width:100%; height:4px; display:block; position:absolute; bottom:0; left:0; z-index:999 !important; -webkit-animation:progress 124.5s linear, hide 1.6s 124.5s forwards;}
 .sub .progress {background:rgba(238,232,213,.3);}
 
 @-webkit-keyframes progress
-{0%{width:0; opacity:1;} 99%{opacity:1;} 100%{width:100%; opacity:0;}}
+{0%{width:0;} 100%{width:100%;}}
 
 
 /* Hello */
@@ -282,8 +282,8 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 @-webkit-keyframes citizenRotate
 {0%{-webkit-transform:rotate(0);}100%{-webkit-transform:rotate(180deg);}}
 
-@-webkit-keyframes citizenGod {to{background:#859900;}}
-@-webkit-keyframes goodAura {to{border-color:#859900;}}
+@-webkit-keyframes citizenGod {to{background:#d75f00;}}
+@-webkit-keyframes goodAura {to{border-color:#d75f00;}}
 
 
 /* Proud */
@@ -306,7 +306,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 .proud span:nth-child(7) b {border-width:06px; -webkit-animation-delay:47.6s, 45s, 56.8s;}
 .proud span:nth-child(8) b {border-width:02px; -webkit-animation-delay:47.8s, 45s, 57.0s;}
 
-@-webkit-keyframes goAway {100%{border-color:#859900;}}
+@-webkit-keyframes goAway {100%{border-color:#d75f00;}}
 
 
 /* Virus */
@@ -336,7 +336,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Transition */
-.transition {width:2800px;height:2800px;position:absolute;top:50%;left:50%;margin:-1400px 0 0 -1400px; border:1px solid #859900; -webkit-animation:transition 2s 58s ease-in-out forwards; z-index:99; border-radius:1400px;}
+.transition {width:2800px;height:2800px;position:absolute;top:50%;left:50%;margin:-1400px 0 0 -1400px; border:1px solid #d75f00; -webkit-animation:transition 2s 58s ease-in-out forwards; z-index:99; border-radius:1400px;}
 
 @-webkit-keyframes transition
 {to{border-width:1400px;}}
@@ -392,7 +392,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Great Man */
-.greatman {width:100%;height:100%; -webkit-animation:fade 1s 77s; z-index:23;}
+.greatman {width:100%;height:100%; -webkit-animation:fade 1.5s 76.8s; z-index:23;}
 .greatman p {background:#2aa198; width:100%; height:0; z-index:22; position:absolute; left:0; -webkit-animation:greatman 2s 74.6s cubic-bezier(.1,.3,.5,1) forwards;}
 .greatman p:nth-child(1) {bottom:50%;}
 .greatman p:nth-child(2) {top:50%;}
@@ -402,7 +402,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* Like My Father */
-.father p {background:#fdf6e3; opacity:0; border:6px solid #2aa198; outline:8px solid #fdf6e3; width:120px; height:140px; -webkit-animation:in 1s 76.7s forwards, fatherShow 1.5s 77.7s forwards, fatherGood 1s 79.2s forwards; font-size:85px; padding:22px 0 6px; text-align:center; color:#fdf6e3; position:absolute; top:50%; left:50%; margin:-60px 0 0 -60px; z-index:22;}
+.father p {background:#fdf6e3; opacity:0; border:6px solid #2aa198; outline:8px solid #fdf6e3; width:120px; height:140px; -webkit-animation:in .1s 76.4s forwards, fatherShow 1.5s 77.7s forwards, fatherGood 1s 79.2s forwards; font-size:85px; padding:22px 0 6px; text-align:center; color:#fdf6e3; position:absolute; top:50%; left:50%; margin:-60px 0 0 -60px; z-index:22;}
 
 .hang p:after, .hang p:before {content:'';width:0;height:0;border-top:0;position:absolute;left:50%; margin-left:-20px;z-index:-1;}
 .hang p:after {border-bottom:20px solid #2aa198; border-right:20px solid transparent; border-left:20px solid transparent; top:-23px;}
@@ -500,12 +500,12 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 /* Fishing */
 .fish p {width:1px; height:1px; opacity:0; border:1px solid #eee8d5; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; -webkit-animation:fish 3.2s cubic-bezier(.07,.66,.44,.97);}
-.fish p:nth-child(1) {-webkit-animation-delay:92.0s;}
-.fish p:nth-child(2) {-webkit-animation-delay:92.4s;}
-.fish p:nth-child(3) {-webkit-animation-delay:92.8s;}
-.fish p:nth-child(4) {-webkit-animation-delay:93.2s;}
-.fish p:nth-child(5) {-webkit-animation-delay:94.0s;}
-.fish p:nth-child(6) {-webkit-animation-delay:95.2s;}
+.fish p:nth-child(1) {-webkit-animation-delay:92.8s;}
+.fish p:nth-child(2) {-webkit-animation-delay:93.0s;}
+.fish p:nth-child(3) {-webkit-animation-delay:93.3s;}
+.fish p:nth-child(4) {-webkit-animation-delay:93.8s;}
+.fish p:nth-child(5) {-webkit-animation-delay:94.6s;}
+.fish p:nth-child(6) {-webkit-animation-delay:95.9s;}
 
 @-webkit-keyframes fish
 {15%{opacity:1;} 20%{border-width:16px;} 40%{opacity:1;} 100%{width:460px; height:460px; margin:-230px 0 0 -230px; border-width:2px;}}
@@ -550,7 +550,7 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 
 /* I am */
-.am {-webkit-animation:hide 1.4s 110.4s forwards; width:100%;height:100%;position:absolute;top:0;left:0;z-index:20;}
+.am {-webkit-animation:hide 1s 110.3s forwards; width:100%;height:100%;position:absolute;top:0;left:0;z-index:20;}
 .am p {font-size:95px; color:#073642; position:absolute; bottom:384px; left:50%; margin:0 0 0 -54px; -webkit-animation:hi 2.8s 107.6s backwards;}
 
 
@@ -608,13 +608,22 @@ h3 em:last-child {background:#DC322F; width:220px; -webkit-animation-delay:1.7s;
 
 /* Like a butterfly */
 .fly {width:100%;height:100%;position:absolute;top:0;left:0; z-index:16;}
-.fly em {-webkit-animation:goingUp 3.8s 115.8s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards, pavil 3s 119.8s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards; background:#eee8d5;width:1px;height:0;position:absolute;bottom:0;left:50%;}
+.fly em {-webkit-animation:goingUp 5.6s 114.0s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards, pavil 3.2s 120s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards; background:#eee8d5;width:1px;height:0;position:absolute;bottom:0;left:50%;}
 
 @-webkit-keyframes goingUp {100%{height:100%;}}
 @-webkit-keyframes pavil {0%{bottom:0;height:100%;}100%{top:0;height:0;}}
 
 
 /* Explode */
-.explode {-webkit-animation:explode 2s 123.1s forwards, hide 2s 127.6s forwards; background:#fdf6e3;width:0;height:0;z-index:100; position:absolute;top:0;left:50%; border-radius:4000px;}
+.explode {-webkit-animation:explode 2.2s 123s forwards, hide 4s 127.6s forwards; background:#fdf6e3;width:0;height:0;z-index:100; position:absolute;top:0;left:50%; border-radius:4000px;}
 
 @-webkit-keyframes explode {100%{top:-50%;width:3000px;height:3000px;margin:-1500px 0 0 -1500px;}}
+
+
+/* Replay */
+.replay {background:#268bd2; color:#eee8d5; width:110px; position:absolute; top:50%; left:10px; font:italic 400 24px 'Lato', serif; padding:2px 6px 4px; margin-top:-14px; opacity:0; -webkit-transition:width .4s; -webkit-animation:replay 1.4s 130s forwards; text-transform:capitalize;}
+.replay em {float:right;}
+.replay:hover {width:132px;}
+
+@-webkit-keyframes replay
+{100%{opacity:1;}}

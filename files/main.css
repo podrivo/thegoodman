@@ -53,7 +53,7 @@ aside .b {margin-bottom:16px;}
 
 .go {background:#268bd2; width:98px; cursor:pointer; transition:all .2s;}
 .go em {float:right;}
-.go:hover {width:135px;}
+.go:hover, .go:focus, .go:active {width:135px;}
 
 .fs, .st {width:135px; position:relative;}
 .st {background:#d33682;}
@@ -62,7 +62,7 @@ aside .b {margin-bottom:16px;}
 .st em {background:#839496;}
 .st em.on, .st em:hover {background:#d33682 !important; cursor:pointer;}
 .fs {background:#6c71c4;}
-.fs em {font-size:26px !important; a}
+.fs em {font-size:26px !important;}
 .fs em.on, .fs em:hover {background:#6c71c4 !important; cursor:pointer;}
 
 

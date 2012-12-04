@@ -22,7 +22,6 @@ $(document).ready(function() {
 		/* remove cursor in fullscreen */
 		if ($('body').is('.full')){$(this).addClass('cursor');};
 	
-	
 		/* vanish animation */
 		setTimeout(function(){$('header, nav, h2, h3, .enemys').remove();},9500);
 		setTimeout(function(){$('.good').remove();},13200);
@@ -42,12 +41,13 @@ $(document).ready(function() {
 		setTimeout(function(){$('.fish').remove();},98500);
 		setTimeout(function(){$('.all').remove();},112000);
 		setTimeout(function(){$('.am, .fly').remove();},126500);
-		setTimeout(function(){$('.explode').remove();},130000);
+		setTimeout(function(){$('.explode, .box').remove();},130000);
 		
 		/* vanish animation */
 		if ($('body').is('.nosub')){$('footer').remove();};
-		setTimeout(function(){$('footer').remove();},126000);
-		setTimeout(function(){$('body').removeClass('cursor');},126000);
+		setTimeout(function(){$('footer, .progress').remove();},126000);
+		setTimeout(function(){$('body').removeClass('cursor').removeClass('bg');},126000);
+		setTimeout(function(){$('article').fadeOut();},130000);
 	});
 
 	/* toggle fullscreen class */

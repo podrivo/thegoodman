@@ -179,3 +179,389 @@ section p:nth-child(5) b {color:#859900;}
 {0%{opacity:0;}20%,80%{opacity:1;}100%{opacity:0;}}
 @-webkit-keyframes subtitle
 {0%{opacity:0;}1%,99%{opacity:1;}100%{opacity:0;}}
+
+
+/* Particles */
+.wave {width:100%;height:100%;}
+.wave div {width:12.5%; height:100%; display:inline-block; position:relative;}
+
+.wave p {position:absolute;}
+.wave p:nth-child(1) {height:50%; top:50%;}
+.wave p:nth-child(2) {height:49%; top:49%; left:10px;}
+.wave p:nth-child(3) {height:48%; top:48%; left:20px;}
+.wave p:nth-child(4) {height:47%; top:47%; left:30px;}
+.wave p:nth-child(5) {height:46%; top:46%; left:40px;}
+.wave p:nth-child(6) {height:45%; top:45%; left:50px;}
+.wave p:nth-child(7) {height:44%; top:44%; left:60px;}
+.wave p:nth-child(8) {height:43%; top:43%; left:70px;}
+.wave p:nth-child(9) {height:42%; top:42%; left:80px;}
+.wave p:nth-child(10) {height:41%; top:41%; left:90px;}
+.wave p:nth-child(11) {height:40%; top:40%; left:100px;}
+.wave p:nth-child(12) {height:39%; top:39%; left:110px;}
+.wave p:nth-child(13) {height:38%; top:38%; left:120px;}
+.wave p:nth-child(14) {height:37%; top:37%; left:130px;}
+.wave p:nth-child(15) {height:36%; top:36%; left:140px;}
+.wave p:nth-child(16) {height:35%; top:35%; left:150px;}
+.wave p:nth-child(17) {height:34%; top:34%; left:160px;}
+.wave p:nth-child(18) {height:33%; top:33%; left:170px;}
+.wave p:nth-child(19) {height:32%; top:32%; left:180px;}
+.wave p:nth-child(20) {height:31%; top:31%; left:190px;}
+.wave p:nth-child(21) {height:30%; top:30%; left:200px;}
+.wave p:nth-child(22) {height:29%; top:29%; left:210px;}
+.wave p:nth-child(23) {height:28%; top:28%; left:220px;}
+.wave p:nth-child(24) {height:27%; top:27%; left:230px;}
+.wave p:nth-child(25) {height:26%; top:26%; left:240px;}
+.wave p:nth-child(26) {height:25%; top:25%; left:250px;}
+.wave p:nth-child(27) {height:24%; top:24%; left:260px;}
+.wave p:nth-child(28) {height:23%; top:23%; left:270px;}
+.wave p:nth-child(29) {height:22%; top:22%; left:280px;}
+.wave p:nth-child(30) {height:21%; top:21%; left:290px;}
+
+/* Particles Extended */
+.wave b {width:20px; height:20px; border-radius:20px; position:absolute; animation:ex 14s ease-in-out infinite;}
+.wave p:nth-child(2) b {transform:scale(.97); background:rgba(238,232,213,1.0);}
+.wave p:nth-child(3) b {transform:scale(.94); background:rgba(238,232,213,.98);}
+.wave p:nth-child(4) b {transform:scale(.91); background:rgba(238,232,213,.96);}
+.wave p:nth-child(5) b {transform:scale(.88); background:rgba(238,232,213,.94);}
+.wave p:nth-child(6) b {transform:scale(.85); background:rgba(238,232,213,.92);}
+.wave p:nth-child(7) b {transform:scale(.82); background:rgba(238,232,213,.90);}
+.wave p:nth-child(8) b {transform:scale(.79); background:rgba(238,232,213,.88);}
+.wave p:nth-child(9) b {transform:scale(.76); background:rgba(238,232,213,.86);}
+.wave p:nth-child(10) b {transform:scale(.73); background:rgba(238,232,213,.84);}
+.wave p:nth-child(11) b {transform:scale(.70); background:rgba(238,232,213,.82);}
+.wave p:nth-child(12) b {transform:scale(.67); background:rgba(238,232,213,.80);}
+.wave p:nth-child(13) b {transform:scale(.64); background:rgba(238,232,213,.78);}
+.wave p:nth-child(14) b {transform:scale(.61); background:rgba(238,232,213,.76);}
+.wave p:nth-child(15) b {transform:scale(.58); background:rgba(238,232,213,.74);}
+.wave p:nth-child(16) b {transform:scale(.55); background:rgba(238,232,213,.72);}
+.wave p:nth-child(17) b {transform:scale(.52); background:rgba(238,232,213,.70);}
+.wave p:nth-child(18) b {transform:scale(.49); background:rgba(238,232,213,.68);}
+.wave p:nth-child(19) b {transform:scale(.46); background:rgba(238,232,213,.66);}
+.wave p:nth-child(20) b {transform:scale(.43); background:rgba(238,232,213,.64);}
+.wave p:nth-child(21) b {transform:scale(.40); background:rgba(238,232,213,.62);}
+.wave p:nth-child(22) b {transform:scale(.37); background:rgba(238,232,213,.60);}
+.wave p:nth-child(23) b {transform:scale(.34); background:rgba(238,232,213,.58);}
+.wave p:nth-child(24) b {transform:scale(.31); background:rgba(238,232,213,.56);}
+.wave p:nth-child(25) b {transform:scale(.28); background:rgba(238,232,213,.54);}
+.wave p:nth-child(26) b {transform:scale(.25); background:rgba(238,232,213,.52);}
+.wave p:nth-child(27) b {transform:scale(.22); background:rgba(238,232,213,.50);}
+.wave p:nth-child(28) b {transform:scale(.19); background:rgba(238,232,213,.48);}
+.wave p:nth-child(29) b {transform:scale(.16); background:rgba(238,232,213,.46);}
+.wave p:nth-child(30) b {transform:scale(.13); background:rgba(238,232,213,.44);}
+
+.wave div:nth-child(1) p:nth-child(2) b,
+.wave div:nth-child(2) p:nth-child(1) b
+{animation-delay:0.2s;}
+
+.wave div:nth-child(1) p:nth-child(3) b,
+.wave div:nth-child(2) p:nth-child(2) b,
+.wave div:nth-child(3) p:nth-child(1) b
+{animation-delay:0.4s;}
+
+.wave div:nth-child(1) p:nth-child(4) b,
+.wave div:nth-child(2) p:nth-child(3) b,
+.wave div:nth-child(3) p:nth-child(2) b,
+.wave div:nth-child(4) p:nth-child(1) b
+{animation-delay:0.6s;}
+
+.wave div:nth-child(1) p:nth-child(5) b,
+.wave div:nth-child(2) p:nth-child(4) b,
+.wave div:nth-child(3) p:nth-child(3) b,
+.wave div:nth-child(4) p:nth-child(2) b,
+.wave div:nth-child(5) p:nth-child(1) b
+{animation-delay:0.8s;}
+
+.wave div:nth-child(1) p:nth-child(6) b,
+.wave div:nth-child(2) p:nth-child(5) b,
+.wave div:nth-child(3) p:nth-child(4) b,
+.wave div:nth-child(4) p:nth-child(3) b,
+.wave div:nth-child(5) p:nth-child(2) b,
+.wave div:nth-child(6) p:nth-child(1) b
+{animation-delay:1.0s;}
+
+.wave div:nth-child(1) p:nth-child(7) b,
+.wave div:nth-child(2) p:nth-child(6) b,
+.wave div:nth-child(3) p:nth-child(5) b,
+.wave div:nth-child(4) p:nth-child(4) b,
+.wave div:nth-child(5) p:nth-child(3) b,
+.wave div:nth-child(6) p:nth-child(2) b,
+.wave div:nth-child(7) p:nth-child(1) b
+{animation-delay:1.2s;}
+
+.wave div:nth-child(1) p:nth-child(8) b,
+.wave div:nth-child(2) p:nth-child(7) b,
+.wave div:nth-child(3) p:nth-child(6) b,
+.wave div:nth-child(4) p:nth-child(5) b,
+.wave div:nth-child(5) p:nth-child(4) b,
+.wave div:nth-child(6) p:nth-child(3) b,
+.wave div:nth-child(7) p:nth-child(2) b,
+.wave div:nth-child(8) p:nth-child(1) b
+{animation-delay:1.4s;}
+
+.wave div:nth-child(1) p:nth-child(9) b,
+.wave div:nth-child(2) p:nth-child(8) b,
+.wave div:nth-child(3) p:nth-child(7) b,
+.wave div:nth-child(4) p:nth-child(6) b,
+.wave div:nth-child(5) p:nth-child(5) b,
+.wave div:nth-child(6) p:nth-child(4) b,
+.wave div:nth-child(7) p:nth-child(3) b,
+.wave div:nth-child(8) p:nth-child(2) b
+{animation-delay:1.6s;}
+
+.wave div:nth-child(1) p:nth-child(10) b,
+.wave div:nth-child(2) p:nth-child(9) b,
+.wave div:nth-child(3) p:nth-child(8) b,
+.wave div:nth-child(4) p:nth-child(7) b,
+.wave div:nth-child(5) p:nth-child(6) b,
+.wave div:nth-child(6) p:nth-child(5) b,
+.wave div:nth-child(7) p:nth-child(4) b,
+.wave div:nth-child(8) p:nth-child(3) b
+{animation-delay:1.8s;}
+
+.wave div:nth-child(1) p:nth-child(11) b,
+.wave div:nth-child(2) p:nth-child(10) b,
+.wave div:nth-child(3) p:nth-child(9) b,
+.wave div:nth-child(4) p:nth-child(8) b,
+.wave div:nth-child(5) p:nth-child(7) b,
+.wave div:nth-child(6) p:nth-child(6) b,
+.wave div:nth-child(7) p:nth-child(5) b,
+.wave div:nth-child(8) p:nth-child(4) b
+{animation-delay:2.0s;}
+
+.wave div:nth-child(1) p:nth-child(12) b,
+.wave div:nth-child(2) p:nth-child(11) b,
+.wave div:nth-child(3) p:nth-child(10) b,
+.wave div:nth-child(4) p:nth-child(9) b,
+.wave div:nth-child(5) p:nth-child(8) b,
+.wave div:nth-child(6) p:nth-child(7) b,
+.wave div:nth-child(7) p:nth-child(6) b,
+.wave div:nth-child(8) p:nth-child(5) b
+{animation-delay:2.2s;}
+
+.wave div:nth-child(1) p:nth-child(13) b,
+.wave div:nth-child(2) p:nth-child(12) b,
+.wave div:nth-child(3) p:nth-child(11) b,
+.wave div:nth-child(4) p:nth-child(10) b,
+.wave div:nth-child(5) p:nth-child(9) b,
+.wave div:nth-child(6) p:nth-child(8) b,
+.wave div:nth-child(7) p:nth-child(7) b,
+.wave div:nth-child(8) p:nth-child(6) b
+{animation-delay:2.4s;}
+
+.wave div:nth-child(1) p:nth-child(14) b,
+.wave div:nth-child(2) p:nth-child(13) b,
+.wave div:nth-child(3) p:nth-child(12) b,
+.wave div:nth-child(4) p:nth-child(11) b,
+.wave div:nth-child(5) p:nth-child(10) b,
+.wave div:nth-child(6) p:nth-child(9) b,
+.wave div:nth-child(7) p:nth-child(8) b,
+.wave div:nth-child(8) p:nth-child(7) b
+{animation-delay:2.6s;}
+
+.wave div:nth-child(1) p:nth-child(15) b,
+.wave div:nth-child(2) p:nth-child(14) b,
+.wave div:nth-child(3) p:nth-child(13) b,
+.wave div:nth-child(4) p:nth-child(12) b,
+.wave div:nth-child(5) p:nth-child(11) b,
+.wave div:nth-child(6) p:nth-child(10) b,
+.wave div:nth-child(7) p:nth-child(9) b,
+.wave div:nth-child(8) p:nth-child(8) b
+{animation-delay:2.8s;}
+
+.wave div:nth-child(1) p:nth-child(16) b,
+.wave div:nth-child(2) p:nth-child(15) b,
+.wave div:nth-child(3) p:nth-child(14) b,
+.wave div:nth-child(4) p:nth-child(13) b,
+.wave div:nth-child(5) p:nth-child(12) b,
+.wave div:nth-child(6) p:nth-child(11) b,
+.wave div:nth-child(7) p:nth-child(10) b,
+.wave div:nth-child(8) p:nth-child(9) b
+{animation-delay:3.0s;}
+
+.wave div:nth-child(1) p:nth-child(17) b,
+.wave div:nth-child(2) p:nth-child(16) b,
+.wave div:nth-child(3) p:nth-child(15) b,
+.wave div:nth-child(4) p:nth-child(14) b,
+.wave div:nth-child(5) p:nth-child(13) b,
+.wave div:nth-child(6) p:nth-child(12) b,
+.wave div:nth-child(7) p:nth-child(11) b,
+.wave div:nth-child(8) p:nth-child(10) b
+{animation-delay:3.2s;}
+
+.wave div:nth-child(1) p:nth-child(18) b,
+.wave div:nth-child(2) p:nth-child(17) b,
+.wave div:nth-child(3) p:nth-child(16) b,
+.wave div:nth-child(4) p:nth-child(15) b,
+.wave div:nth-child(5) p:nth-child(14) b,
+.wave div:nth-child(6) p:nth-child(13) b,
+.wave div:nth-child(7) p:nth-child(12) b,
+.wave div:nth-child(8) p:nth-child(11) b
+{animation-delay:3.4s;}
+
+.wave div:nth-child(1) p:nth-child(19) b,
+.wave div:nth-child(2) p:nth-child(18) b,
+.wave div:nth-child(3) p:nth-child(17) b,
+.wave div:nth-child(4) p:nth-child(16) b,
+.wave div:nth-child(5) p:nth-child(15) b,
+.wave div:nth-child(6) p:nth-child(14) b,
+.wave div:nth-child(7) p:nth-child(13) b,
+.wave div:nth-child(8) p:nth-child(12) b
+{animation-delay:3.6s;}
+
+.wave div:nth-child(1) p:nth-child(20) b,
+.wave div:nth-child(2) p:nth-child(19) b,
+.wave div:nth-child(3) p:nth-child(18) b,
+.wave div:nth-child(4) p:nth-child(17) b,
+.wave div:nth-child(5) p:nth-child(16) b,
+.wave div:nth-child(6) p:nth-child(15) b,
+.wave div:nth-child(7) p:nth-child(14) b,
+.wave div:nth-child(8) p:nth-child(13) b
+{animation-delay:3.8s;}
+
+.wave div:nth-child(1) p:nth-child(21) b,
+.wave div:nth-child(2) p:nth-child(20) b,
+.wave div:nth-child(3) p:nth-child(19) b,
+.wave div:nth-child(4) p:nth-child(18) b,
+.wave div:nth-child(5) p:nth-child(17) b,
+.wave div:nth-child(6) p:nth-child(16) b,
+.wave div:nth-child(7) p:nth-child(15) b,
+.wave div:nth-child(8) p:nth-child(14) b
+{animation-delay:4.0s;}
+
+.wave div:nth-child(1) p:nth-child(22) b,
+.wave div:nth-child(2) p:nth-child(21) b,
+.wave div:nth-child(3) p:nth-child(20) b,
+.wave div:nth-child(4) p:nth-child(19) b,
+.wave div:nth-child(5) p:nth-child(18) b,
+.wave div:nth-child(6) p:nth-child(17) b,
+.wave div:nth-child(7) p:nth-child(16) b,
+.wave div:nth-child(8) p:nth-child(15) b
+{animation-delay:4.2s;}
+
+.wave div:nth-child(1) p:nth-child(23) b,
+.wave div:nth-child(2) p:nth-child(22) b,
+.wave div:nth-child(3) p:nth-child(21) b,
+.wave div:nth-child(4) p:nth-child(20) b,
+.wave div:nth-child(5) p:nth-child(19) b,
+.wave div:nth-child(6) p:nth-child(18) b,
+.wave div:nth-child(7) p:nth-child(17) b,
+.wave div:nth-child(8) p:nth-child(16) b
+{animation-delay:4.4s;}
+
+.wave div:nth-child(1) p:nth-child(24) b,
+.wave div:nth-child(2) p:nth-child(23) b,
+.wave div:nth-child(3) p:nth-child(22) b,
+.wave div:nth-child(4) p:nth-child(21) b,
+.wave div:nth-child(5) p:nth-child(20) b,
+.wave div:nth-child(6) p:nth-child(19) b,
+.wave div:nth-child(7) p:nth-child(18) b,
+.wave div:nth-child(8) p:nth-child(17) b
+{animation-delay:4.6s;}
+
+.wave div:nth-child(1) p:nth-child(25) b,
+.wave div:nth-child(2) p:nth-child(24) b,
+.wave div:nth-child(3) p:nth-child(23) b,
+.wave div:nth-child(4) p:nth-child(22) b,
+.wave div:nth-child(5) p:nth-child(21) b,
+.wave div:nth-child(6) p:nth-child(20) b,
+.wave div:nth-child(7) p:nth-child(19) b,
+.wave div:nth-child(8) p:nth-child(18) b
+{animation-delay:4.8s;}
+
+.wave div:nth-child(1) p:nth-child(26) b,
+.wave div:nth-child(2) p:nth-child(25) b,
+.wave div:nth-child(3) p:nth-child(24) b,
+.wave div:nth-child(4) p:nth-child(23) b,
+.wave div:nth-child(5) p:nth-child(22) b,
+.wave div:nth-child(6) p:nth-child(21) b,
+.wave div:nth-child(7) p:nth-child(20) b,
+.wave div:nth-child(8) p:nth-child(19) b
+{animation-delay:5.0s;}
+
+.wave div:nth-child(1) p:nth-child(27) b,
+.wave div:nth-child(2) p:nth-child(26) b,
+.wave div:nth-child(3) p:nth-child(25) b,
+.wave div:nth-child(4) p:nth-child(24) b,
+.wave div:nth-child(5) p:nth-child(23) b,
+.wave div:nth-child(6) p:nth-child(22) b,
+.wave div:nth-child(7) p:nth-child(21) b,
+.wave div:nth-child(8) p:nth-child(20) b
+{animation-delay:5.2s;}
+
+.wave div:nth-child(1) p:nth-child(28) b,
+.wave div:nth-child(2) p:nth-child(27) b,
+.wave div:nth-child(3) p:nth-child(26) b,
+.wave div:nth-child(4) p:nth-child(25) b,
+.wave div:nth-child(5) p:nth-child(24) b,
+.wave div:nth-child(6) p:nth-child(23) b,
+.wave div:nth-child(7) p:nth-child(22) b,
+.wave div:nth-child(8) p:nth-child(21) b
+{animation-delay:5.4s;}
+
+.wave div:nth-child(1) p:nth-child(29) b,
+.wave div:nth-child(2) p:nth-child(28) b,
+.wave div:nth-child(3) p:nth-child(27) b,
+.wave div:nth-child(4) p:nth-child(26) b,
+.wave div:nth-child(5) p:nth-child(25) b,
+.wave div:nth-child(6) p:nth-child(24) b,
+.wave div:nth-child(7) p:nth-child(23) b,
+.wave div:nth-child(8) p:nth-child(22) b
+{animation-delay:5.6s;}
+
+.wave div:nth-child(1) p:nth-child(30) b,
+.wave div:nth-child(2) p:nth-child(29) b,
+.wave div:nth-child(3) p:nth-child(28) b,
+.wave div:nth-child(4) p:nth-child(27) b,
+.wave div:nth-child(5) p:nth-child(26) b,
+.wave div:nth-child(6) p:nth-child(25) b,
+.wave div:nth-child(7) p:nth-child(24) b,
+.wave div:nth-child(8) p:nth-child(23) b
+{animation-delay:5.8s;}
+
+.wave div:nth-child(2) p:nth-child(30) b,
+.wave div:nth-child(3) p:nth-child(29) b,
+.wave div:nth-child(4) p:nth-child(28) b,
+.wave div:nth-child(5) p:nth-child(27) b,
+.wave div:nth-child(6) p:nth-child(26) b,
+.wave div:nth-child(7) p:nth-child(25) b,
+.wave div:nth-child(8) p:nth-child(24) b
+{animation-delay:6.0s;}
+
+.wave div:nth-child(3) p:nth-child(30) b,
+.wave div:nth-child(4) p:nth-child(29) b,
+.wave div:nth-child(5) p:nth-child(28) b,
+.wave div:nth-child(6) p:nth-child(27) b,
+.wave div:nth-child(7) p:nth-child(26) b,
+.wave div:nth-child(8) p:nth-child(25) b
+{animation-delay:6.2s;}
+
+.wave div:nth-child(4) p:nth-child(30) b,
+.wave div:nth-child(5) p:nth-child(29) b,
+.wave div:nth-child(6) p:nth-child(28) b,
+.wave div:nth-child(7) p:nth-child(27) b,
+.wave div:nth-child(8) p:nth-child(26) b
+{animation-delay:6.4s;}
+
+.wave div:nth-child(5) p:nth-child(30) b,
+.wave div:nth-child(6) p:nth-child(29) b,
+.wave div:nth-child(7) p:nth-child(28) b,
+.wave div:nth-child(8) p:nth-child(27) b
+{animation-delay:6.6s;}
+
+.wave div:nth-child(6) p:nth-child(30) b,
+.wave div:nth-child(7) p:nth-child(29) b,
+.wave div:nth-child(8) p:nth-child(28) b
+{animation-delay:6.8s;}
+
+.wave div:nth-child(7) p:nth-child(30) b,
+.wave div:nth-child(8) p:nth-child(29) b
+{animation-delay:7.0s;}
+
+.wave div:nth-child(8) p:nth-child(30) b
+{animation-delay:7.2s;}
+
+@keyframes wave {
+0%,100%{top:0;}
+20%{top:55%; width:9px; height:9px;}
+35%{top:40%; width:12px; height:12px;}
+50%{top:80%; width:2px; height:2px;}}

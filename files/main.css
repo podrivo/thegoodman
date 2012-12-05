@@ -58,12 +58,17 @@ aside .b {margin-bottom:16px;}
 .fs, .st {width:135px; position:relative;}
 .st {background:#d33682;}
 .st em:hover {background:#d33682 !important; cursor:pointer;}
-.st em, .fs em {background:#93a1a1; width:36px; font:18px/34px 'The Good Man', sans-serif !important; position:absolute; top:0; right:-40px; text-align:center; transition:all .2s;}
-.st em {background:#839496;}
-.st em.on, .st em:hover {background:#d33682 !important; cursor:pointer;}
+.st em, .fs em {background:rgba(0,43,54,.6); color:rgba(238,232,213,.35); width:36px; height:34px; font:18px/34px 'The Good Man', sans-serif !important; position:absolute; top:0; right:-40px; text-align:center; transition:all .2s;}
+.st em.on, .st em:hover {background:#d33682 !important; cursor:pointer; color:#eee8d5;}
+.st em span:nth-child(2) {color:rgba(238,232,213,.35);}
 .fs {background:#6c71c4;}
 .fs em {font-size:26px !important;}
-.fs em.on, .fs em:hover {background:#6c71c4 !important; cursor:pointer;}
+.fs em.on, .fs em:hover {background:#6c71c4 !important; cursor:pointer; color:#eee8d5;}
+
+.st em span {width:36px; position:absolute; left:0;}
+.st em span:nth-child(2), .st em.on span:nth-child(1), .st em span:nth-child(1), .st em.on span:nth-child(2) {-webkit-transition:all .2s;}
+.st em span:nth-child(2), .st em.on span:nth-child(1), .st em:hover span:nth-child(1) {-webkit-transform:scale(1) rotate(0);}
+.st em span:nth-child(1), .st em.on span:nth-child(2), .st em:hover span:nth-child(2) {-webkit-transform:scale(0) rotate(270deg);}
 
 
 /* Menu */

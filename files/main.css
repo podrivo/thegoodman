@@ -182,7 +182,7 @@ section p:nth-child(5) b {color:#859900;}
 
 
 /* Particles */
-.wave {width:100%;height:100%;}
+.wave {width:100%;height:100%;position:absolute;top:0;left:0;}
 .wave div {width:12.5%; height:100%; display:inline-block; position:relative;}
 
 .wave p {position:absolute;}

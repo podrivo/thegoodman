@@ -63,7 +63,7 @@ $(document).ready(function() {
 			j = 0;
 			toappend += '</div>';
 		}
-		setTimeout(function(){$('.part').hide().append(toappend).fadeIn(1600);},131000);
+		setTimeout(function(){$('.wave').hide().append(toappend).fadeIn(2400);},131000);
 	});
 
 	/* toggle fullscreen class */

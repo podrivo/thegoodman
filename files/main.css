@@ -218,7 +218,7 @@ section p:nth-child(5) b {color:#859900;}
 .wave p:nth-child(30) {height:21%; top:21%; left:290px;}
 
 /* Particles Extended */
-.wave b {width:20px; height:20px; border-radius:20px; position:absolute; animation:ex 14s ease-in-out infinite;}
+.wave b {width:20px; height:20px; border-radius:20px; position:absolute; animation:wave 14s ease-in-out infinite;}
 .wave p:nth-child(2) b {transform:scale(.97); background:rgba(238,232,213,1.0);}
 .wave p:nth-child(3) b {transform:scale(.94); background:rgba(238,232,213,.98);}
 .wave p:nth-child(4) b {transform:scale(.91); background:rgba(238,232,213,.96);}

@@ -60,6 +60,7 @@ $(document).ready(function() {
 			for(; j < 30; j++) {
 				toappend += '<p><b></b></p>';
 			}
+			j = 0;
 			toappend += '</div>';
 		}
 		setTimeout(function(){$('.part').hide().append(toappend).fadeIn(1600);},131000);

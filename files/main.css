@@ -78,9 +78,17 @@ nav em {position:absolute; top:-99999px;}
 nav a, .int .home a, .test .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}
 nav .home a {width:30px;}
 nav .home span:before {font-size:18px; position:relative; top:3px; left:-2px;}
-nav a:hover, nav a:focus, .home a, .int.a .about a, .int.t .tests a {background:#268bd2;}
+nav a:hover, nav a:focus, .home a, .home a:hover, .int.a .about a, .int.t .tests a {background:#268bd2;}
 .int.a .about a, .int.t .tests a, .home a {cursor:default;}
 .int .home a, .test .home a {cursor:pointer;}
+
+
+/* Share */
+.share, .fb, .tw, .gp {position:absolute !important;bottom:0 !important;right:0 !important;margin:0 !important;padding:0 !important;height:20px; z-index:99;}
+.share {bottom:10px !important;right:10px !important;}
+.tw {right:60px !important;}
+.gp {right:180px !important;}
+
 
 /* About */
 .int {overflow:auto;}

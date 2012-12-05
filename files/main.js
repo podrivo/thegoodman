@@ -57,9 +57,7 @@ $(document).ready(function() {
 		var toappend = '', i = j = 0;
 		for(; i < 8; i++) {
 			toappend += '<div>';
-			for(; j < 30; j++) {
-				toappend += '<p><b></b></p>';
-			}
+			for(; j < 30; j++) {toappend += '<p><b></b></p>';}
 			j = 0;
 			toappend += '</div>';
 		}

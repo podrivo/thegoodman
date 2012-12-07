@@ -10,7 +10,7 @@ Also, this is my graduation project in Graphic Design. It was intended to be a s
 If you’d like to talk, get in touch: @podrivo
 
 ## Credits
-Music by [Husky Rescue](http://husky-rescue.com/), served via [SoundCloud](http://soundcloud.com/husky-rescue/11-the-good-man)
+[The Good Man](http://soundcloud.com/husky-rescue/11-the-good-man), song by [Husky Rescue](http://husky-rescue.com/).
 
 Typography includes [Montserrat](http://www.google.com/webfonts/specimen/Montserrat), by Julieta Ulanovsky, and [Lato](http://www.google.com/webfonts/specimen/Lato), by Łukasz Dziedzic, and is served via [Google Web Fonts](http://google.com/webfonts).
 

@@ -19,6 +19,12 @@ a:hover, a:focus {opacity:1; text-decoration:none;}
 header *, aside, article *, section {z-index:4;}
 header {height:100%; z-index:4;}
 
+/* Warn */
+.warn {width:100%; position:absolute; bottom:10px; text-align:center; text-transform:uppercase; font:400 14px/30px 'Montserrat', sans-serif; z-index:5; transition:background .6s; animation:in .8s 1.4s forwards; opacity:0;}
+.warn a {background:#073642; display:inline-block; height:30px; color:#eee8d5; padding:0 8px;}
+.warn a:hover, .warn a:focus {background:#2aa198;}
+.chrome .warn {display:none;}
+
 /* The Good Man */
 h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 73px 'Montserrat', sans-serif; color:#073642; text-align:center; text-transform:uppercase; letter-spacing:20px; opacity:0; animation:sup 1.8s .4s forwards;}
 .tchau {opacity:0; animation:tchau .8s;}
@@ -72,7 +78,7 @@ aside .b {margin-bottom:16px;}
 
 
 /* Menu */
-nav {font:400 14px 'Montserrat', sans-serif; text-transform:uppercase; position:fixed; bottom:10px; left:10px; z-index:5;}
+nav {font:400 14px 'Montserrat', sans-serif; text-transform:uppercase; position:fixed; bottom:10px; left:10px; z-index:20;}
 nav li {display:inline-block; float:left;}
 nav em {position:absolute; top:-99999px;}
 nav a, .int .home a, .test .home a {background:#073642; height:30px; display:block; color:#eee8d5; padding:0 8px; margin-left:2px; line-height:30px;}

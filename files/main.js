@@ -18,7 +18,7 @@ $(document).ready(function() {
 	$('.go').click(function() {
 		audio.play();
 		animation.css('display','block');
-		$('aside').removeClass('sup').addClass('tchau').fadeOut(900);
+		$('aside, .warn').removeClass('sup').addClass('tchau').fadeOut(900);
 		body.addClass('bg').addClass('cursor');
 		footer.fadeIn('fast');
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		if (body.is('.full')){$(this).addClass('cursor');};
 
 		/* vanish animation */
-		setTimeout(function(){$('header, h2, h3, .enemys').remove();},9500);
+		setTimeout(function(){$('header, h2, h3, .enemys, .warn').remove();},9500);
 		setTimeout(function(){$('.good').remove();},13200);
 		setTimeout(function(){$('.plus').find('q').remove();},19000);
 		setTimeout(function(){$('.plus').remove();},23500);

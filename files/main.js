@@ -12,7 +12,7 @@ $(document).ready(function() {
 	/* play */
 	$('.play').find('p').click(function() {
 		$('h1').addClass('tchau');
-		$('.play, nav, .share').fadeOut(900);
+		$('.play, nav, .share, #awwwards').fadeOut(900);
 		$('aside').fadeIn().addClass('sup').css('display','table');
 	});
 	$('.go').click(function() {
@@ -51,7 +51,7 @@ $(document).ready(function() {
 		if (body.is('.nosub')){footer.remove();};
 		setTimeout(function(){$('footer, .progress').remove();},127500);
 		setTimeout(function(){body.removeClass('cursor').removeClass('bg');},126000);
-		setTimeout(function(){$('nav, .share').fadeIn(900);},130000);
+		setTimeout(function(){$('nav, .share, #awwwards').fadeIn(900);},130000);
 
 		/* particles */
 		var toappend = '', i = j = 0;

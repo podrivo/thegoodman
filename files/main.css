@@ -92,8 +92,8 @@ nav a:hover, nav a:focus, .home a, .home a:hover, .int.a .about a, .int.t .tests
 /* Share */
 .share, .fb, .tw, .gp {position:absolute !important;bottom:0 !important;right:0 !important;margin:0 !important;padding:0 !important;height:20px; z-index:99;}
 .share {bottom:10px !important;right:10px !important;}
-.tw {right:72px !important;}
-.gp {right:190px !important;}
+.tw {right:84px !important;}
+.gp {right:200px !important;}
 
 
 /* About */

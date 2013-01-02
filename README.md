@@ -16,6 +16,8 @@ Typography includes [Montserrat](http://www.google.com/webfonts/specimen/Montser
 
 Icon font builder provided by [IcoMoon](http://icomoon.io/).
 
+Color palette by [Solarized](http://ethanschoonover.com/solarized).
+
 Special thanks to [Claudio Santos](http://voltzdesign.com.br/), [Lucas Franco](http://lucasfranco.com.br/) and [João Henrique Martins](http://bebopstudio.com.br/).
 
 ## License

@@ -571,3 +571,10 @@ section p:nth-child(5) b {color:#859900;}
 20%{top:55%; width:9px; height:9px;}
 35%{top:40%; width:12px; height:12px;}
 50%{top:80%; width:2px; height:2px;}}
+
+/* Awards */
+.www {position:absolute; top:50%; right:0; margin-top:-52px; z-index:9999;}
+.www a {background-image:url(awwwards_sotd_green_right.png); display:block; width:70px; height:105px; text-indent:-8000px; background-repeat:no-repeat; background-position: 0 0; overflow:hidden;}
+@media (max-width:767px) {.www {display:none;}}
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {.www a {background-image:url(awwwards_sotd_green_right2x.png); background-size:70px 105px;}}
+.fwa a {background:url(DayTopRight.png) no-repeat; width:100px; height:100px; position:absolute; top:0; right:0; text-indent:-999999px; display:block;}

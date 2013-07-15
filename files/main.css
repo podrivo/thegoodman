@@ -33,6 +33,9 @@ h1 {position:absolute; top:50%; left:50%; margin:-150px 0 0 -392px; font:700 73p
 @keyframes sup
 {0%{opacity:0; transform:translateY(50px);} 30%{opacity:0;} 100%{opacity:1; transform:translateY(0);}}
 
+@keyframes sup2
+{0%{opacity:0; margin-top:50px;} 30%{opacity:0;} 100%{opacity:1; margin-top:0;}}
+
 @keyframes tchau
 {0%{opacity:1; transform:translateY(0);} 100%{opacity:0; transform:translateY(-20px);}}
 
@@ -99,7 +102,7 @@ nav a:hover, nav a:focus, .home a, .home a:hover, .int.a .about a, .int.t .tests
 /* About */
 .int {overflow:auto;}
 .int body {height:auto;}
-.int section {max-width:700px; margin:auto; padding:40px 20px 60px; opacity:0; font:italic 400 22px 'Lato', serif; position:relative; animation:sup 1.2s forwards;}
+.int section {max-width:700px; margin:auto; padding:40px 20px 60px; opacity:0; font:italic 400 22px 'Lato', serif; position:relative; animation:sup2 1.2s forwards;}
 .int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
 .int p, .int h4 {margin-bottom:25px; position:relative;}
 .int p:last-child {margin-bottom:0;}
@@ -573,8 +576,10 @@ section p:nth-child(5) b {color:#859900;}
 50%{top:80%; width:2px; height:2px;}}
 
 /* Awards */
-.www {position:absolute; top:50%; right:0; margin-top:-52px; z-index:9999;}
-.www a {background-image:url(awwwards_sotd_green_right.png); display:block; width:70px; height:105px; text-indent:-8000px; background-repeat:no-repeat; background-position: 0 0; overflow:hidden;}
-@media (max-width:767px) {.www {display:none;}}
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {.www a {background-image:url(awwwards_sotd_green_right2x.png); background-size:70px 105px;}}
-.fwa a {background:url(DayTopRight.png) no-repeat; width:100px; height:100px; position:absolute; top:0; right:0; text-indent:-999999px; display:block; z-index:9999;}
+.awards {margin:20px 0 50px;}
+.awards li {margin-right:30px; display:inline-block;}
+.awards li a {background:url(awards.png) no-repeat; height:41px; text-indent:-9999999px; display:block; border:0; position:relative; opacity:.7;}
+.awards li a:hover {border:0; opacity:1; top:-5px;}
+.awards .www a {width:183px;}
+.awards .fwa a {background-position:-183px 0; width:111px;}
+.awards .cea a {background-position:-294px 0; width:164px;}

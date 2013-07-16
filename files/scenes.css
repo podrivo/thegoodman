@@ -4,7 +4,7 @@
 audio {position:absolute !important; display:block !important; z-index:999999 !important;}
 
 /* Dev */
-.dev header, .dev nav {display:none;}
+.dev header, .dev nav, .dev .share, .dev footer {display:none;}
 .dev article {display:block;}
 header, nav {display:block;}
 article {display:none;}
@@ -75,7 +75,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 
 
 /* Enemys */
-.enemys {width:86%; height:86%; z-index:2 !important; position:absolute; top:47%; left:50%; margin:-43% 0 0 -43%; color:#002b36;}
+.enemys {width:86%; height:86%; z-index:2 !important; position:absolute; top:7%; left:7%; color:#002b36;}
 .enemys p {font-size:30px; position:absolute; animation:bounceIn .8s backwards;}
 
 .enemys p:nth-child(1n+0) {font-size:30px; opacity:.9;}
@@ -214,7 +214,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 {to,from{opacity:0;}50%{opacity:1;}}
 
 /* Fight the fire */
-.fight {width:80%; height:80%; z-index:50 !important; position:absolute; top:47%; left:50%; margin:-40% 0 0 -40%;}
+.fight {width:80%; height:80%; z-index:50 !important; position:absolute; top:10%; left:10%;}
 .fight p {text-align:center; border-style:dashed; border-color:#eee8d5; border-radius:100px; box-sizing:border-box; animation:bounceIn 1s backwards, dash 2.6s cubic-bezier(0.075,0.820,0.165,1.0) forwards; position:absolute; z-index:50; display:block;}
 .fight p:nth-child(1n+1) {width:04px; height:04px; opacity:.10; border-width:02px; animation-delay:30.7s, 34.6s}
 .fight p:nth-child(2n+2) {width:08px; height:08px; opacity:.14; border-width:04px; animation-delay:31.0s, 34.6s}
@@ -381,19 +381,19 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 
 /* Shoot */
 .shoot {width:100%;height:100%;}
-.shoot p, .shoot span {width:0; height:6%; margin-top:-3%; position:absolute; top:50%; left:0; animation:shoot .7s cubic-bezier(0,.5,.3,1) forwards;}
+.shoot p, .shoot span {width:0; height:48px; margin-top:-24px; position:absolute; top:50%; left:0; animation:shoot .7s cubic-bezier(0,.5,.3,1) forwards;}
 .shoot p:nth-child(1) {background:rgba(7,54,66,.75); animation-delay:70.2s}
 .shoot p:nth-child(2) {background:#eee8d5; animation-delay:71.0s}
-.shoot span {background:#2aa198; height:2%; margin-top:-1%; animation-delay:72.3s}
+.shoot span {background:#2aa198; height:16px; margin-top:-8px; animation-delay:72.3s}
 
 @keyframes shoot
 {to{width:100%;}}
 
 
 /* Great Man */
-.greatman {width:100%;height:100%; animation:fade 1.5s 76.8s; z-index:23;}
-.greatman p {background:#2aa198; width:100%; height:0; z-index:22; position:absolute; left:0; animation:greatman 2s 74.6s cubic-bezier(.1,.3,.5,1) forwards;}
-.greatman p:nth-child(1) {bottom:50%;}
+.greatman {width:100%;height:100%; z-index:23;}
+.greatman p {background:#2aa198; width:100%; height:0; z-index:22; position:absolute; left:0; animation:greatman 2s 74.6s cubic-bezier(.1,.3,.5,1) forwards, fade 0.6s 76.8s forwards;}
+.greatman p:nth-child(1) {bottom:49.9%;}
 .greatman p:nth-child(2) {top:50%;}
 
 @keyframes greatman {to{height:60%;}}

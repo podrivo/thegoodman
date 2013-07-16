@@ -38,7 +38,7 @@ $(document).ready(function() {
 		setTimeout(function(){$('.transition').remove();},60200);
 		setTimeout(function(){$('.bars, .shoot').remove();},76000);
 		setTimeout(function(){$('.officer').remove();},76400);
-		setTimeout(function(){$('.greatman').remove();},77500);
+		setTimeout(function(){$('.greatman').remove();},77850);
 		setTimeout(function(){$('.heart').remove();},88000);
 		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
 		setTimeout(function(){$('.fish').remove();},98500);

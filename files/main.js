@@ -40,7 +40,8 @@ $(document).ready(function() {
 		setTimeout(function(){$('.officer').remove();},76400);
 		setTimeout(function(){$('.greatman').remove();},77850);
 		setTimeout(function(){$('.heart').remove();},88000);
-		setTimeout(function(){$('.coming, .read, .build').remove();},93000);
+		setTimeout(function(){$('.coming, .read').remove();},92600);
+		setTimeout(function(){$('.build').remove();},95000);
 		setTimeout(function(){$('.fish').remove();},98500);
 		setTimeout(function(){$('.all').remove();},112000);
 		setTimeout(function(){$('.am, .fly').remove();},126500);

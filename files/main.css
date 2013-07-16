@@ -103,7 +103,8 @@ nav a:hover, nav a:focus, .home a, .home a:hover, .int.a .about a, .int.t .tests
 .int {overflow:auto;}
 .int body {height:auto;}
 .int section {max-width:700px; margin:auto; padding:40px 20px 60px; opacity:0; font:italic 400 22px 'Lato', serif; position:relative; animation:sup2 1.2s forwards;}
-.int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; padding:5px 20px;}
+.int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; margin-top:20px; padding:5px 20px;}
+.int h4:first-child {margin-top:0;}
 .int p, .int h4 {margin-bottom:25px; position:relative;}
 .int p:last-child {margin-bottom:0;}
 .int section a {color:#586e75; border-bottom:2px dashed #586e75;}

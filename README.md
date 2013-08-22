@@ -18,7 +18,7 @@ Icon font builder provided by [IcoMoon](http://icomoon.io/).
 
 Color palette by [Solarized](http://ethanschoonover.com/solarized).
 
-Special thanks to [Claudio Santos](http://voltzdesign.com.br/), [Lucas Franco](http://lucasfranco.com.br/) and [João Henrique Martins](http://bebopstudio.com.br/).
+Special thanks to [Claudio Santos](http://voltzdesign.com.br/), [Lucas Franco](http://lucasfranco.com.br/) and [João Martins](http://bebopstudio.com.br/).
 
 ## License
 This project is licensed under [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).

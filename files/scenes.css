@@ -468,7 +468,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 
 
 /* Read News */
-.read * {height:25%; position:absolute; animation:going .6s cubic-bezier(0,.5,.3,1) forwards;}
+.read p, .read b {width:0; height:25%; position:absolute; animation:going .6s cubic-bezier(0,.5,.3,1) forwards;}
 .read p {left:0;}
 .read b {right:0;}
 .read p:nth-child(1) {background:#93a1a1; animation-delay:87.6s; top:00%;}

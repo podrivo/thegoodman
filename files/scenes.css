@@ -563,18 +563,26 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .am p {font-size:95px; color:#073642; position:absolute; bottom:384px; left:50%; margin:0 0 0 -54px; animation:hi 2.8s 107.6s backwards;}
 
 
+/* Like a butterfly */
+.fly {width:100%;height:100%;position:absolute;top:0;left:0;z-index:16;}
+.fly em {animation:goingUp 5.6s 114s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards, pavil 3.2s 120s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards; background:#eee8d5;height:0;width:1px;position:absolute;left:50%;}
+
+@keyframes goingUp {0%{height:0;bottom:0;}100%{height:100%;bottom:0;}}
+@keyframes pavil {0%{top:0;height:100%;}100%{top:0;height:0;}}
+
+
 /* Box */
 .box {z-index:14;}
-.box p {width:220px;height:220px;position:absolute;background:#0087ff;animation:box .8s backwards;}
-.box p:nth-child(1) {animation-delay:119.6s; top:0; left:50%;}
-.box p:nth-child(2) {animation-delay:119.6s; top:0; right:50%;}
-.box p:nth-child(3) {animation-delay:119.8s; top:0; left:50%;  margin-left:220px;}
-.box p:nth-child(4) {animation-delay:119.8s; top:0; right:50%; margin-right:220px;}
-.box p:nth-child(5) {animation-delay:120.0s; top:0; left:50%; margin-left:440px;}
-.box p:nth-child(6) {animation-delay:120.0s; top:0; right:50%; margin-right:440px;}
-.box p:nth-child(7) {animation-delay:120.2s; top:0; left:50%; margin-left:660px;}
-.box p:nth-child(8) {animation-delay:120.2s; top:0; right:50%; margin-right:660px;}
-.box p:nth-child(9) {animation-delay:120.4s; top:0; left:50%; margin-left:880px;}
+.box p {width:220px; height:220px; position:absolute; animation:box .8s forwards; z-index:14;}
+.box p:nth-child(1)  {animation-delay:119.6s; top:0; left:50%;}
+.box p:nth-child(2)  {animation-delay:119.6s; top:0; right:50%;}
+.box p:nth-child(3)  {animation-delay:119.8s; top:0; left:50%;  margin-left:220px;}
+.box p:nth-child(4)  {animation-delay:119.8s; top:0; right:50%; margin-right:220px;}
+.box p:nth-child(5)  {animation-delay:120.0s; top:0; left:50%; margin-left:440px;}
+.box p:nth-child(6)  {animation-delay:120.0s; top:0; right:50%; margin-right:440px;}
+.box p:nth-child(7)  {animation-delay:120.2s; top:0; left:50%; margin-left:660px;}
+.box p:nth-child(8)  {animation-delay:120.2s; top:0; right:50%; margin-right:660px;}
+.box p:nth-child(9)  {animation-delay:120.4s; top:0; left:50%; margin-left:880px;}
 .box p:nth-child(10) {animation-delay:120.4s; top:0; right:50%; margin-right:880px;}
 
 .box p:nth-child(11) {animation-delay:119.8s; top:220px; left:50%;}
@@ -622,15 +630,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .box p:nth-child(50) {animation-delay:121.2s; top:880px; right:50%; margin-right:880px;}
 
 @keyframes box
-{0%{opacity:0;}100%{opacity:1;}}
-
-
-/* Like a butterfly */
-.fly {width:100%;height:100%;position:absolute;top:0;left:0; z-index:16;}
-.fly em {animation:goingUp 5.6s 114.0s cubic-bezier(0.895, 0.030, 0.685, 0.220) forwards, pavil 3.2s 120s cubic-bezier(1.000, 0.000, 0.000, 1.000) forwards; background:#eee8d5;width:1px;height:0;position:absolute;bottom:0;left:50%;}
-
-@keyframes goingUp {100%{height:100%;}}
-@keyframes pavil {0%{bottom:0;height:100%;}100%{top:0;height:0;}}
+{0%{background-color:transparent;}100%{background-color:#0087ff;}}
 
 
 /* Explode */

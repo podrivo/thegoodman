@@ -1,4 +1,4 @@
- 	/*! The Good Man */
+/*! The Good Man */
 $(document).ready(function() {
 	var audio = $('audio')[0],
 		animation = $('article'),

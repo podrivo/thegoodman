@@ -95,6 +95,8 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
+	$('body').removeClass('preload');
+	
 	var play = $('.play');
 	play.find('p').fadeIn(1200);
 	play.find('span').fadeOut(700);

@@ -1,4 +1,4 @@
-/*! The Good Man */
+ 	/*! The Good Man */
 $(document).ready(function() {
 	var audio = $('audio')[0],
 		animation = $('article'),
@@ -95,6 +95,8 @@ $(document).ready(function() {
 });
 
 $(window).load(function() {
+	$('body').removeClass('preload');
+	
 	var play = $('.play');
 	play.find('p').fadeIn(1200);
 	play.find('span').fadeOut(700);

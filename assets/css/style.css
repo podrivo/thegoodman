@@ -2,19 +2,20 @@
 
 /* http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-*{box-sizing:border-box;backface-visibility:hidden;animation-fill-mode:both;}
+* {box-sizing:border-box;}
 
 /* @font-face */
 @font-face {font-family:'The Good Man'; src:url(../fonts/thegoodman.eot); src:url(../fonts/thegoodman.eot?#iefix) format('embedded-opentype'), url(../fonts/thegoodman.svg#The Good Man) format('svg'), url(../fonts/thegoodman.woff) format('woff'), url(../fonts/thegoodman.ttf) format('truetype'); font-weight:normal; font-style:normal;}
 article, .fs:after, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
-html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important;}
-body {background:#fdf6e3; background-image:radial-gradient(ellipse at center, #fefaf2 0%,#fff5dc 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefaf2', endColorstr='#fff5dc',GradientType=1); z-index:0;}
+html, body {width:100%; height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important;}
+body {width:100%; height:100%; background:#fdf6e3; background-image:radial-gradient(ellipse at center, #fefaf2 0%,#fff5dc 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefaf2', endColorstr='#fff5dc',GradientType=1); z-index:0;}
 a, .back {transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
 
 /* Misc */
+.preload * {transition:none !important;}
 .pat {width:100% !important; height:100% !important; z-index:2; background:radial-gradient(rgba(0,0,0,.1) 1px, transparent 1px); background-size:8px 8px; position:fixed !important; top:0 !important; left:0 !important; display:block !important; margin:0 !important;}
 header *, aside, article *, section {z-index:4;}
 header {height:100%; z-index:4;}
@@ -97,7 +98,7 @@ nav a:hover, nav a:focus, .home a, .home a:hover, .int.a .about a, .int.t .tests
 .int {overflow:auto;}
 .int body {height:auto;}
 .int section {max-width:700px; margin:auto; padding:40px 20px 60px; opacity:0; font:italic 400 22px 'Lato', serif; position:relative; animation:sup2 1.2s forwards;}
-.int h4 {background:#073642; color:#fdf6e3; font:normal 700 48px 'Montserrat', sans-serif; display:inline-block; margin-top:20px; padding:5px 20px;}
+.int h4 {background:#073642; color:#fdf6e3; font:700 48px 'Montserrat', sans-serif; display:inline-block; margin-top:20px; padding:5px 20px;}
 .int h4:first-child {margin-top:0;}
 .int p, .int h4 {margin-bottom:25px; position:relative;}
 .int p:last-child {margin-bottom:0;}
@@ -114,6 +115,7 @@ section p:nth-child(5) b {color:#859900;}
 .social li {display:inline-block;}
 .social li em {position:absolute; top:-99999px;}
 .social li a {display:inline-block; color:#002b36; margin:0 3px; padding:0 3px; border:0 !important;}
+.social li:first-child a {margin-left:0; padding-left:0;}
 .social li:nth-child(1) a:hover {color:#dc322f;}
 .social li:nth-child(2) a:hover {color:#859900;}
 .social li:nth-child(3) a:hover {color:#2aa198;}

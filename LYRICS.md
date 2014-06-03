@@ -1,5 +1,5 @@
-# Lyrics
-The Good Man, by Husky Rescue
+# The Good Man
+by Husky Rescue
 
 I am the superman  
 The great enemy of evil  

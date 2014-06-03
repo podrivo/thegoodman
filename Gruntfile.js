@@ -9,11 +9,11 @@ module.exports = function(grunt) {
         options: {
           separator:';'
         },
-          src: ['assets/js/main.js','assets/js/jquery.fullscreen.js','assets/js/rotator.js'],
+          src: ['assets/js/main.js','assets/js/jquery.fullscreen-min.js','assets/js/rotator.js'],
           dest: 'assets/js/global.js'
       },
       css: {
-          src: ['assets/css/main.css','dev/css/scenes.css'],
+          src: ['assets/css/main.css','assets/css/scenes.css'],
           dest: 'assets/css/global.css'
       }
     },
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
         }
       },
       css: {
-        tasks: ['concat:css', 'autoprefixer', 'cssmin'],
+        tasks: ['concat:css', 'cssmin', 'autoprefixer'],
         files: ['assets/css/*.css'],
         options: {
           spawn: false

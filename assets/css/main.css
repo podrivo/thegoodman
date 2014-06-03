@@ -5,7 +5,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *{box-sizing:border-box;backface-visibility:hidden;animation-fill-mode:both;}
 
 /* @font-face */
-@font-face {font-family:'The Good Man'; src:url('fonts/thegoodman.eot'); src:url('fonts/thegoodman.eot?#iefix') format('embedded-opentype'), url('fonts/thegoodman.svg#The Good Man') format('svg'), url('fonts/thegoodman.woff') format('woff'), url('fonts/thegoodman.ttf') format('truetype'); font-weight:normal; font-style:normal;}
+@font-face {font-family:'The Good Man'; src:url(../fonts/thegoodman.eot); src:url(../fonts/thegoodman.eot?#iefix) format('embedded-opentype'), url(../fonts/thegoodman.svg#The Good Man) format('svg'), url(../fonts/thegoodman.woff) format('woff'), url(../fonts/thegoodman.ttf) format('truetype'); font-weight:normal; font-style:normal;}
 article, .fs:after, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
@@ -574,7 +574,7 @@ section p:nth-child(5) b {color:#859900;}
 .awards {margin:20px 0 50px;}
 .awards:hover li a {opacity:.4;}
 .awards li {margin-right:20px; display:inline-block;}
-.awards li a {background:url(awards.png) no-repeat; height:41px; text-indent:-9999999px; display:block; border:0; position:relative; top:0;}
+.awards li a {background:url(../img/awards.png) no-repeat; height:41px; text-indent:-9999999px; display:block; border:0; position:relative; top:0;}
 .awards li a:hover {border:0; opacity:1; top:-5px;}
 .awards .www a {width:183px;}
 .awards .fwa a {background-position:-183px 0; width:111px;}

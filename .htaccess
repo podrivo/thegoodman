@@ -1,38 +1,3 @@
-RewriteEngine On
-RewriteBase /
-
-RewriteRule ^about/$ /about.html
-RewriteRule ^tests/$ /tests.html
-RewriteRule ^tests/up/$ /tests/up.html
-RewriteRule ^tests/up-full/$ /tests/up-full.html
-RewriteRule ^tests/txtr-01/$ /tests/txtr-01.html
-RewriteRule ^tests/txtr-02/$ /tests/txtr-02.html
-RewriteRule ^tests/bounce/$ /tests/bounce.html
-RewriteRule ^tests/change/$ /tests/change.html
-RewriteRule ^tests/rotate/$ /tests/rotate.html
-RewriteRule ^tests/graph/$ /tests/graph.html
-RewriteRule ^tests/chain/$ /tests/chain.html
-RewriteRule ^tests/chain-full/$ /tests/chain-full.html
-RewriteRule ^tests/chain-down/$ /tests/chain-down.html
-RewriteRule ^tests/particles/$ /tests/particles.html
-RewriteRule ^tests/particles-ex/$ /tests/particles-ex.html
-
-RewriteRule ^about$ /about/ [R=301,L]
-RewriteRule ^tests$ /tests/ [R=301,L]
-RewriteRule ^tests/up$ /tests/up/ [R=301,L]
-RewriteRule ^tests/up-full$ /tests/up-full/ [R=301,L]
-RewriteRule ^tests/txtr-01$ /tests/txtr-01/ [R=301,L]
-RewriteRule ^tests/txtr-02$ /tests/txtr-02/ [R=301,L]
-RewriteRule ^tests/bounce$ /tests/bounce/ [R=301,L]
-RewriteRule ^tests/change$ /tests/change/ [R=301,L]
-RewriteRule ^tests/rotate$ /tests/rotate/ [R=301,L]
-RewriteRule ^tests/graph$ /tests/graph/ [R=301,L]
-RewriteRule ^tests/chain$ /tests/chain/ [R=301,L]
-RewriteRule ^tests/chain-full$ /tests/chain-full/ [R=301,L]
-RewriteRule ^tests/chain-down$ /tests/chain-down/ [R=301,L]
-RewriteRule ^tests/particles$ /tests/particles/ [R=301,L]
-RewriteRule ^tests/particles-ex$ /tests/particles-ex/ [R=301,L]
-
 <IfModule mod_deflate.c>
-	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript text/javascript
+	AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css text/javascript application/x-javascript application/javascript
 </IfModule>

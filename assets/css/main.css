@@ -9,8 +9,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 article, .fs:after, span[data-icon]:before {font:normal 22px 'The Good Man'; content:attr(data-icon); speak:none; text-transform:lowercase;}
 
 /* HTML */
-html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; font-smoothing:antialiased !important; text-shadow:1px 1px 1px rgba(0,0,0,0.004);}
-body {background:#fdf6e3; background-image:gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,250,242,1)),color-stop(100%,rgba(250,245,220,1))); background-image:radial-gradient(center, circle cover, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); background-image:radial-gradient(circle at center, rgba(254,250,242,1) 0%,rgba(250,245,220,1) 100%); z-index:0;}
+html, body {height:100%; overflow:hidden; text-rendering:optimizeLegibility; -webkit-font-smoothing:antialiased !important;}
+body {background:#fdf6e3; background-image:radial-gradient(ellipse at center, #fefaf2 0%,#fff5dc 100%); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefaf2', endColorstr='#fff5dc',GradientType=1); z-index:0;}
 a, .back {transition:all .2s; text-decoration:none;}
 a:hover, a:focus {opacity:1; text-decoration:none;}
 

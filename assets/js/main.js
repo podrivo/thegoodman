@@ -6,9 +6,6 @@ $(document).ready(function() {
 		footer = $('footer'),
 		fs = $('.fs');
 
-	/* toggle fullscreen */
-	fs.toggle($(document).fullScreen() != null).click(function() {$(document).toggleFullScreen()});
-
 	/* play */
 	$('.play').find('p').click(function() {
 		$('h1').addClass('tchau');
@@ -64,7 +61,10 @@ $(document).ready(function() {
 		}
 		setTimeout(function(){$('.wave').hide().append(toappend).fadeIn(2400);},131000);
 	});
-
+	
+	/* toggle fullscreen */
+	fs.toggle($(document).fullScreen() != null).click(function() {$(document).toggleFullScreen()});
+	
 	/* toggle fullscreen class */
 	fs.click(function(){body.toggleClass('full');});
 

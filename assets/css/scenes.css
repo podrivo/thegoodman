@@ -146,7 +146,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 /* Plus */
 .plus span {width:100px; height:100px; font-size:100px; line-height:100px; z-index:11; display:block; color:#eee8d5; position:absolute; top:50%; left:50%; margin:-50px 0 0 -50px; animation:bounceIn .8s 10s backwards;}
 .plus p {opacity:1; animation:rotate 1.7s 10s, changeOut 3.6s 19.6s cubic-bezier(1,-0.35,0,1.35) forwards;}
-.plus em, .plus b, .plus i {display:block; position:absolute; top:50%; left:50%; border-radius:500px; animation:bounceIn 1.2s backwards, badbehaviorGB 2s cubic-bezier(1,-0.5,0,1.3) forwards;}
+.plus em, .plus b, .plus i {display:block; position:absolute; top:50%; left:50%; border-radius:500px; animation:bounceIn 1.2s backwards, badbehaviorGB 2s cubic-bezier(1.0,-0.5,0,1.3) forwards;}
 .plus em:nth-child(2) {background:#073642; z-index:9; width:180px; height:180px; margin:-90px 0 0 -90px; animation:bounceIn .8s 11.8s backwards, badbehavior 1s 15.3s forwards, badbehaviorGB 2s 18s cubic-bezier(1,-0.5,0,1.3) forwards;}
 .plus em:nth-child(3) {background:#dc322f; z-index:8; width:250px; height:250px; margin:-125px 0 0 -125px; animation-delay:12.6s, 18.4s}
 .plus em:nth-child(4) {background:#eee8d5; z-index:7; width:300px; height:300px; margin:-150px 0 0 -150px; animation-delay:12.8s, 18.8s}
@@ -178,14 +178,14 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 
 
 /* Fire */
-.fire em {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; animation:fire 3.2s cubic-bezier(.07,.66,.44,.97);}
+.fire em {width:1px; height:1px; opacity:0; border:1px solid #dc322f; border-radius:1000px; position:absolute; top:50%; left:50%; display:block; animation:fire 3.2s cubic-bezier(0.07,0.66,0.44,0.97);}
 .fire em:nth-child(1) {animation-delay:21.6s;}
 .fire em:nth-child(2) {animation-delay:22.4s;}
 .fire em:nth-child(3) {animation-delay:23.2s;}
 .fire p {background:#dc322f; opacity:1; position:absolute; top:50%; left:50%; border-radius:1000px; animation:fireOn 7.4s 24.8s forwards;}
 
 @keyframes fire
-{15%{opacity:1;} 20%{border-width:24px;} 40%{opacity:1;} 100%{width:500px; height:500px; margin:-250px 0 0 -250px; border-width:2px;}}
+{0%{border-width:1px;}15%{opacity:1;} 20%{border-width:24px;} 40%{opacity:1;} 100%{width:500px; height:500px; margin:-250px 0 0 -250px; border-width:2px;}}
 
 @keyframes fireOn
 {0%{width:1px; height:1px; margin:0; opacity:0;} 10%,40%{opacity:1;} 70%,100%{width:3000px; height:3000px; margin:-1500px 0 0 -1500px; opacity:0;}}

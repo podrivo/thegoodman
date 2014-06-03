@@ -9,11 +9,11 @@ module.exports = function(grunt) {
         options: {
           separator:';'
         },
-          src: ['assets/js/main.js','assets/js/jquery.fullscreen-min.js','assets/js/rotator.js'],
+          src: ['assets/js/functions.js','assets/js/jquery.fullscreen-min.js','assets/js/rotator.js'],
           dest: 'assets/js/global.js'
       },
       css: {
-          src: ['assets/css/main.css','assets/css/scenes.css'],
+          src: ['assets/css/style.css','assets/css/scenes.css'],
           dest: 'assets/css/global.css'
       }
     },
@@ -22,17 +22,6 @@ module.exports = function(grunt) {
       global: {
         src: 'assets/js/global.js',
         dest: 'assets/js/global.min.js'
-      }
-    },
-
-    imagemin: {
-      dynamic: {
-        files: [{
-          expand: true,
-          cwd: 'assets/img/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'assets/img/'
-        }]
       }
     },
 
@@ -53,6 +42,23 @@ module.exports = function(grunt) {
         src: 'assets/css/global.min.css',
         dest: 'assets/css'
       },
+      tests: {
+        expand: true,
+        flatten: true,
+        src: 'assets/css/tests.css',
+        dest: 'assets/css'
+      }
+    },
+
+    imagemin: {
+      img: {
+        files: [{
+          expand: true,
+          cwd: 'assets/img/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/img/'
+        }]
+      }
     },
 
     clean: {
@@ -106,6 +112,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin', 'cssmin', 'autoprefixer', 'clean']);
+  grunt.registerTask('default', ['concat', 'uglify', 'cssmin', 'autoprefixer', 'imagemin', 'clean']);
 
 };

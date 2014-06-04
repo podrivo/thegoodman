@@ -61,7 +61,7 @@ h2:after {content:''; width:0; height:0; display:block; position:absolute; top:7
 {0%{color:#586e75} 100%{color:#dc322f}}
 
 @keyframes great
-{15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border:150px solid #dc322f;}}
+{0%{border-width:1px;} 15%{opacity:1;} 100%{width:2000px; height:2000px; margin:-1000px 0 0 -1000px; border-width:150px;}}
 
 
 /* Sync */
@@ -148,33 +148,35 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .plus p {opacity:1; animation:rotate 1.7s 10s, changeOut 3.6s 19.6s cubic-bezier(1,-0.35,0,1.35) forwards;}
 .plus em, .plus b, .plus i {display:block; position:absolute; top:50%; left:50%; border-radius:500px; animation:bounceIn 1.2s backwards, badbehaviorGB 2s cubic-bezier(1.0,-0.5,0,1.3) forwards;}
 .plus em:nth-child(2) {background:#073642; z-index:9; width:180px; height:180px; margin:-90px 0 0 -90px; animation:bounceIn .8s 11.8s backwards, badbehavior 1s 15.3s forwards, badbehaviorGB 2s 18s cubic-bezier(1,-0.5,0,1.3) forwards;}
+
 .plus em:nth-child(3) {background:#dc322f; z-index:8; width:250px; height:250px; margin:-125px 0 0 -125px; animation-delay:12.6s, 18.4s}
 .plus em:nth-child(4) {background:#eee8d5; z-index:7; width:300px; height:300px; margin:-150px 0 0 -150px; animation-delay:12.8s, 18.8s}
 .plus em:nth-child(5) {background:#dc322f; z-index:6; width:350px; height:350px; margin:-175px 0 0 -175px; animation-delay:13s, 19.2s}
-.plus i {background:#268bd2; z-index:9; width:1px; height:1px; opacity:0; animation:badbehaviorUP 1s 16.3s forwards, badbehaviorGB 2s 17.4s cubic-bezier(1,-0.5,0,1.3) forwards}
-.plus b {background:transparent; z-index:9; width:360px; height:360px; margin:-180px 0 0 -180px; border-style:solid; border-color:#073642; animation:badbehaviorLast 1s 16.5s forwards}
-.plus q {background:#dc322f;z-index:10;width:1px;height:1px;position:absolute;top:50%;left:50%;border-radius:200px;display:block;opacity:0;animation:in .1s 17s forwards, lastone 2s 17s cubic-bezier(0.5,0,0,1);}
+
+.plus i {background:#268bd2; z-index:9; animation:badbehaviorUP 1s 16.3s forwards, badbehaviorGB 2s 17.4s cubic-bezier(1,-0.5,0,1.3) forwards}
+.plus b {background:transparent; z-index:9; width:350px; height:350px; margin:-175px 0 0 -175px; border-style:solid; border-color:#073642; animation:badbehaviorLast 1s 16.5s forwards}
+.plus q {background:#dc322f; z-index:10; width:1px; height:1px; position:absolute; top:50%; left:50%; border-radius:200px; display:block; opacity:0; animation:in .1s 17s forwards, lastone 2s 17s cubic-bezier(0.5,0,0,1);}
 
 @keyframes lastone
 {47%,53%{width:210px;height:210px;margin:-105px 0 0 -105px;}}
 
 @keyframes rotate
-{to{transform:rotate(360deg);}}
+{0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);}}
 
 @keyframes changeOut
 {0%{transform:scale(1) rotate(0);} 100%{transform:scale(0) rotate(360deg); opacity:0;}}
 
 @keyframes badbehavior
-{to{width:350px; height:350px; margin:-175px 0 0 -175px;}}
+{100%{width:350px; height:350px; margin:-175px 0 0 -175px;}}
 
 @keyframes badbehaviorUP
-{to{width:360px; height:360px; margin:-180px 0 0 -180px; opacity:1;}}
+{0%{width:1px; height:1px; opacity:0;} 100%{width:350px; height:350px; margin:-175px 0 0 -175px; opacity:1;}}
 
 @keyframes badbehaviorLast
-{from{width:1px; height:1px; margin:0; border-width:0;}45%{border-width:20px;}to{border-width:0;}}
+{0%{width:1px; height:1px; margin:0; border-width:0;}45%{border-width:20px;}100%{border-width:0;}}
 
 @keyframes badbehaviorGB
-{from{width:350px; height:350px; margin:-175px 0 0 -175px;}to{width:1px; height:1px; margin:0; border-width:0;}}
+{0%{width:350px; height:350px; margin:-175px 0 0 -175px;}100%{width:1px; height:1px; margin:0; border-width:0;}}
 
 
 /* Fire */
@@ -214,12 +216,12 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 {to,from{opacity:0;}50%{opacity:1;}}
 
 /* Fight the fire */
-.fight {width:80%; height:80%; z-index:50 !important; position:absolute; top:10%; left:10%;}
-.fight p {text-align:center; border-style:dashed; border-color:#eee8d5; border-radius:100px; box-sizing:border-box; animation:bounceIn 1s backwards, dash 2.6s cubic-bezier(0.075,0.820,0.165,1.0) forwards; position:absolute; z-index:50; display:block;}
-.fight p:nth-child(1n+1) {width:04px; height:04px; opacity:.10; border-width:02px; animation-delay:30.7s, 34.6s}
-.fight p:nth-child(2n+2) {width:08px; height:08px; opacity:.14; border-width:04px; animation-delay:31.0s, 34.6s}
-.fight p:nth-child(3n+3) {width:10px; height:10px; opacity:.25; border-width:05px; animation-delay:31.3s, 34.6s}
-.fight p:nth-child(4n+4) {width:16px; height:16px; opacity:.30; border-width:08px; animation-delay:31.6s, 34.7s}
+.fight {width:86%; height:86%; z-index:50 !important; position:absolute; top:7%; left:7%;}
+.fight p {text-align:center; border-style:solid; border-color:#eee8d5; border-radius:100px; animation:bounceIn 1s backwards, dash 2s cubic-bezier(0.075,0.820,0.165,1.0) forwards; position:absolute; z-index:50; display:block;}
+.fight p:nth-child(1n+1) {width:04px; height:04px; opacity:.10; border-width:2px; animation-delay:30.7s, 34.6s}
+.fight p:nth-child(2n+2) {width:08px; height:08px; opacity:.14; border-width:4px; animation-delay:31.0s, 34.6s}
+.fight p:nth-child(3n+3) {width:10px; height:10px; opacity:.25; border-width:5px; animation-delay:31.3s, 34.6s}
+.fight p:nth-child(4n+4) {width:16px; height:16px; opacity:.30; border-width:8px; animation-delay:31.6s, 34.7s}
 .fight p:nth-child(5n+5) {width:22px; height:22px; opacity:.40; border-width:11px; animation-delay:31.9s, 34.7s}
 .fight p:nth-child(6n+6) {width:26px; height:26px; opacity:.55; border-width:13px; animation-delay:32.2s, 34.7s}
 .fight p:nth-child(7n+7) {width:32px; height:32px; opacity:.60; border-width:16px; animation-delay:32.5s, 34.7s}
@@ -228,22 +230,24 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .fight p:nth-child(10n+10) {width:50px; height:50px; opacity:.80; border-width:25px; animation-delay:33.4s, 34.8s}
 
 @keyframes dash
-{to{border:0 dashed #eee8d5; transform:rotate(380deg); opacity:0}}
+{100%{border-width:0; opacity:0}}
 
 
 /* Smash */
 .smash, .smash p {width:100%; height:100%; display:block; position:absolute; overflow:hidden;}
-.smash p:nth-child(1), .smash p:nth-child(2) {background:#073642; width:100%; height:55%; left:0;}
-.smash p:nth-child(1) {animation:smashTop 1.4s 36.2s cubic-bezier(.75,0,.75,0) forwards; top:-55%;}
-.smash p:nth-child(2) {animation:smashBot 1.4s 36.2s cubic-bezier(.75,0,.75,0) forwards; bottom:-55%;}
-.smash p:nth-child(3), .smash p:nth-child(4) {background:#002b36; width:55%; height:100%; top:0;}
-.smash p:nth-child(3) {animation:smashLeft 1.4s 36.6s cubic-bezier(.75,0,.75,0) forwards; left:-55%;}
-.smash p:nth-child(4) {animation:smashRight 1.4s 36.6s cubic-bezier(.75,0,.75,0) forwards; right:-55%;}
 
-@keyframes smashTop {to{top:0;}}
-@keyframes smashBot {to{bottom:0;}}
-@keyframes smashLeft {to{left:0;}}
-@keyframes smashRight {to{right:0;}}
+.smash p:nth-child(1), .smash p:nth-child(2) {background:#073642; width:100%; height:55%; left:0;}
+.smash p:nth-child(1) {animation:smashTop 1.4s 36.2s cubic-bezier(0.75,0,0.75,0) forwards; top:-55%;}
+.smash p:nth-child(2) {animation:smashBot 1.4s 36.2s cubic-bezier(0.75,0,0.75,0) forwards; bottom:-55%;}
+
+.smash p:nth-child(3), .smash p:nth-child(4) {background:#002b36; width:55%; height:100%; top:0;}
+.smash p:nth-child(3) {animation:smashLeft 1.4s 36.6s cubic-bezier(0.75,0,0.75,0) forwards; left:-55%;}
+.smash p:nth-child(4) {animation:smashRight 1.4s 36.6s cubic-bezier(0.75,0,0.75,0) forwards; right:-55%;}
+
+@keyframes smashTop {100%{top:0;}}
+@keyframes smashBot {100%{bottom:0;}}
+@keyframes smashLeft {100%{left:0;}}
+@keyframes smashRight {100%{right:0;}}
 
 
 /* Claw */
@@ -253,7 +257,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .claw em:nth-child(1) {width:120px; height:130px; display:block; color:#5f5faf; font-size:120px; position:absolute; left:-10px; bottom:-26px; z-index:20;}
 .claw em:nth-child(2) {background:#859900; width:30px; height:30px; opacity:0; display:block; border-radius:50px; z-index:20; position:absolute; bottom:0; left:50%; margin-left:-17px; animation:person .2s 40.2s forwards, wig .5s ease-in infinite;}
 
-@keyframes claw {50%{top:-30%;}100%{top:-100%;}}
+@keyframes claw {50%{top:-30%;} 100%{top:-100%;}}
 @keyframes person {100%{opacity:1;}}
 @keyframes hide {100%{opacity:0;}}
 
@@ -468,23 +472,24 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 
 
 /* Read News */
-.read p, .read b {width:0; height:25%; position:absolute; animation:going .6s cubic-bezier(0,.5,.3,1) forwards;}
+.read p, .read b {width:0; height:25%; position:absolute; animation:going .6s cubic-bezier(0,0.5,0.3,1) forwards;}
 .read p {left:0;}
 .read b {right:0;}
 .read p:nth-child(1) {background:#93a1a1; animation-delay:87.6s; top:00%;}
 .read p:nth-child(2) {background:#839496; animation-delay:87.7s; top:25%;}
 .read p:nth-child(3) {background:#657b83; animation-delay:87.8s; top:50%;}
 .read p:nth-child(4) {background:#586e75; animation-delay:87.9s; top:75%;}
+
 .read b:nth-child(5) {background:#586e75; animation-delay:88.3s; top:00%;}
 .read b:nth-child(6) {background:#657b83; animation-delay:88.4s; top:25%;}
 .read b:nth-child(7) {background:#839496; animation-delay:88.5s; top:50%;}
 .read b:nth-child(8) {background:#93a1a1; animation-delay:88.6s; top:75%;}
 
-@keyframes going {100%{width:100%}}
+@keyframes going {0%{width:0;} 100%{width:100%}}
 
 
 /* Build */
-.build b {width:100%; height:100%; position:absolute; top:-101%; animation:build .4s cubic-bezier(1,1.02,.005,1.02) forwards;}
+.build b {width:100%; height:100%; position:absolute; top:-101%; animation:build .4s cubic-bezier(1,1.02,0.005,1.02) forwards;}
 .build p {width:100%; height:13%; background:#268bd2; position:absolute; animation:fade 1s 93s forwards;}
 .build b:nth-child(1) {animation-delay:90.1s;}
 .build b:nth-child(2) {animation-delay:90.4s;}
@@ -504,7 +509,7 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .build b:nth-child(7) p {bottom:75%;}
 .build b:nth-child(8) p {bottom:87%;}
 
-@keyframes build {to{top:0;}}
+@keyframes build {0%{top:-101%;} 100%{top:0;}}
 
 
 /* Fishing */

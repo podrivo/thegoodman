@@ -536,8 +536,8 @@ h3 em:last-child {background:#DC322F; width:220px; animation-delay:1.7s;}
 .all p:nth-child(5) {margin-left:-210px; border-bottom:220px solid #657b83; border-left-width:210px; border-right-width:210px;}
 .all p:nth-child(6) {margin-left:-140px; border-bottom:150px solid #839496; border-left-width:140px; border-right-width:140px;}
 .all p:nth-child(7) {margin-left:-100px; border-bottom:110px solid #93a1a1; border-left-width:100px; border-right-width:100px;}
-.all p:nth-child(8) {margin-left:-060px; border-bottom:070px solid #eee8d5; border-left-width:060px; border-right-width:060px;}
-.all p:nth-child(9) {margin-left:-025px; border-bottom:030px solid #fdf6e3; border-left-width:025px; border-right-width:025px;}
+.all p:nth-child(8) {margin-left:-60px; border-bottom:70px solid #eee8d5; border-left-width:60px; border-right-width:60px;}
+.all p:nth-child(9) {margin-left:-25px; border-bottom:30px solid #fdf6e3; border-left-width:25px; border-right-width:25px;}
 
 
 .all p:nth-child(1) {animation-delay:96.8s, 96.0s, 098.8s}
